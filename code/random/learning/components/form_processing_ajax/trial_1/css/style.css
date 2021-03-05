@@ -1,0 +1,275 @@
+/*SECTION 1: All Page specific CSS */
+body {
+	background-color: #EEECE8;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	color: 3F3F3F;
+    background-image: url("../images/bg-pattern.jpg");
+    background-repeat: repeat;
+}
+
+#site-wrapper {
+	margin: 0 auto;
+	width: 960px; 
+	border: 1px solid #DBD6D0;
+	min-height: 800px;
+	border-bottom: 6px solid #DBD6DO;
+}
+
+#fixed-header-background {
+    position: relative;
+    height: 55px;
+	left: -10px;
+    top: 0;
+    width: 120%;
+    z-index: 100;
+	background: rgb(86,84,85); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(86,84,85,1) 0%, rgba(57,53,52,1) 41%, rgba(52,48,47,1) 54%, rgba(37,33,34,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(86,84,85,1)), color-stop(41%,rgba(57,53,52,1)), color-stop(54%,rgba(52,48,47,1)), color-stop(100%,rgba(37,33,34,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(86,84,85,1) 0%,rgba(57,53,52,1) 41%,rgba(52,48,47,1) 54%,rgba(37,33,34,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(86,84,85,1) 0%,rgba(57,53,52,1) 41%,rgba(52,48,47,1) 54%,rgba(37,33,34,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(86,84,85,1) 0%,rgba(57,53,52,1) 41%,rgba(52,48,47,1) 54%,rgba(37,33,34,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(86,84,85,1) 0%,rgba(57,53,52,1) 41%,rgba(52,48,47,1) 54%,rgba(37,33,34,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565455', endColorstr='#252122',GradientType=0 ); /* IE6-9 */	
+	border-bottom: 3px solid #DBD6D0;	
+}
+
+#fixed {
+	position: relative; 
+	z-index: 1000;
+
+}
+
+#header-logo {
+	position: relative;
+	top: -60px;
+	left: 20px;
+}
+
+#header-text {
+	position: relative;
+	top: -122px;
+	left: 140px;
+	color: #C34500;
+}
+
+#connection-list{
+	position: relative;
+	top: -40px;
+	width: 540px;
+}
+
+
+#menu{	
+	position: relative;
+	top: -70px;
+	width: 100%;
+	height: 60px;
+	background-color: #FFFFFF;
+
+}
+#container {
+	position: absolute;
+	top: -246px;
+	width: 600px; 
+	margin: 280px auto 0
+}
+
+/*SECTION 1: Navigation Bar*/
+#navigation-background {
+	width: 960px;
+	height: 34px;
+	margin: 40px 0;	
+	background-color: #373737;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+}
+
+#navigation {
+	width: 900px;
+	height: 34px;
+	padding-left: 8px;
+	margin: 40px 0;	
+	font-family: 'Gudea', sans-serif;
+	background-color: #373737;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;	
+
+}
+
+#navigation  ul{
+	list-style: none;
+
+}
+
+#navigation  ul li {
+	width: 120px;
+	float: left;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000s;
+	text-align: center;
+}
+
+#navigation li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	line-height: 34px;
+	display: block;
+}
+
+#navigation li a:hover {
+	background-color: #4B4B4B;
+	color: #FFFFFF;
+	transition-delay: .15s;
+
+}
+
+/*SECTION 1: Connection List*/
+#connection-list{
+	position: relative;
+	width: 540px;
+}
+
+#connection-list h2 {
+
+	text-align: center;
+	color: #C34500;
+}
+
+.connection-list-date{
+	margin-left: 16px;
+	margin-top: 20px;
+	margin-bottom: 6px;
+	font-family: 'Gudea', sans-serif;
+	color: #252525;
+}
+
+.connection {
+	background-color: #FFFFFF;
+	border: 2px solid #F4F4F4;
+	border: 2px solid #F2F2F2;
+	height: 40px;
+	width: 500px;
+	margin-top: 12px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.connection-style p {
+	font-family: 'Gudea', sans-serif;
+	color: #C34500;
+}
+
+.connection-style a {
+	font-family: 'Gudea', sans-serif;
+	color: #C34500;
+}
+
+.connection-style a:hover, a:active, a:focus {
+    color: #615042;
+}
+
+.connection-font-position {
+	margin-left: 12px;
+	margin-top: 10px;
+}
+
+
+/*SECTION 1: Highlight for Individual Connection */
+#individual-connection {
+	position: absolute;
+	top: 210px;
+	left: 860px;
+	background-color: #FFFFFF;
+	border: 2px solid #F4F4F4;
+	border: 2px solid #F2F2F2;
+	height: 400px;
+	width: 360px;
+	margin-top: 12px;
+	margin-bottom: 60px;
+	padding-bottom: 100px;
+	margin-left: 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#connection-user-image {
+	margin-top: 10px;
+	margin-left: 12px;
+}
+
+.individual-connection-title{
+
+	margin-left: 16px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	font-family: 'Gudea', sans-serif;
+	color: #252525;
+}
+
+.staff-connection {
+	position: relative;
+	top: -96px;
+	left: 350px;
+	font-family: 'Gudea', sans-serif;
+	color: #252525;
+}
+
+.staff-connection-image {
+	position: relative;
+	top: -50px;
+	left: 300px;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius:  2px 2px 2px 2px;
+	border-radius:  2px 2px 2px 2px;
+}
+
+.staff-connection-name {
+	position: absolute;
+	left: 106px;
+	top: 14px;
+	color: #252525;
+}
+
+.individual-connection-subtitle {
+	margin-top: 10px;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 2px;
+	color: #252525;
+}
+
+.individual-connection-text {
+	margin-left: 8px;
+	margin-right: 8px;
+	color: #252525;
+}
+
+/**/
+
+
+
+/*Footer Styles*/
+footer {
+	position: relative;
+	left: -10px;
+	box-shadow: 0px 500px 0px 500px #252525;
+	border-top: 2px solid #C34500;
+	background-color: #252525;
+}
+
+/*Page Specific*/
+
+.board {
+	width: 300px;
+	height: 500px;
+	background-color: #23719F;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}

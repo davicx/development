@@ -1,0 +1,54 @@
+html, body {
+    height:100%;
+} 
+
+body {
+
+
+} 
+
+#header {
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	-webkit-box-shadow: #36361E 1px 1px 1px;
+	-moz-box-shadow: #36361E 1px 1px 1px; 
+	box-shadow: #36361E 1px 1px 1px;
+	
+}
+ 
+#site-wrapper {
+	margin: 0px auto 0px auto; 
+	width: 1240px; 
+	border: 1px solid black; 
+	min-height: 400px;
+overflow: auto;
+}
+ 
+#navigation {
+	position: fixed;
+	height: 60px;
+	width: 1240px; 
+} 
+
+#links {
+	float: left;
+	width: 800px;
+	margin-left: 80px;
+	border: 1px solid blue;
+	min-height: 600px;
+} 
+
+#side-links {
+	float: left;
+	width: 280px;
+	border: 1px solid blue;
+	min-height: 600px;
+} 
+
+
+/*SECTION 1: Index Page*/
+
+
+

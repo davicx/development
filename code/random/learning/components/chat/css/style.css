@@ -1,0 +1,83 @@
+/*Chat box*/
+.chat-box {
+	border: 1px solid black;
+	width: 500px;
+	margin: 50px;
+	background-color: #99FF66;
+} 
+
+.chat-box .user {
+	text-align: right;
+	padding: 5pxl;
+}
+
+.user input#signIn {
+	color: blue;
+	text-decoration: none;
+	background: none;
+	border: none;
+}
+
+.user input#signIn:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.user input {
+	margin-right: 5px;
+}
+
+.user .error {
+	color: red;
+	margin-right: 5px;
+}
+
+
+/*Message Log Area*/
+.chat-box .main {
+	background-color: #fff;
+	height: 300px;
+	padding: 5px;
+	overflow: auto;
+}
+
+/* New Message Area*/
+.chat-box .message-box {
+	padding: 7px 5px 5px 5px; 
+
+}
+
+#newMessageContent {
+	font: 14px arial, sans-serif;
+	width: 400px;
+	height: 62px;
+}
+
+#newMessageSend {
+	height: 36px;
+	width: 80px;
+}
+
+.chat-box .message-box .left {
+	
+}
+
+/* Sign in and out */
+#signOut {
+	font: 14px arial, sans-serif;
+	color: blue;
+	text-decoration: none;
+	margin-left: 8px;
+}
+
+#signOut:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+
+
+
+
+

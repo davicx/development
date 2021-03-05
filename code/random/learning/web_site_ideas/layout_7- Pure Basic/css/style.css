@@ -1,0 +1,65 @@
+body {
+
+}
+
+.header h1 {
+
+}
+
+.content-subhead {
+	color: #5EB95E;
+}
+
+#menu-bar {
+	height: 50px;
+	margin-bottom: 50px;
+
+}
+
+.menu-1 {
+	background-color: #0E90D2;
+	color: white;
+	text-align: center;
+	width: 220px;
+	float: left;
+}
+
+.menu-2 {
+	background-color: #5EB95E;
+	color: white;
+	text-align: center;
+	width: 180px;
+	float: left;
+}
+
+.menu-3 {
+	background-color: #8058A5;
+	color: white;
+	text-align: center;
+	width: 240px;
+	float: left;
+}
+
+.menu-4 {
+	background-color: #DD514C;
+	color: white;
+	text-align: center;
+	width: 80px;
+	float: left;
+}
+
+.menu-5 {
+	background-color: #F37B1D;
+	color: white;
+	text-align: center;
+	width: 180px;
+	float: left;
+}
+
+.menu-6 {
+	background-color: #FAD232;
+	color: white;
+	text-align: center;
+	width: 194px;
+	float: left;
+}

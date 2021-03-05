@@ -1,0 +1,71 @@
+body {
+	width: 1240px;
+	background-color: #004756;
+}
+
+#file-system {
+	border: 1px solid black;
+	margin-left: 200px;
+	padding-left: 20px;
+}
+
+#file-menu {
+
+
+}
+
+.droppable { 
+	width: 150px; 	
+	height: 150px; 
+	padding: 0.5em; 
+	margin: 10px;
+}
+
+.draggable { 
+	width: 100px; 
+	height: 100px; 
+	padding: 0.5em; 
+	margin: 10px 10px 10px 0;
+}
+
+.container {
+	width: 600px;
+	border: 1px solid white;
+}
+
+li {
+	list-style-type: none;
+	border: 1px solid #E67EE2;
+}
+
+/* Files */
+.file {
+	border: 1px solid #AAA;
+	background: #FFF;
+	color: #222;
+}
+
+.file:hover {
+    background-color: blue;
+	cursor: pointer; cursor: hand;
+}
+
+.dragged-file{
+	background-color: #F1F1F1;
+	width: 40px;
+	height: 40px;
+}
+
+/* Folder */
+
+.folder {
+    border: 1px solid #AAA;
+    background: #CCC;
+    color: #222;
+    font-weight: bold;
+}
+
+.folder:hover {
+    background-color: blue;
+	cursor: pointer; cursor: hand;
+}

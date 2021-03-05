@@ -1,0 +1,1 @@
+<?php	function create_authcode($filename) {		$authcode = sha1(substr(md5($filename), -12));		return $authcode;	}?>

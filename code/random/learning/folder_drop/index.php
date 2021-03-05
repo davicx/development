@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery UI Sortable - Connect lists</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+<style>
+	#sortable1, #sortable2 {
+	border: 1px solid #eee;
+	width: 142px;
+	min-height: 20px;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 0 0 0;
+	float: left;
+	margin-right: 10px;
+	}
+	#sortable1 li, #sortable2 li {
+	margin: 0 5px 5px 5px;
+	padding: 5px;
+	font-size: 1.2em;
+	width: 120px;
+	}
+</style>
+<script>
+	$(function() {
+		//$( "#sortable1, #sortable2" ).sortable({connectWith: ".connectedSortable"}).disableSelection().on( "sort", function( event, ui ) {
+		$( "#sortable1, #sortable2" ).sortable({connectWith: ".connectedSortable"}).disableSelection().on( "sortreceive", function( event, ui ) {	
+		//	$newFolder = $('.connectedSortable').attr('id')
+		//	alert(ui.item.closest('ul').attr('id'));
+			
+			
+		
+		});
+		//$( ".selector" ).on( "sort", function( event, ui ) {} );
+		//$( ".selector" ).sortable({ delay: 150 });
+	});
+</script>
+</head>
+<body>
+<ul id="sortable1" class="connectedSortable">
+	<li class="ui-state-default">Item 1</li>
+	<li class="ui-state-default">Item 2</li>
+	<li class="ui-state-default">Item 3</li>
+	<li class="ui-state-default">Item 4</li>
+	<li class="ui-state-default">Item 5</li>
+</ul>
+<ul id="sortable2" class="connectedSortable">
+	<li class="ui-state-highlight" >Item 1</li>
+	<li class="ui-state-highlight" >Item 2</li>
+	<li class="ui-state-highlight" >Item 3</li>
+	<li class="ui-state-highlight" >Item 4</li>
+	<li class="ui-state-highlight" >Item 5</li>
+</ul>
+</body>
+</html>

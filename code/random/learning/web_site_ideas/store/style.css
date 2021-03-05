@@ -1,0 +1,72 @@
+#wrapper {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 800px;
+	position: relative;
+	border: 1px solid black
+}
+
+body {
+	/*font-family: verdana,arial,helvetica,sans-serif; */
+	background-image:url('test.jpg');
+
+}
+
+header {
+	position: relative; 
+	top: -30px;
+	left: -10px;
+	width: 120%;
+	height: 70px;
+	background-color: #EC602F;
+	font-family: "Open Sans Condensed";
+	font-style: normal;
+	font-weight: 300;
+	color: white;
+	src: local("Open Sans Cond Light"), local("OpenSans-CondensedLight"), url("http://themes.googleusercontent.com/static/fonts/opensanscondensed/v7/gk5FxslNkTTHtojXrkp-xF1YPouZEKgzpqZW9wN-3Ek.woff") format("woff");
+
+
+}
+
+#logo {
+	position: relative;
+	left: 20px;
+	top: 16px;
+}
+
+#navigation {
+	position: relative;
+	top: -20px;
+	left: 400px;
+}
+
+#article {
+	float: left;
+	bottom: 17px;
+	width: 260px;
+	height: 300px;
+
+}
+
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+ul a {
+	color: black;
+}
+
+li {
+	display:inline;
+}
+
+@font-face {
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Cond Light"), local("OpenSans-CondensedLight"), url("http://themes.googleusercontent.com/static/fonts/opensanscondensed/v7/gk5FxslNkTTHtojXrkp-xF1YPouZEKgzpqZW9wN-3Ek.woff") format("woff");
+}

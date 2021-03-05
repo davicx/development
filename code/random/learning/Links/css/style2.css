@@ -1,0 +1,244 @@
+/*SECTION 1: Page Styling*/
+body {
+	background-color: F1F1F1;
+	  background: url(../images/grass.jpg) no-repeat center center fixed; 
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	font-family: 'geometria_lightlight';
+	font-family: Helvetica,Verdana,sans-serif;
+	font-family: 'sofia_pro_lightregular';
+	font-family: arial,sans-serif;
+	color: #333;
+}
+
+#site-wrapper {
+	margin: 0 auto;
+	margin-top: 1px;
+	width: 960px; 
+/*	border: 1px solid #DBD6D0; */
+	min-height: 1000px;
+	background-color: #FFFFFF;
+/*	border: 1px solid #E5E5E5; */
+}
+
+#fixed-header-background {
+    position: fixed;
+    height: 55px;
+	left: -10px;
+    top: 0;
+    width: 120%;
+	background-color: #FFFFFF; 
+	border-bottom: 2px solid #C4C4C4;
+}
+
+#header {
+    position: fixed;
+    height: 54px;
+	width: 960px;
+   background-color: #FFFFFF;
+   border-bottom: 2px solid #C4C4C4;
+    z-index: 100;
+
+
+}
+
+#profile {
+	float: left;
+	margin-top: 55px;
+	width: 240px;
+	min-height: 942px;
+	background-color: #3DC0F1;
+	background-color: #FAFAFA;
+	border: 1px solid #E5E5E5;
+	text-align: center;
+}
+
+#main-links {
+	float: left;
+	margin-top: 65px;
+	width: 560px;
+	min-height: 800px;
+	text-align: center;
+}
+
+#right-bar {
+	float: left;
+	margin-top: 5px;
+	width: 152px;
+	min-height: 992px;
+	background-color: #FAFAFA;
+	text-align: center;
+	border: 1px solid #E5E5E5;
+}
+
+
+/*SECTION 2: Section and Page Specific */
+
+/*SECTION 2: Header*/
+.logo-icon {
+	position: relative;
+	bottom: 6px;
+	color: #FFF;
+}
+
+/*SECTION 2: Profile*/
+.profile-image {
+	margin-top: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #FFFFFF;
+	/*
+	-webkit-box-shadow: #B3B3B3 2px 2px 2px;
+	-moz-box-shadow: #B3B3B3 2px 2px 2px; 
+	box-shadow: #B3B3B3 2px 2px 2px; */
+	-webkit-box-shadow: #B3B3B3 1px 1px 1px;
+	-moz-box-shadow: #B3B3B3 1px 1px 1px; 
+	box-shadow: #B3B3B3 1px 1px 1px;
+}
+
+/*SECTION 2: Links*/
+
+/*Main Links Section*/
+#left-links {
+	float: left;
+	width: 184px;
+}
+
+#middle-links {
+	float: left;
+	width: 184px;
+}
+
+#right-links {
+	float: left;
+	width: 184px;
+}
+
+/*Individual Link Groups*/
+/*
+.link-header{
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	border-top: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	background-color: #FAFAFA;
+	background-color: #E0E0E0;
+	text-align: center;
+	color: #777;
+	margin-left: 12px;
+	width: 172px;
+	height: 32px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+
+}
+
+.link-header-text {
+	position: relative;
+	bottom: 8px;
+}
+
+*/
+
+/*Alt*/
+.link-header{
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	border-top: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	background-color: #F1F1F1;
+	text-align: center;
+	color: #333;
+	margin-left: 12px;
+	width: 172px;
+	height: 32px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+
+}
+
+.link-header-text {
+	position: relative;
+	bottom: 8px;
+}
+/*Alt*/
+
+.sub-link-group {
+	list-style-type: none;
+	margin-left: 12px;
+	padding-left: 0px;
+}
+
+.sub-link {
+	text-decoration: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	color: #333;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 17px;
+}
+
+.individual-link {
+	width: 172px; 
+	margin-bottom: 4px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+a {
+font-size: 14px;
+	display: block;
+	text-decoration: none;
+}
+
+a:hover {
+font-size: 14px;
+	color: #2793E6;
+
+}
+
+a:visited {
+   color: #2793E6;
+	text-decoration: none;
+	font-size: 14px;
+	text-decoration: none;
+	
+}
+
+a:active {
+color: #2793E6;
+	text-decoration: none;
+	font-size: 14px;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+/*SECTION 2: Right Menu Bar*/
+/*
+.button-secondary{
+	color: white;
+	border-radius: 4px;
+	background-color: red; 
+	background-color: #2BA3D4; 
+	margin-bottom: 20px;
+	width: 120px;
+	
+}
+*/
+.button-secondary{
+	color: white;
+	border-radius: 4px;
+	background-color: red; 
+	background-color: #2BA3D4; 
+	margin-bottom: 20px;
+	width: 120px;
+	
+}
+
+
+
+
+
+

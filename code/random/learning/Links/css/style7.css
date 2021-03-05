@@ -1,0 +1,179 @@
+
+body {
+	font-family: "Times New Roman", Georgia, Serif;
+	color: #404040;
+
+	
+}
+
+
+#site-wrapper {
+	margin: 0 auto;
+	width: 960px; 
+	min-height: 1000px;
+}
+
+#fixed-header-background {
+    position: fixed;
+    height: 55px;
+	left: -10px;
+    top: 0;
+    width: 120%;
+	border-bottom: 1px solid #404040;
+
+} 
+
+#header {
+    position: fixed;
+    height: 54px;
+	width: 960px;
+	z-index: 100;	
+
+}
+
+#profile {
+	float: left;
+	margin-top: 65px;
+	width: 240px;
+	min-height: 800px;
+	/*
+	background-color: #3DC0F1;
+		*/
+
+
+	border: 1px solid #E5E5E5;
+	text-align: center;
+}
+
+#main-links {
+	float: left;
+	margin-top: 65px;
+	width: 560px;
+	min-height: 800px;
+	text-align: center;
+}
+
+#right-bar {
+	float: left;
+	margin-top: 65px;
+	width: 152px;
+	min-height: 800px;
+
+	text-align: center;
+	border: 1px solid #E5E5E5;
+}
+
+/*SECTION 2: Section and Page Specific */
+
+/*SECTION 2: Header*/
+.logo-icon {
+	position: relative;
+	bottom: 6px;
+	color: #FFF;
+}
+
+/*SECTION 2: Profile*/
+.profile-image {
+	margin-top: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #FFFFFF;
+	-webkit-box-shadow: #B3B3B3 1px 1px 1px;
+	-moz-box-shadow: #B3B3B3 1px 1px 1px; 
+	box-shadow: #B3B3B3 1px 1px 1px;
+}
+
+/*SECTION 2: Links*/
+
+/*Main Links Section*/
+#left-links {
+	float: left;
+	width: 184px;
+}
+
+#middle-links {
+	float: left;
+	width: 184px;
+}
+
+#right-links {
+	float: left;
+	width: 184px;
+}
+
+/*Alt*/
+.link-header{
+	border-top: 1px solid #404040;
+	border-bottom: 1px solid #404040;
+	text-align: center;
+	margin-left: 12px;
+	width: 172px;
+	height: 32px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/*
+#5EB95E
+#8058A5
+#DD514C
+#F37B1D
+#F37B1D
+
+*/
+.link-header-text {
+	position: relative;
+	bottom: 16px;
+}
+
+.sub-link-group {
+	list-style-type: none;
+	margin-left: 12px;
+	padding-left: 0px;
+}
+
+.sub-link {
+	text-decoration: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	text-decoration: none;
+}
+
+.individual-link {
+	width: 172px; 
+	margin-bottom: 4px;
+	border-bottom: 1px solid #E5E5E5;
+	
+}
+
+a {
+
+	display: block;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #1368A8;
+	background-color: #FAFAFA;
+}
+
+a:visited {
+
+}
+
+a:active {
+
+}
+
+/*SECTION 2: Right Menu Bar*/
+.button-secondary{
+	color: white;
+	border-radius: 4px; 
+
+	margin-bottom: 20px;
+	width: 120px;
+	
+}
+

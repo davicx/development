@@ -1,0 +1,273 @@
+/*PROFILE CSS LAYOUT*/
+/*User Profile*/
+#profile {
+	border: 1px solid blue;
+	position: absolute;
+	top: 100px;
+	left: 40px;
+	width: 400px;
+	height: 400px;
+}
+
+#profile-right {
+	position: absolute;
+	top: 20px;
+	left: 200px;
+}
+
+#friends {
+	border: 1px solid blue;
+	width: 400px;
+	position: relative;
+	left: 40px;
+	top: -1250px;
+}
+
+#friend-display {
+	border: 1px solid blue;
+	width: 300px;
+	position: relative;
+}
+
+/*WALL*/
+#feed {
+	position: absolute;
+	top: 100px;
+	left: 440px;
+	background-color: #E9EAED;
+	width: 600px;
+	
+}
+
+/*I) POSTS*/
+.posts {
+	border: 1px solid #DDDEDF;	
+	background-color: #E9EAED;
+	background-color: #F1FEEC;
+	background-color: #FFFFFF;
+	position: relative;
+	left: 50px;
+	width: 500px;
+	margin-top: 20px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding-bottom: 100px;
+	border: 1px solid blue;
+	margin-bottom: 30px;
+}
+
+
+
+/* POST HEAD: */
+.post-head {
+	height: 88px;
+
+}
+
+.post-updated{
+	position: relative;
+	top: -80px;
+	left: 90px;
+	width: 220px;
+	/*margin-bottom: -60px;*/
+	color: #222;
+
+}
+
+.post-user-info{
+	position: relative;
+	top: -80px;
+	left: 90px;
+	color: #3F729B;
+}
+
+.post-user-image {
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+
+/*POST BODY: */
+.post-body {
+	margin-bottom: 30px;	
+	display: inline-block;	
+	padding-bottom: 60px;
+}
+
+.post-main-image {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+}
+
+.post-caption {
+	width: 494px;
+	min-height: 60px;
+	background-color: #DDDDDD;
+	border-top: 1px solid #DDDEDF;	
+	padding: 3px;
+
+}
+
+
+
+/* POST LIKE ACTIONS:*/
+.post-like-actions {
+	position: relative;
+	top: -132px;
+	height: 26px;
+	border-top: 1px solid #DDDEDF;
+	border-bottom: 1px solid #DDDEDF;	
+	background-color: gray;
+
+} 
+
+
+
+.current-post-likes {
+	position: relative;	
+	top: -10px;
+	left: 70px;
+	width: 400px;
+	height: 20px;
+
+}
+
+.like {
+	width: 60px;
+	height: 20px;
+	position: relative;
+	top: -46px;
+	
+}
+
+
+/*Post Comments*/
+.comments {
+	border: 1px solid red;
+	position: relative;
+	top: -132px;
+	/*This controls how far down the bottom of the entire post will go*/
+	margin-bottom: -234px;
+	width: 500px;
+
+}
+		
+/*Post Edit Area*/
+/*JQUERY*/
+/*Hide or show elements*/
+.view {
+	visibility:visible;
+}
+
+.hide {
+	display: none;
+}
+
+.edit {
+	position: relative;
+	top: -50px;
+	left: 454px;
+}
+
+
+.save{ 
+	position: relative;
+	top: -100px;
+	left: 10px;
+	margin-bottom: -20px
+}
+
+.cancel {
+	position: relative;
+	top: -100px;
+	left: 10px;
+	margin-bottom: -20px
+}
+
+.updated-post {
+	margin-top: -10px;
+	position: relative;
+	top: -200px;
+	left: 10px;
+}
+
+.view-post {
+	visibility:visible;
+
+}	
+
+.view-textbox {
+	visibility:hidden;
+
+}
+
+
+
+
+
+
+
+
+
+	
+	
+	
+/*New Post*/
+#new_posts {
+	position: relative;
+	background-color: #F6F7F8;
+	background-color: #EDEEEF;
+	width: 600px;
+	height: 120px;
+	border: 1px solid #DDDEDF;	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+
+}
+
+#type-of-post {
+	position: relative;
+	left: 500px;
+	top: -96px;
+}
+
+#type-of-post p{
+	margin-bottom: -8px;
+
+}
+
+.new-post-textarea {
+	margin-left: 40px;
+	margin-top: 10px;
+
+}
+
+.new-post-button {
+	position: relative;
+	top: 26px;
+	right: 420px;
+}
+
+
+
+/*EDIT/INFO*/
+#edit-profile {
+	border: 1px solid blue;
+	width: 200px;
+	position: relative;
+	top: -550px;
+	left: 1060px;
+}
+
+#form {
+	display: inline;
+	width: 300px;
+}
+
+#image-gallery {
+
+}

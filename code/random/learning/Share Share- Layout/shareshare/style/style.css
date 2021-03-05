@@ -1,0 +1,67 @@
+body {
+	background-color: white;	
+	background-color: #F6F7F8;
+	margin-top: 650px;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+} 
+
+.site-wrapper {
+
+}
+
+/*NAVIGATION*/
+#navigation {
+	position: fixed;
+	top: 1px;
+	width: 100%;
+	z-index: 1000;
+	height: 40px;
+	text-align: right;
+	padding-top: 15px;
+	color: #3653E3;
+	/* Adds shadow to the bottom of the bar */	
+	-webkit-box-shadow: 0px 0px 22x 0px #7A1B11;
+	-moz-box-shadow: 0px 0px 2px 0px #7A1B11;
+	box-shadow: 0px 0px 2px 0px #7A1B11;
+	/* Adds the transparent background */
+	/*background-color: #EE3423; Path*/
+	background-color: #121212; 
+	background-color: #D9301F;	
+	background-color: #C42B1C;
+	color:  #000438;
+	overflow:hidden; 
+}
+
+#navigation a {
+	position: relative; 
+	top: 4px;
+	right: 10px;
+	/*"Trebuchet MS", Helvetica, sans-serif*/
+	font: helvetica;
+	font-size: 16px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: white;
+	text-decoration: none;
+	overflow:hidden;
+}
+
+#navigation a:hover {
+color: grey;
+} 
+
+.img {
+   padding:1px;
+   border:1px solid #021a40;
+   border-radius: 5px;
+}
+
+#login-main {
+	position: absolute;
+	right: 620px;
+	top: 150px;
+
+}
+

@@ -1,0 +1,83 @@
+/****************************************************
+SECTION 1: Main 
+*****************************************************/
+body {
+
+	background-color:		#183026;
+	background-image:		url('../images/background/overlay.png'),			url('../images/background/bg2.jpg');
+	background-repeat:		repeat,								no-repeat;
+	background-size:		auto,								cover;
+	background-position: 	top left,							center 0;
+	background-attachment:	fixed,								fixed;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+#site-wrapper {
+	margin: 0px auto 0px auto; 
+	width: 1240px; 
+	min-height: 500px;
+	border: 1px solid black;
+	overflow: auto;
+	padding-bottom: 200px;
+}
+
+/****************************************************
+SECTION 2: Phone Template 
+*****************************************************/
+/* Post Type 1: Normal Post */
+.phone{
+	float: left;
+	height: 558px;
+	width: 320px;
+ 	margin-top: 40px;
+	margin-left: 40px;
+	border: 1px solid #444;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color:#FFFFFF; 
+
+}
+
+.phone-header {
+	height: 70px;
+	border: 1px solid #444;
+}
+
+
+.phone-content {
+	height: 418px;
+	text-align: center; 
+	border: 1px solid #444;
+
+}
+
+.phone-footer {
+	height: 70px;
+	border: 1px solid #444;
+}
+
+.footer-button {
+	float: left;
+	width: 61px;
+	border: 1px solid #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.post-social {
+	border: 1px solid red;
+}

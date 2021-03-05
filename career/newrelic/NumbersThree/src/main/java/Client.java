@@ -1,0 +1,39 @@
+
+import java.io.IOException;
+import java.io.PrintStream;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class Client {
+
+    public static void main(String args[]) throws IOException  {
+        Socket s = null;
+
+
+        try {
+            s = new Socket("127.0.0.1", 1342);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            //Scanner sc1 = new Scanner(s.getInputStream());
+            //System.out.println("Enter a Number");
+            //number = sc.nextInt();
+            PrintStream p = new PrintStream(s.getOutputStream());
+            p.println(1000);
+
+            //Accept Server Result
+
+            //temp = sc1.nextInt();
+            //System.out.println(temp);
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
+    }
+}

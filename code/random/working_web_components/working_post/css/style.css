@@ -1,0 +1,32 @@
+body { 
+	
+	
+}
+
+#site-wrapper {
+	margin: 0 auto;
+	width: 960px; 
+	border: 1px solid #DBD6D0;
+	min-height: 800px;
+}
+
+#user-posts {
+	border: 1px solid black;
+	width: 600px;
+}
+
+.individual-post {
+	border: 1px solid blue;
+}
+
+.user-info {
+	border: 1px solid black;
+	width: 400px;
+}
+
+.post-text {
+	border: 1px solid green; 
+	margin-left: 50px;
+	width: 500px;
+	min-height: 120px;
+}

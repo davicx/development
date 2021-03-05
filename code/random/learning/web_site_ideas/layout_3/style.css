@@ -1,0 +1,145 @@
+#wrapper {
+	width: 1240px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -20px;
+	min-height: 800px;
+	position: relative;
+
+}
+
+
+body {
+/*	background-color: #F1F1F1; */
+	background-color: #00AEFF;
+}
+
+
+/*Header*/
+#header {
+	background-color: #FFFFFF;
+	position: absolute;
+	width: 1240px;
+	height: 70px;
+
+
+}
+
+#header-cover {
+	background-color: #FFFFFF;
+	position: absolute;
+	left: -20px;
+	width: 1440px;
+	height: 70px;
+
+}
+
+/*User Bar*/
+#user-bar {
+	position: absolute;
+	top: 60px;
+	width: 260px;
+	height: 800px;
+}			
+
+#user-image {
+	position: relative;
+	left: 25px;
+	top: 10px;
+	border: 4px solid #191818;
+	border-radius: 8px;
+}
+
+
+#profile {
+	position: relative;
+	top: 20px;
+	width: 260px;
+	height: 200px;
+	background-color: #FFFFFF;
+	border-radius: 8px 8px 0px 0px;
+	border: 2px solid #B7B7B7;
+
+}			
+
+#share{
+	position: relative;
+	top: 40px;
+	width: 260px;
+	height: 300px;
+	background-color: #FFFFFF;
+	border: 1px solid #B7B7B7;
+
+}		
+
+#friends{
+	position: relative;
+	background-color: #FFFFFF;
+	top: 50px;
+	width: 260px;
+	height: 200px;
+	border-radius: 0px 0px 8px 8px;
+	border: 2px solid #B7B7B7;
+}		
+
+/*Wall*/
+#wall {
+	position: absolute;
+	top: 200px;
+	left: 260px;
+	width: 700px;
+	min-height: 400px;
+}	
+/*
+.comment {
+	border: 1px solid black;
+	position: relative;
+	left: 50px;
+	width: 600px;
+	min-height: 300px;
+}
+*/
+.url {
+	border-top: 1px solid #FFFFFF;
+	position: relative;
+	left: 50px;
+	width: 600px;
+	min-height: 60px;
+	margin-top: -40px;
+
+}
+
+.url-text {
+	color: #777777;
+	position: relative;
+	left: 110px;
+	top: -130px;
+
+}
+
+.url-function {
+	color: #777777;
+	position: relative;
+	top: -65px;
+	left: 470px;
+
+}
+
+.url-like{
+	color: #777777;
+	position: relative;
+	top: -30px;
+	left: 120px;
+
+}
+
+.url-link{
+	position: relative;
+	top: 0px;
+	left: 20px;
+
+}
+/*Info Bar*/
+#info {
+
+}

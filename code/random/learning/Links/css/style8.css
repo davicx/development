@@ -1,0 +1,223 @@
+/*SECTION 1: Page Styling*/
+body {
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	font-family: 'geometria_lightlight';
+	font-family: 'sofia_pro_lightregular';
+	font-family: Helvetica,Verdana,sans-serif;
+	color: #222;
+	background-color: #3DC0F1;
+}
+
+#site-wrapper {
+	margin: 0 auto;
+	width: 960px; 
+	min-height: 1000px;
+	background-color: #3DC0F1;
+}
+
+#fixed-header-background {
+    position: fixed;
+    height: 55px;
+	left: -10px;
+    top: 0;
+    width: 120%;
+	background-color: #000000;
+
+}
+
+#header {
+    position: fixed;
+    height: 54px;
+	width: 960px;
+	background-color: #000000;
+	z-index: 100;
+}
+
+#profile {
+	float: left;
+	margin-top: 75px;
+	width: 240px;
+	min-height: 800px;
+	border: 1px solid #E5E5E5;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#main-links {
+	float: left;
+	margin-top: 75px;
+	width: 560px;
+	min-height: 800px;
+	text-align: center;
+	background-color: #3DC0F1;
+}
+
+#right-bar {
+	float: left;
+	margin-top: 75px;
+	width: 152px;
+	min-height: 800px;
+	border: 1px solid #E5E5E5;
+	text-align: center;
+	border: 1px solid #E5E5E5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/*SECTION 2: Section and Page Specific */
+
+/*SECTION 2: Header*/
+.logo-icon {
+	position: relative;
+	bottom: 6px;
+	color: #FFF;
+}
+
+/*SECTION 2: Profile*/
+.profile-image {
+	margin-top: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #FFFFFF;
+	-webkit-box-shadow: #B3B3B3 1px 1px 1px;
+	-moz-box-shadow: #B3B3B3 1px 1px 1px; 
+	box-shadow: #B3B3B3 1px 1px 1px;
+}
+
+/*SECTION 2: Links*/
+
+/*Main Links Section*/
+#left-links {
+	float: left;
+	width: 184px;
+}
+
+#middle-links {
+	float: left;
+	width: 184px;
+}
+
+#right-links {
+	float: left;
+	width: 184px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/*Alt*/
+.link-group {
+	background-color: white;
+	margin-top: 12px;
+	margin-bottom: 18px;
+	margin-left: 12px;
+	width: 172px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+
+	
+}
+
+.link-header{
+	text-align: center;
+	color: #222;
+	color: #545454;	
+	width: 172px;
+	height: 32px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.link-header-text {
+	border-top: 1px solid #CCCCCC; 
+	border-bottom: 1px solid #CCCCCC;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	position: relative;
+	margin-top: 10px;
+}
+
+.sub-link-group {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.sub-link {
+	text-decoration: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	color: #2BA3D4;
+	color: #222;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.individual-link {
+	width: 172px; 
+	margin-bottom: 2px;
+	padding-bottom: 3px;
+/*	border-bottom: 1px solid #E5E5E5; */
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+.sub-link:hover {
+	background-color: #DEDEDE;
+	color: #616161;	
+	color: #777;
+	color: #545454;	
+
+}
+
+a:visited {
+    color: #2BA3D4;
+	color: #777;
+	color: #5E5E5E;
+	text-decoration: none;
+	font-size: medium;
+	text-decoration: none;
+	
+}
+
+a:active {
+    color: #2BA3D4;
+	color: #616161;	
+	text-decoration: none;
+	font-size: medium;
+	text-decoration: none;
+}
+
+/*SECTION 2: Right Menu Bar*/
+.button-secondary{
+	color: white;
+	border-radius: 4px; 
+	background-color: #00AEEF;
+	margin-bottom: 20px;
+	width: 120px;
+}
+
+.uk-button {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.add-margin {
+	margin-bottom: 8px;
+	border-bottom: 1px dotted #808080;
+	padding-bottom: 4px;
+
+
+}

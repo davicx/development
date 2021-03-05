@@ -1,0 +1,19 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "comma-dangle": ["error", "never"],
+      "class-methods-use-this": ["error", "never"],
+      "object-curly-newline": ["error", {
+        "ObjectExpression":  { "multiline": true },
+        "ObjectPattern": { "multiline": true },
+        "ImportDeclaration":  { "multiline": true },
+        "ExportDeclaration":  { "multiline": true }
+    }]
+    }
+}

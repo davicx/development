@@ -1,0 +1,587 @@
+/*SECTION 1: All Page specific CSS */
+body {
+	background-color: #EEECE8;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	color: 3F3F3F;
+    background-image: url("../images/bg-pattern.jpg");
+    background-repeat: repeat;
+}
+
+#site-wrapper {
+	margin: 0 auto;
+	width: 960px; 
+}
+
+#site-border-wrapper {
+	border: 1px solid #DBD6D0;	
+	display: inline-block;
+}
+
+/* Header*/
+#fixed-header-background {
+	height: 56px;
+    z-index: 100;
+	background: rgb(86,84,85); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(86,84,85,1) 0%, rgba(57,53,52,1) 41%, rgba(52,48,47,1) 54%, rgba(37,33,34,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(86,84,85,1)), color-stop(41%,rgba(57,53,52,1)), color-stop(54%,rgba(52,48,47,1)), color-stop(100%,rgba(37,33,34,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(86,84,85,1) 0%,rgba(57,53,52,1) 41%,rgba(52,48,47,1) 54%,rgba(37,33,34,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(86,84,85,1) 0%,rgba(57,53,52,1) 41%,rgba(52,48,47,1) 54%,rgba(37,33,34,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(86,84,85,1) 0%,rgba(57,53,52,1) 41%,rgba(52,48,47,1) 54%,rgba(37,33,34,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(86,84,85,1) 0%,rgba(57,53,52,1) 41%,rgba(52,48,47,1) 54%,rgba(37,33,34,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565455', endColorstr='#252122',GradientType=0 ); /* IE6-9 */	
+	border-bottom: 3px solid #DBD6D0;	
+}
+
+	
+#header-logo {
+	position: relative;
+	top: -60px;
+	left: 20px;
+	z-index: 1000;
+}
+
+#header-text {
+	position: relative;
+	top: -122px;
+	left: 140px;
+	color: #C34500;
+}
+
+/* Navigation Bar*/
+#container {
+	position: absolute;
+	top: -246px;
+	width: 600px; 
+	margin: 280px auto 0
+}
+
+#navigation-background {
+	width: 960px;
+	height: 34px;
+	margin: 40px 0;	
+	background-color: #373737;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+}
+
+#navigation {
+	z-index: 1000;
+	width: 900px;
+	height: 34px;
+	padding-left: 8px;
+	margin: 40px 0;	
+	font-family: 'Gudea', sans-serif;
+	background-color: #373737;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;	
+}
+
+#navigation-position {
+	position: relative;
+	top: -150px;
+}
+
+#navigation  ul{
+	list-style: none;
+}
+
+#navigation  ul li {
+	width: 120px;
+	float: left;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	text-align: center;
+}
+
+#navigation li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	line-height: 34px;
+	display: block;
+}
+
+#navigation li a:hover {
+	background-color: #4B4B4B;
+	color: #FFFFFF;
+	transition-delay: .15s;
+}
+
+ul li ul {
+	z-index: 1000;
+	padding: 0;
+	position: absolute;
+	top: 18px;
+	left: 40;
+	width: 150px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transiton: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	-ms-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	-transition: opacity 0.2s;
+}
+
+ul li ul li { 
+  background: #555; 
+  display: block; 
+  color: #fff;
+}
+ul li ul li:hover { 
+	
+}
+
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.display-hidden {
+	/*display: hidden;*/
+}
+
+
+/* Login Page*/
+#login-menu {
+	position: absolute;
+	top: 310px;
+	left: 540px;
+	background-color: #FFFFFF;
+	border: 2px solid #F4F4F4;
+	border: 2px solid #F2F2F2;
+	height: 200px;
+	width: 460px;
+	margin-top: 12px;
+	margin-bottom: 60px;
+	padding-bottom: 100px;
+	margin-left: 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.login-form-position {
+	position: relative;
+	top: 50px;
+	left: 80px;
+}
+
+.display-hidden {
+	visibility: hidden;
+}
+
+
+/*Register Page*/
+.register-form{
+	text-align: center;
+}
+
+/* Connection List*/
+#connection-list{
+	float: left;
+	width: 540px;
+	min-height: 600px;
+	margin-top: -140px;
+	margin-left: 10px;
+}
+
+#connection-list h2 {
+	text-align: center;
+	color: #C34500;
+}
+
+.connection-list-date{
+	margin-left: 16px;
+	margin-top: 20px;
+	margin-bottom: 6px;
+	font-family: 'Gudea', sans-serif;
+	color: #252525;
+}
+
+.connection {
+	background-color: #FFFFFF;
+	border: 2px solid #F4F4F4;
+	border: 2px solid #F2F2F2;
+	height: 40px;
+	width: 500px;
+	margin-top: 12px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	
+}
+
+.connection-style p {
+	font-family: 'Gudea', sans-serif;
+	color: #C34500;
+		
+}
+
+.connection-style a {
+	font-family: 'Gudea', sans-serif;
+	color: #C34500;
+		
+}
+
+.connection-style a:hover, a:active, a:focus {
+    color: #615042;
+		
+}
+
+.connection-font-position {
+	margin-left: 22px;
+	margin-top: -6px;
+		
+}
+
+.college-fill {
+	min-height: 22px;
+}
+
+/*Highlight for Individual Connection */
+#individual-connection {
+	display: none;
+	float: left;
+	background-color: #FFFFFF;
+	border: 2px solid #F4F4F4;
+	border: 2px solid #F2F2F2;
+	width: 360px;
+	min-height: 400px;
+	margin-top: -100px;
+	margin-bottom: 60px;
+	padding-bottom: 40px;
+	margin-left: 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#connection-user-image {
+	margin-top: 10px;
+	margin-left: 12px;
+}
+
+#contact-college {
+	margin-top: 40px;
+}
+
+#connection-staff-image {
+	position: relative;
+	top: -20px;
+}
+
+.connection-staff-image {	
+	height: 150px;
+}
+
+.connection-position {
+	margin-top: -40px;
+	left: 6px;
+}
+
+.individual-connection-title{
+	margin-left: 16px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	font-family: 'Gudea', sans-serif;
+	color: #252525;
+}
+
+
+
+
+.staff-connection {
+	position: relative;
+	top: -88px;
+	left: 350px;
+	font-family: 'Gudea', sans-serif;
+	color: #252525;
+}
+
+.staff-connection-image {
+	position: relative;
+	top: -45px;
+	left: 300px;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius:  2px 2px 2px 2px;
+	border-radius:  2px 2px 2px 2px;
+}
+
+.staff-connection-name {	
+	position: relative;
+	width: 140px;
+	left: 150px;
+	top: -140px;
+	color: #252525;
+}
+
+.individual-connection-subtitle {
+	margin-top: 10px;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 20px;
+	color: #252525;
+}
+
+.individual-connection-text {
+	margin-left: 8px;
+	margin-right: 8px;
+	color: #252525;
+}
+
+/* User Profile */
+#user-connection-list {
+	float: left;
+	width: 540px;
+	margin-top: -140px;
+	margin-left: 10px;
+}
+
+#user-profile {
+	float: left;
+	background-color: #FFFFFF;
+	border: 2px solid #F4F4F4;
+	border: 2px solid #F2F2F2;
+	width: 360px;
+	min-height: 400px;
+	margin-top: -120px;
+	margin-bottom: 60px;
+	padding-bottom: 40px;
+	margin-left: 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#connection-user-image {
+	margin-top: 60px;
+	left: 10px;
+}
+
+/*Edit User Profile*/
+.individual-connection-edit-text {
+	margin-left: 10px;
+}
+
+.image-upload-position {
+	position: relative;
+	top: 60px;
+	left: 6px;
+}
+
+#save-edit-profile {
+	margin-left: 10px;
+	margin-top: 6px;
+}
+
+#cancel-edit-profile {
+	margin-top: 6px;
+}
+		
+
+
+/*Edit Post*/
+.profile-connection-short {
+	background-color: #FFFFFF;
+	border: 2px solid #F4F4F4;
+	border: 2px solid #F2F2F2;
+	width: 500px;
+	min-height: 20px;
+	margin-top: 12px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-bottom: -40px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.profile-connection-post-image {
+	min-height: 34px;  
+	margin-left: 20px;
+	margin-top: -6px;
+}
+
+.profile-connection-staff-name {
+	margin-left: 80px;
+	margin-top: -30px;
+
+}
+
+.edit-button {
+	margin-left: 350px;
+	margin-top: -40px;
+
+}
+
+.delete-button {
+	/*
+	margin-left: 300px;
+	*/
+}
+
+.save {
+
+}
+
+.cancel{
+	margin-right: 100px;
+	margin-top: 20px;
+}
+
+.profile-connection-font-position {
+	margin-left: 5px;
+	margin-top: 0px;
+}
+
+.connection-edit-form-area {
+	margin-left: 10px;
+	padding: 5px;
+	padding-bottom: 8px;
+
+}
+
+
+/*Report Liason*/
+
+.report-connection-formatting {
+	margin-top: -30px;
+}
+
+.contact-error {
+	margin-left: 140px;
+	color: #C34500;
+}
+
+.year-error {
+	margin-left: 140px;
+	color: #C34500;
+}
+
+#submit-form {
+	margin-left: 6px;
+	margin-top: -20px;
+}
+
+.submit-liaison-header {
+	margin-left: 6px;
+}
+
+.liaison-submit-user-image {
+	height: 120px;
+	
+}
+
+.connection-user-image-placeholder {
+	position: relative;
+	left: 20px;
+	min-height: 100px;
+	max-width: 400px;
+
+}
+
+.liaison-submit-user-name {
+	font-weight: bold;
+	position: relative;
+	margin-left: 20px;
+	padding-bottom: 20px;
+}
+
+/* Reporting of Database Data */
+#report-area {
+	float: left;
+	margin-left: 20px;
+	margin-top: -120px;
+}
+	
+#reports {
+	width: 800px;
+	min-height: 600px;
+	border: 1px solid #DBD6D0;
+
+}
+
+#option-bar {
+	width: 800px;
+	height: 80px;
+	border-left: 1px solid #DBD6D0;
+	border-right: 1px solid #DBD6D0;
+	border-top: 1px solid #DBD6D0;
+}
+
+#report-year {
+	float: left;
+	margin-left: 20px;
+	margin-top: -120px;
+	width: 100px;
+	min-height: 500px;
+
+	border: 1px solid #DBD6D0;
+}
+
+a.link-year-style {
+	font-size: 18px;
+	font-family: 'Gudea', sans-serif;
+	color: #C34500;
+	text-decoration: none;
+}
+	
+.button-year-style {
+	background: none;
+	border: 0;
+	font-size: 18px;
+	font-family: 'Gudea', sans-serif;
+	color: #C34500;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+.button-year-style:hover {
+	background: none;
+	border: 0;
+	font-size: 18px;
+	font-family: 'Gudea', sans-serif;
+	color: #C34500;
+	text-decoration: underline;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+
+.year-header-font {
+	text-align: center;
+}
+
+.connection-style-formatting {
+	text-align: center;
+	margin-top: 20px;
+}	
+
+.report-float-left{
+	margin-left: 20px;
+	width: 200px;
+	float: left;
+}
+
+.get-year {
+	display: none;
+}
+	
+	
+	
+	
+	
+	
+	
+	

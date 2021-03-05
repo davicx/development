@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+/*	background-color: #385874;
+	background-color: #009BD4; */
+	color: #F1F1F1; 
+/*	background-image: url("../images/twitter.jpg");*/
+} 
+
+
+#site-wrapper {
+	margin: 0px auto 0px auto; 
+	width: 1024px; 
+	border-left: 1px solid #F1F1F1; 
+	border: 1px solid #F1F1F1; 
+}
+
+
+/* Header and Navigation */
+#header-full-width {
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	height: 50px;
+	border: 1px solid #F1F1F1;
+	background-color: #00A4F0;
+	
+}
+
+#navigation {
+	position: fixed;
+	width: 1024px;
+	z-index: 1000;
+}
+
+#logo {
+	margin-top: 10px;
+	font-size: 200%;
+}
+
+/* Profile and Friends */
+#main-content {
+	position: relative; 
+	top: 60px;
+	border: 2px solid black;
+	width: 1024px; 
+	min-height: 1200px;
+	min-height: 800px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	
+}
+
+#profile {
+
+}
+
+
+#friends {
+
+}
+
+/*Wall and Make Posts*/
+#wall {
+
+}
+
+#post-toolbar {
+	position: relative;
+	top: 100px;
+	left: 40px;
+	border: 1px solid black;
+	height: 80px;
+	width: 448px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+
+
+

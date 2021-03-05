@@ -1,0 +1,17 @@
+/*SECTION 1: All Page specific CSS */
+body {
+	background-color: #EEECE8;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	color: 3F3F3F;
+    background-image: url("../images/bg-pattern.jpg");
+    background-repeat: repeat;
+}
+
+#site-wrapper {
+	margin: 0 auto;
+	width: 960px; 
+	border: 1px solid #DBD6D0;
+	border: 1px solid red;
+	min-height: 800px;
+	border-bottom: 6px solid #DBD6DO;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MyFirstJUnitJupiterTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-12-14T01:04:04" hostname="HSRCSTU4-OP7040" time="0.022">
+  <properties/>
+  <testcase name="addition()" classname="MyFirstJUnitJupiterTests" time="0.018"/>
+  <testcase name="additionTwo()" classname="MyFirstJUnitJupiterTests" time="0.001"/>
+  <testcase name="additionThree()" classname="MyFirstJUnitJupiterTests" time="0.001"/>
+  <system-out><![CDATA[All Tests Passed
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

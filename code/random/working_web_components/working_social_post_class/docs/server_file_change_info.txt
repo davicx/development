@@ -1,0 +1,35 @@
+You must change two files when moving across servers. They are the following:
+
+
+1) connection.inc.php
+Location: sharespace\functions\classes\connection.inc.php
+
+2) constants.php
+Location: sharespace\functions\includes\constants.php
+
+//WAMP 
+//Server Connect
+$host		= "localhost";
+$user_name	= "root";
+$password 	= "";
+$dbname 	= "sharespace";
+
+
+/*
+//LIVE SERVER
+//Server Connect
+
+$host		= "mysql.beta.mysharesquare.com";
+$user_name	= "vasquezd";
+$password 	= "Pgcb1e3K4ZerHPj";
+$dbname 	= "sharespace717";
+*/
+
+/*
+//AMPPS SERVER
+
+$host		= "localhost";
+$user_name	= "root";
+$password 	= "mysql";
+$dbname 	= "sharespace";
+*/

@@ -1,0 +1,14 @@
+body {
+	width: 1240px;
+	background-color: #004756;
+}
+
+.container {
+	width: 600px;
+	border: 1px solid white;
+}
+
+li {
+	list-style-type: none;
+	border: 1px solid #E67EE2;
+}

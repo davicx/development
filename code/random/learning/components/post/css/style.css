@@ -1,0 +1,121 @@
+body { 
+	background-color: #F4f4f4;
+	
+	
+}
+
+#site-wrapper {
+	margin: 0 auto;
+	width: 960px; 
+	border: 1px solid #DBD6D0;
+	min-height: 800px;
+}
+
+#user-posts {
+	margin-left: 200px;
+	border: 1px solid black;
+	width: 600px;
+	padding: 20px;
+
+}
+
+/*POSTS*/
+/*Entire Post*/
+.individual-post {
+	margin-bottom: 20px;
+	width: 600px;
+	min-height: 200px;
+	border: 2px solid blue;
+}
+
+/*This is photo and info about post*/
+.post-user-info {
+	border: 1px solid black;
+	margin-left: 50px;
+	width: 500px;
+	min-height: 60px;
+}
+
+.post-makers-image {
+	width: 50px;
+	float: left;
+}
+
+.individual-post-info {
+	width: 400px;
+	float: left;
+}
+
+/*Post message*/
+.post-message {
+	background-color: #FFFFFF; 
+	border: 1px solid #737373;
+	margin-left: 50px;
+	width: 500px;
+	min-height: 60px;
+}
+
+/*Post Likes*/
+.post-like-comment {
+	background-color: #FFFFFF; 
+	border: 1px solid #737373;
+	margin-left: 50px;
+	width: 500px;
+	height: 50px;
+}
+
+.total-post-likes {
+	width: 400px;
+	margin-top: 0px;
+	margin-left: 100px;
+	margin-bottom: 20px;
+}
+
+.like{
+	width: 60px;
+	margin-top: -40px;
+}
+
+/*Comments*/
+.post-comments {
+	border: 1px solid black;
+	margin-left: 50px;
+	width: 500px;
+	min-height: 60px;
+}
+
+/*Make a Comment*/
+.make-comment {
+	border: 1px solid black;
+	width: 500px;
+	margin-left: 50px;
+	min-height: 100px;
+	margin-left: 50px;
+}
+
+.comment-text-area {
+	width: 490px;
+	height: 60px;
+
+}
+
+.individual-post-comment {
+	border-bottom: 1px solid red;
+}
+
+
+
+/*******/
+/*******/
+
+.like-button {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+}
+
+.display-inline {
+	margin-left: 20px;
+	display: inline;
+}

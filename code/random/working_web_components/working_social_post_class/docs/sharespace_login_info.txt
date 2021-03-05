@@ -1,0 +1,24 @@
+#Site Domain
+http://dev.mysharesquare.com/index.php
+
+#FTP
+Host: mysharesquare.com
+User Name: tareng3
+PW: sharesquare717
+
+#login to host
+https://panel.dreamhost.com/index.cgi
+Email: tarren@outlook.com
+PW: sharesquare717
+
+#login to database
+Host: mysql.beta.mysharesquare.com 
+Username: vasquezd
+PW: Pgcb1e3K4ZerHPj
+
+#other
+User: tareng3
+tarren@outlook.com
+sharesquare717
+Tarren Engberg
+

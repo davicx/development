@@ -1,0 +1,75 @@
+body {
+	background-color: #FAFAFA;
+	background-color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#site-wrapper {
+	margin: 0px auto 0px auto; 
+	width: 1024px; 
+	min-height: 500px;
+	border: 1px solid black;
+
+}
+
+
+#posts {
+	width: 640px;
+	margin-left: 200px;
+	border: 1px solid blue;
+	min-height: 400px;
+}
+
+.post {
+	width: 400px;
+	margin-left: 100px;
+	margin-top: 20px;
+	min-height: 100px;
+	border: 1px solid #C9C9C9;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/****************************************************
+SECTION 2: Header and Navigation Bar 
+*****************************************************/
+header {
+
+}
+
+/* NAVIGATION BAR */
+nav {
+	z-index: 1000; 
+	height: 60px;
+	border-bottom: 1px solid #f0f0f0;
+	border: 1px solid black;
+}
+
+#square-users {
+	height: 58px;
+	min-width: 624px;
+	float: left;
+	margin-left: 100px;
+	border: 1px solid black;
+}
+
+#site-navigation-menu {
+	height: 58px;
+	width: 200px;
+	float: left;
+	border: 1px solid black;
+}
+
+
+
+

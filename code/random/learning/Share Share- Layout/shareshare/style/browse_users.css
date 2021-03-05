@@ -1,0 +1,9 @@
+.browse-users {
+	position: relative;
+	/*top: -540px;*/
+	top: -350px;
+	left: 280px;
+	border: 1px solid black;
+	width: 400px;
+	margin-left: 100px;
+}
