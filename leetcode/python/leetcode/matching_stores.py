@@ -16,5 +16,4 @@ winco {
 
 """
 
-
-print(stores)
+for item in 

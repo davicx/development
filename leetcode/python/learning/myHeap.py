@@ -1,7 +1,20 @@
 import heapq 
 import heapq as hq 
   
-# dictionary to be heapified 
+#Create a Dictionary
+heroes = {
+    "frodo": 4,
+    "bilbo": 3,
+    "david": 1
+}
+
+print(heroes)
+
+
+
+
+
+"""
 words_dict = {"hiya": 2526, "ab": 12, "cd": 34, "yay": 910, "hi": 67} 
 heap = [(-value, key) for key,value in words_dict.items()]
 top_two = heapq.nsmallest(2, heap)
@@ -9,8 +22,7 @@ largest = [(key, -value) for value, key in top_two]
 print(top_two)
 print(largest)
 
-"""
-  
+
 # convert dictionary to list of tuples 
 di = list(dict_1.items()) 
   
