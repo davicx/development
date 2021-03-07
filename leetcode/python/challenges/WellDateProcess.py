@@ -1,5 +1,6 @@
 import datetime
 import string
+import re
 
 date_one = "7th Apr 2020"
 date_two = "22nd Jan 2013"
@@ -15,36 +16,54 @@ def main():
   month_raw = date_string[1] 
   year_raw = date_string[2] 
 
-  day = day_format(day_raw)
-  month = month_format(month_raw)
-  year = year_format(year_raw)
+  date_helper = DateHelper()
+  day = date_helper.day_format(day_raw)
+  month =date_helper.month_format(month_raw)
+  year =date_helper.year_format(year_raw)
 
-  print(day, " ", month, " ", year)  
+
+  #print(day, " ", month, " ", year)  
   d = datetime.date(year, day, month)
-  print(d)
-  #datetime.datetime(year=year,month=month,day=day,hour=hour)
+  #print(d)
+
+  a_string = "3rd"
+
+  numeric_string = re.sub("[^0-9]", "", a_string)
+  print(numeric_string)
+  #parseDate = RemoveDateChar()
+  #cleaned_day = int(date_raw.translate(parseDate))
+  
+
+  
 
 
-def day_format(day_raw):
-  parseDate = RemoveDateChar()
-  cleaned_day = int(day_raw.translate(parseDate))
-  return cleaned_day
 
-def month_format(month_raw):
-  datetime_object = datetime.datetime.strptime(month_raw, "%b")
-  month_number = datetime_object.month
-  return month_number 
-
-def year_format(year_raw):
-  year = int(year_raw)
-  return year
 
 
 class RemoveDateChar:
   def __init__(self, keep=string.digits):
     self.comp = dict((ord(c),c) for c in keep)
+
   def __getitem__(self, k):
     return self.comp.get(k)
+
+class DateHelper:
+
+  def day_format(self, day_raw):
+    parseDate = RemoveDateChar()
+    cleaned_day = int(day_raw.translate(parseDate))
+    return cleaned_day
+
+  def month_format(self, month_raw):
+    datetime_object = datetime.datetime.strptime(month_raw, "%b")
+    month_number = datetime_object.month
+    return month_number 
+
+  def year_format(self, year_raw):
+    year = int(year_raw)
+    return year
+
+
 
 
 if __name__ == "__main__":
@@ -52,28 +71,3 @@ if __name__ == "__main__":
  
 
  
-
-
-"""
-
-#Get the Month as a Number 
-def get_month_number(month_name):
-    datetime_object = datetime.datetime.strptime(month_name, "%b")
-    month_number = datetime_object.month
-    print(month_number) 
-
-month_name = "Mar"
-get_month_number(month_name)
-
-#Remove the Chars from the Day 
-parseDate = RemoveDateChar()
-date_string = list(date_three.split(" ")) 
-day = date_string[0].translate(parseDate)
-month = date_string[1] 
-year = date_string[2] 
-
-#d = datetime.date(year, month, day)
-d = datetime.date(2020, 4, 21)
-#print(day, " ", month, " ", year)
-#print(d)
-"""
