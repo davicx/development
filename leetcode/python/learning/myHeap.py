@@ -1,5 +1,23 @@
 import heapq 
-import heapq as hq 
+  
+
+#Simple Priority Q
+nums = [3,1,5,8,2,9,2]
+list = []
+heapq.heapify(list) 
+
+for num in nums:
+    heapq.heappush(list, num) 
+
+print(list)
+
+#Pop smallest element 
+#heapq.heappop(list)
+while list:
+    print(heapq.heappop(list))
+
+print(list)
+
   
 #Create a Dictionary
 heroes = {
@@ -9,12 +27,12 @@ heroes = {
 }
 
 print(heroes)
+ 
 
 
 
 
-
-"""
+""" 
 words_dict = {"hiya": 2526, "ab": 12, "cd": 34, "yay": 910, "hi": 67} 
 heap = [(-value, key) for key,value in words_dict.items()]
 top_two = heapq.nsmallest(2, heap)
@@ -37,10 +55,7 @@ print("Heapified list of tuples :", di)
 di = dict(di) 
   
 print("Dictionary as heap :", di)
-"""
-
-
-"""
+ 
 # initializing list 
 li = [5, 7, 9, 1, 3] 
   

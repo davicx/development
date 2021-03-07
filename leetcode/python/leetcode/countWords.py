@@ -7,6 +7,7 @@ words_counter = defaultdict(int)
 
 for word in words:
     words_counter[word] +=1
+    
 
 for item in words_counter:
     print(words_counter[item], " ", item)
