@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<show>
+   <sitcom name="King of Queens">
+      <year>1998</year>
+      <character>Doug Heffernan</character>
+      <character>Carrie Heffernan</character>
+      <character>Arthur Spooner</character>
+   </sitcom>
+   <sitcom name="Seinfeld">
+      <year>1989</year>
+      <character>Jerry Seinfeld</character>
+      <character>Elaine Benes</character>
+      <character>George Costanza</character>
+   </sitcom>
+</show>
