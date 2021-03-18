@@ -1,66 +1,48 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-	<body>
+<?php
+//header('Content-Type: application/json');
 
-		<button id = "get_button" type="button">Get CORS </button>
-		<button id = "post_button" type="button">Post User </button>
+//GET Request 
+if (isset($_GET['name'])) {
+	//$name = $_GET['name'];
+	$name = htmlspecialchars($_GET['name'], ENT_QUOTES, 'UTF-8');
+	
+    echo $name;
+	
+}
 
-		
-		<script>		
-			
-			//GET REQUEST 
-			document.getElementById('get_button').addEventListener('click', getUser);	
+//POST Request
+//CORS
+if (isset($_SERVER["HTTP_ORIGIN"]) === true && isset($_POST["name"]) && (!empty($_POST["name"]))) {
+	$origin = $_SERVER["HTTP_ORIGIN"];
+	$allowed_origins = array(
+		"http://localhost/development/career/adobe/adobe_cors.html",
+		"http://localhost/development/career/adobe/"
+	);
+	if (in_array($origin, $allowed_origins, true) === true) {
+		header('Access-Control-Allow-Origin: ' . $origin);
+		header('Access-Control-Allow-Credentials: true');
+		header('Access-Control-Allow-Methods: POST');
+		header('Access-Control-Allow-Headers: Content-Type');
+	}
+	if ($_SERVER["REQUEST_METHOD"] === "OPTIONS") {
+		exit; 
+	}
+	
+	$name 		= htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
+	$location 	= htmlspecialchars($_POST['location'], ENT_QUOTES, 'UTF-8');
+	
+	echo $name;
+}
 
-			function getUser() {
+/*
+if () {
+	$name 		= htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
+	$location 	= htmlspecialchars($_POST['location'], ENT_QUOTES, 'UTF-8');
+	
+	echo $name;
 
-				var xhr = new XMLHttpRequest();
-				xhr.open('GET', 'adobe.php?name=David', true);
+}
 
-				//Send Request
-				xhr.onload = function() {
-				if (this.status == 200) {
-					console.log(this.responseText);
-
-					} else if(this.status = 404) {
-						console.log("not found ");
-					} else {
-						console.log("Some other error");
-					}
-				}
-
-				//Error Handing
-				xhr.onerror = function() {
-					console.log('Request Error ')
-				}
-
-				xhr.send();
-
-			}
-
-			//POST REQUEST 
-			document.getElementById('post_button').addEventListener('click', postUser);	
-
-			function postUser() {
-				var http = new XMLHttpRequest();
-				var url = 'adobe.php';
-				var params = 'name=david&location=shire';
-				http.open('POST', url, true);
-
-				//Send the proper header information along with the request
-				http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-
-				http.onreadystatechange = function() {//Call a function when the state changes.
-					if(http.readyState == 4 && http.status == 200) {
-						console.log(http.responseText);
-					}
-				}
-				http.send(params);
-
-			}
-			
-		</script>		
-	</body>
-</html>
+*/
+	
+?>
