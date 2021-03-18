@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+	<body>
+
+		<button id = "user_object" type="button">Show All Users (Objects)</button>
+ 
+		<!-- Users Object -->
+		<h4> Show Users Object </h4>
+		<div id = "users_object"></div>
+
+		
+		<script>		
+			
+            //USERS OBJECT 
+			document.getElementById('user_object').addEventListener('click', loadUserObject);	
+
+			function loadUserObject() {
+
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', 'adobe.php?users_object=true', true);
+				
+				//Send Request
+				xhr.onload = function() {
+					if (this.status == 200) {
+						console.log(this.responseText);
+						var users = JSON.parse(this.responseText);
+                            
+                        var output = '';
+
+                        for(var i in users) {
+                            output += '<ul>' + 
+                                '<li>ID: ' + users[i].name + '</li>' +
+                                '<li>Name: ' + users[i].last_name + '</li>' +
+                                '<li>Email: ' + users[i].city + '</li>' +
+                                '</ul>';
+                        }
+                        document.getElementById('users_object').innerHTML = output;				
+	
+					} else if(this.status = 404) {
+						console.log("not found ");
+					} else {
+						console.log("Some other error");
+					}
+				}
+
+				//Error Handing
+				xhr.onerror = function() {
+					console.log('Request Error ')
+				}
+
+				xhr.send();
+			
+			}		
+					
+		</script>		
+	</body>
+</html>

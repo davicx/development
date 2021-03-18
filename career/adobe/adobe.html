@@ -12,15 +12,19 @@
 		
 		<!-- Users Array -->
 		<h4> Show Users Array </h4>
-		<div id = "users_array"></div>
+		<div id = "users_array"></div>		
+		
+		<!-- Users Object -->
+		<h4> Show Users Object </h4>
+		<div id = "users_object"></div>
 
 		
 		<script>		
 			
             //USERS OBJECT 
-			document.getElementById('user_object').addEventListener('click', loadUsers);	
+			document.getElementById('user_object').addEventListener('click', loadUserObject);	
 
-			function loadUsers() {
+			function loadUserObject() {
 
 				var xhr = new XMLHttpRequest();
 				xhr.open('GET', 'adobe.php?users_object=true', true);
@@ -30,7 +34,18 @@
 					if (this.status == 200) {
 						console.log(this.responseText);
 						var users = JSON.parse(this.responseText);
+                            
+                        var output = '';
 
+                        for(var i in users) {
+                            output += '<ul>' + 
+                                '<li>ID: ' + users[i].name + '</li>' +
+                                '<li>Name: ' + users[i].last_name + '</li>' +
+                                '<li>Email: ' + users[i].city + '</li>' +
+                                '</ul>';
+                        }
+                        document.getElementById('users_object').innerHTML = output;				
+	
 					} else if(this.status = 404) {
 						console.log("not found ");
 					} else {
@@ -60,19 +75,19 @@
 					if (this.status == 200) {
 						//console.log(this.responseText);
 						var users = JSON.parse(this.responseText);
-
-						//for (var key in value)
-                        
-						var output = '<ul> <li>item 1</li> <li>item 2</li> </ul>';
-						//output += '<ul>';
+                        console.log(users);
+						var output_sample = '<ul> <li>item 1</li> <li>item 2</li> </ul>';
+						output = '<ul>';
+                        //output += '<li>item 1</li>';
+						
 						for (var name in users) {
 							if (users.hasOwnProperty(name)) {
 								console.log(name + " " + users[name]);
 								//'<li>Name: ' + name + ' Age ' + users[name] + '</li>';
-								
+                                output += '<li> ' + name + ' ' + users[name] +  ' </li>';
 							}
 						}
-						//output += '</ul>';
+                        output += '</ul>';
                         document.getElementById('users_array').innerHTML = output;	      
 
 					} else if(this.status = 404) {

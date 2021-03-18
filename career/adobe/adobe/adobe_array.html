@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+	<body>
+		<button id = "user_array" type="button">Show All Users (Array) </button>
+		
+		<!-- Users Array -->
+		<h4> Show Users Array </h4>
+		<div id = "users_array"></div>		
+		
+		<script>		
+						
+            //USERS ARRAY 
+			document.getElementById('user_array').addEventListener('click', loadUsers);	
+
+			function loadUsers() {
+
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', 'adobe.php?users_array=true', true);
+				
+				//Send Request
+				xhr.onload = function() {
+					if (this.status == 200) {
+						//console.log(this.responseText);
+						var users = JSON.parse(this.responseText);
+                        console.log(users);
+						var output_sample = '<ul> <li>item 1</li> <li>item 2</li> </ul>';
+						output = '<ul>';
+                        //output += '<li>item 1</li>';
+						
+						for (var name in users) {
+							if (users.hasOwnProperty(name)) {
+								console.log(name + " " + users[name]);
+								//'<li>Name: ' + name + ' Age ' + users[name] + '</li>';
+                                output += '<li> ' + name + ' ' + users[name] +  ' </li>';
+							}
+						}
+                        output += '</ul>';
+                        document.getElementById('users_array').innerHTML = output;	      
+
+					} else if(this.status = 404) {
+						console.log("not found ");
+					} else {
+						console.log("Some other error");
+					}
+				}
+				
+				//Error Handing
+				xhr.onerror = function() {
+					console.log('Request Error ')
+				}
+				xhr.send();
+			}
+ 
+		</script>		
+	</body>
+</html>
