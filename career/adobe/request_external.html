@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <style>
+        .user {
+            display: flex;
+            background: #F4f4f4;
+            padding: 10px;
+            width: 220px;
+            margin-bottom: 10xp;
+        }
+        .user ul {
+            list-type: none;
+        }
+
+
+    </style>
+</head>
+	<body>
+        <!-- https://api.github.com/users -->
+		<button id = "button" type="button">Load Github Users </button>
+		<h4> Users </h4>
+		<div id = "users">
+
+		</div>
+
+
+		<script>
+            document.getElementById('button').addEventListener('click', loadUsers);
+
+            
+			//Function A.3: Load Github Users 
+			function loadUsers() {
+				var xhr = new XMLHttpRequest();
+
+				xhr.open('GET', 'https://api.github.com/users', true);
+				
+				//Send Request
+				xhr.onload = function() {
+					if (this.status == 200) {
+						//console.log(this.responseText);
+						var users = JSON.parse(this.responseText);
+                        usersAsHTML = usersFormatted(users);
+                        console.log(usersFormatted);
+                        document.getElementById('users').innerHTML = usersAsHTML;
+						console.log(users);
+						console.log(usersAsHTML);
+
+					} else if(this.status = 404) {
+						console.log("not found ");
+					} else {
+						console.log("Some other error");
+					}
+				}
+
+				//Error Handing
+				xhr.onerror = function() {
+					console.log('Request Error ')
+				}
+
+				xhr.send();
+			
+			}
+
+            function usersFormatted(users) {
+                var output = '';
+                for(var i in users) {
+                    //console.log(users[i].avatar_url);
+                    output += '<div class = "user">' + 
+								'<img src = "' + users[i].avatar_url + '" width = "70" height = "70">' + 
+                                '<ul>' +
+                                    '<li>ID: ' + users[i].id + '</li>' +
+								    '<li>Login: ' + users[i].login + '</li>' +				
+                                '</ul>' +
+                                '</div>';
+                }
+
+                return output;
+            }
+
+
+
+            
+                        /*
+						//var output = '<p> hi </p>';
+						var output = '';
+
+						for(var i in users) {
+							output += '<ul>' + 
+								'<li>ID: ' + users[i].id + '</li>' +
+								'<li>Name: ' + users[i].name + '</li>' +
+								'<li>Email: ' + users[i].email + '</li>' +
+								'</ul>';
+						}
+						document.getElementById('users').innerHTML = output;				
+						console.log(output);		
+                        */
+
+		</script>
+
+	</body>
+</html>
+
+
