@@ -1,10 +1,33 @@
 var stuff = require('./count');
 var events = require('events')
 var util = require('util')
+var fs = require('fs');
+const { myMultiply } = require('./count');
+
+//VIDEO 9: Reading and Writing Files (Reading a File is Binary Data)
+var myText = fs.readFileSync('readMe.txt', 'utf8')
+
+console.log(myText);
+
+fs.writeFileSync('writeMe.txt', myText)
 
 
 
-//VIDEO 7: Modules and Require 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//VIDEO 8: Events
 //Type 2:
 var Person =function(name){
     this.name = name;
@@ -38,29 +61,6 @@ myEmmitter.on('someEvent', function(message){
 
 myEmmitter.emit('someEvent', 'my own message!')
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

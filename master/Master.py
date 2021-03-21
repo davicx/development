@@ -3,8 +3,6 @@ from collections import defaultdict
 
 #Basic Data Structures
 mylist = ["apple", "banana", "cherry"]
-mylist.sort()
-
 mytuple = ("apple", "banana", "cherry") #Can't Change
 myset = {"apple", "banana", "cherry"}
 
