@@ -2,14 +2,60 @@ var stuff = require('./count');
 var events = require('events')
 var util = require('util')
 var fs = require('fs');
+var http = require('http')
 const { myMultiply } = require('./count');
 
+
+//VIDEO 11: Clients and Servers
+var server = http.createServer(function(req, res) {
+    res.writeHead(200, {'Content-Type' : 'text/plain'});
+    res.end('hiya!');
+
+
+});
+
+
+
+
+
+
+
+
+
+//VIDEO 10: Create and Remove Directory
+//Sync
+//Create
+//fs.mkdirSync('stuff')
+//Remove
+//fs.rmdirSync('stuff')
+
+//Async
+fs.mkdir('stuff', function(){
+    fs.readFile('readme.txt', 'utf8', function(err, data) {
+        fs.writeFileSync('./stuff/writeMe.txt', data);
+    })
+})
+
+
 //VIDEO 9: Reading and Writing Files (Reading a File is Binary Data)
-var myText = fs.readFileSync('readMe.txt', 'utf8')
+//Sync
+//var myText = fs.readFileSync('readMe.txt', 'utf8')
+//fs.writeFileSync('writeMe.txt', myText)
 
-console.log(myText);
+//Async
+//Need a Callback function when complete (now this is non-blocking code)
+/*
+fs.readFile('readMe.txt', 'utf8', function(err, data){
+    console.log(data);
+    fs.writeFileSync('writeMe.txt', data)
 
-fs.writeFileSync('writeMe.txt', myText)
+});
+
+console.log('test')
+*/
+//Delete
+//fs.unlink('writeMe.txt');
+
 
 
 
@@ -49,7 +95,7 @@ people.forEach(function(person) {
     })
 });
 
-david.emit('speak', 'hiya!')
+//david.emit('speak', 'hiya!')
 
 //Type 1: Events
 /*
