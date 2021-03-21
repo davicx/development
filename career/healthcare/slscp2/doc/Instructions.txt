@@ -1,8 +1,0 @@
-Step 1: Get the Zip Code from the SLSCP.csv File
-We need to get the rate that corresponds to this zip code
-
-STEP 2: Go to zips.csv and get the Rate Area and State 
-a) This also has 
-- State, County Code, Name and Rate Area 
-
-STEP 3: Go to plans.csv and find the rate for the matching state, rate and rate_area
