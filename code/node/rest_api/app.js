@@ -5,9 +5,28 @@ const morgan = require('morgan')
 
 app.use(morgan('combined'))
 
+
+//Middleware 
+var myLogger = function (req, res, next) {
+  console.log('You came here!')
+  next()
+}
+
+var requestTime = function (req, res, next) {
+  req.requestTime = Date.now()
+  console.log(Date.now())
+
+  next()
+}
+
+app.use(myLogger)
+app.use(requestTime)
+
+
+//App 
 app.get("/", (req, res) => {
   console.log("Responding to root route")
-  res.send("Hello from ROOOOOT")
+  res.send("hiya davd!!")
 })
 
 app.get("/users", (req, res) => {
@@ -16,6 +35,7 @@ app.get("/users", (req, res) => {
     const user3 = {firstName: "Bilbo", lastName: "B"}
     res.json([user1, user2, user3])
 })
+
 
 // localhost:3003
 app.listen(3003, () => {
