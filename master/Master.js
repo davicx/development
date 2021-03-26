@@ -19,8 +19,13 @@ function myFunction(p1, p2) {
   return p1 * p2;   
 }
 
+myFunction(4, 3);
+
 //OBJECTS 
 var car = {type:"Fiat", model:"500", color:"white"};
+
+
+
 
 
 
