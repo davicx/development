@@ -37,6 +37,22 @@ WHERE population > (
     SELECT AVG(population)
     FROM city);
 
+#LIKE
+#First two letters like 
+SELECT name, continent FROM country WHERE name LIKE ('ar%') LIMIT 20
+
+#SUBQUERY
+SELECT ID, name, population, (SELECT AVG(population) FROM CITY) FROM city
+
+/*First build the table of what you need */
+SELECT name, district, countrycode, population FROM city ORDER BY district LIMIT 100 ;
+
+SELECT COUNT(NAME) FROM city;
+
+SELECT countrycode, district, AVG(population) AS district_pop FROM city GROUP BY district, countrycode LIMIT 100
+
+SELECT AVG(district_pop) FROM (
+    SELECT countrycode, district, AVG(population) AS district_pop FROM city GROUP BY district, countrycode LIMIT 100) sub; 
 
 
 /*

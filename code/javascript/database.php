@@ -13,20 +13,39 @@
 		$host		= "localhost";
 		$user_name	= "root";
 		$password 	= "";
-		$dbname 	= "shareshare";
+		$dbname 	= "test";
 		$conn = mysqli_connect($host, $user_name, $password , $dbname);
-
-		//EXAMPLE 1: Inner Join
+		
 		$result = mysqli_query($conn,"
-			SELECT * FROM user_profile 
-			INNER JOIN user_login ON user_profile.user_id = user_login.user_id");
-
+		 
+		SELECT 
+			p.product_name,
+			(COALESCE (SUM(CASE WHEN i.time_paid is null and i.time_canceled is null and i.time_refunded is null IS NOT NULL THEN it.quantity * it.price ELSE 0 END ),0)) as due,
+			(COALESCE (SUM(CASE WHEN i.time_paid IS NOT NULL THEN it.quantity * it.price ELSE 0 END ),0)) as paid,
+			(COALESCE (SUM(CASE WHEN i.time_canceled IS NOT NULL THEN it.quantity * it.price ELSE 0 END ),0)) as canceled,
+			(COALESCE (SUM(CASE WHEN i.time_refunded IS NOT NULL THEN it.quantity * it.price ELSE 0 END ),0)) as refunded
+		FROM
+			PRODUCT p
+		LEFT OUTER JOIN invoice_item it ON p.id = it.product_id
+		LEFT OUTER JOIN invoice i ON it.invoice_id = i.id
+		GROUP BY 
+			product_name
+		ORDER BY 
+			p.id ASC
+		");
+		
 		while($row = mysqli_fetch_array($result)) {		
-			$first_name = $row['first_name'];	
-			$email = $row['email'];	
-			echo "<p>" . $first_name . " " . $email . "</p>";
+			$product_name = $row['product_name'];	
+			$due = $row['due'];	
+			$canceled = $row['canceled'];	
+			$refunded = $row['refunded'];	
+	 
+			echo "<p>" . $product_name . " " . $due . " " . $canceled . " " . $refunded . "</p>";
 			//echo "<p>" . $last_name . "</p>";
-		}
+		}	
+		//EXAMPLE 1: Inner Join
+		/*
+
 		 
 			
 
@@ -42,7 +61,7 @@
 			//echo "<p>" . $last_name . "</p>";
 		}
 		 
-			
+			*/
 
 
  

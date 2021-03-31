@@ -1,5 +1,8 @@
 "use strict";
 
+
+
+/*
 //Classes
 class Rectangle {
   constructor(height, width) {
@@ -21,7 +24,7 @@ class Rectangle {
 const square = new Rectangle(10, 10);
 
 console.log(square.area);  
-
+*/
 
 /*
 class Rectangle {
@@ -52,11 +55,29 @@ let RectangleTwo = class Rectangle2 {
 };
 console.log(RectangleTwo.name);
 */
-
+/*
 //String Primitive
 var message = 'hello hi. hiya there';
 
 //String Object
 const messageString = new String('hello hi. hiya there');
 
-console.log(message.slice);
+
+ 
+var str = "Visit W3Schools!"; 
+var n = str.search("xxx");
+
+
+var str = 'How are you "doing " today?';
+var res = str.split("/"");
+console.log(res);
+
+var string = "Stackoverflow is the BEST";
+var result = string.match(/best/i);
+// result == 'BEST';
+
+if (result){
+    alert('Matched');
+}
+
+*/
