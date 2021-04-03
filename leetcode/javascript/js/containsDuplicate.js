@@ -1,25 +1,35 @@
-var nums = [1,2,3,1]
-const mySet = new Set()
-mySet   
+//var nums = [1,2,3,1]
+var nums = [1,2,3,4]
 
 function containsDuplicate(nums) {
+    //const mySet = new Set(nums)
+ 
+    var mySet = new Set();
+    
     for (let i = 0; i < nums.length; i++) {
         mySet.add(nums[i]);
+        console.log(nums[i]);
+        console.log(mySet);
     }
+ 
+    console.log(mySet.size + " " + nums.length);
+
+    if(mySet.length != nums.length) {
+        //
+        return true;
+
+    } else {
+       //console.log("NO Duplicate");
+        return false;
+
+    }
+ 
 }
-
-if(mySet.length != nums.length) {
-    console.log("Duplicate");
-
-} else {
-    console.log("NO Duplicate");
-
-}
+ 
+console.log(containsDuplicate(nums));
 
 
-containsDuplicate(nums)
-
-
+/*
 var letterMap = new Object();
 
 charOne = "a";
@@ -44,7 +54,7 @@ if (letterMap.hasOwnProperty(charThree) ) {
 } 
 
 console.log(letterMap);
-
+*/
 
 /*
 

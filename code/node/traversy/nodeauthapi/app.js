@@ -9,9 +9,6 @@ app.use(express.json());
 //app.use(bodyParser.json());
 
 
-
-  
-
 //GET: localhost:3003
 app.listen(3003, () => {
     console.log("Server is up and listening on 3003...")
@@ -21,47 +18,26 @@ app.listen(3003, () => {
 //Login (This make a request and provides a token to request a protected route)
 app.post("/api/login", (req, res) => {
 
-    //const firstName = req.body.first_name;
-    //console.log("login "  + firstName);
-    //console.log(body);
-
+    const userName = req.body.username;
+    const password = req.body.password;
+    const email = req.body.email;
+    console.log("login "  + userName + " " + password);
+   
     //Mock User
     const user = {
-        id: 1, 
-        username: 'david',
-        email: 'david@gmail.com'
-      }
-    //jwt.sign({user}, 'secretkey', { expiresIn: '30s' }, (err, token) => {
-    jwt.sign({user}, 'secretkey', (err, token) => {
+        username: userName,
+        email: password
+    }
+    console.log(user);
+    jwt.sign({user}, 'secretkey', { expiresIn: '30s' }, (err, token) => {
+    //jwt.sign({user}, 'secretkey', (err, token) => {
         res.json({
           token
         });
     });
-})
+});
 
 
-/*
-app.get("/user_create", (req, res) => {
-  console.log("Responding to root route");
-  const firstName = req.body.create_first_name
-  const lastName = req.body.create_last_name 
-
-    const queryString = "INSERT INTO user_profile (first_name, last_name) VALUES (?, ?)"
-    getConnection().query(queryString, [firstName, lastName], (err, results, fields) => {
-      if (err) {
-        console.log("Failed to insert new user: " + err)
-        res.sendStatus(500)
-        return
-      }
-  
-  getConnection().query();
-      //user_profile_id user_id
-  //console.log("Inserted a new user with id: ", results.insertId);
-
-  res.end()
-}) 
-
-*/
 
 //POST
 //Create Post
@@ -76,28 +52,20 @@ app.post('/api/posts', verifyToken, (req, res) => {
         });
       }
     });
-  });
+});
   
-app.post('/api/sendData', (req, res) => {  
+app.post('/api/recieveData', (req, res) => {  
     const firstName = req.body.first_name;
-    //const lastName = req.body.create_last_name
+    const lastName = req.body.last_name
     
     console.log(firstName);
+    console.log(lastName);
     res.end()
-  }); 
+}); 
 
-  
-/*
-app.post("/api/posts", verifyToken, (req, res) => {
-    res.json({
-        message: 'Post Created!'
-    })
-})
-*/
 
 //FORMAT OF TOKEN
 //Authorization: Bearer <access_token>
-//Verify Token
 function verifyToken(req, res, next) {
     // Get auth header value
     const bearerHeader = req.headers['authorization'];
@@ -121,6 +89,14 @@ function verifyToken(req, res, next) {
   }
 
 
+  
+/*
+app.post("/api/posts", verifyToken, (req, res) => {
+    res.json({
+        message: 'Post Created!'
+    })
+})
+*/
 
 
 /*
@@ -178,6 +154,28 @@ function verifyToken(req, res, next) {
  */
 
 
+/*
+app.get("/user_create", (req, res) => {
+  console.log("Responding to root route");
+  const firstName = req.body.create_first_name
+  const lastName = req.body.create_last_name 
+
+    const queryString = "INSERT INTO user_profile (first_name, last_name) VALUES (?, ?)"
+    getConnection().query(queryString, [firstName, lastName], (err, results, fields) => {
+      if (err) {
+        console.log("Failed to insert new user: " + err)
+        res.sendStatus(500)
+        return
+      }
+  
+  getConnection().query();
+      //user_profile_id user_id
+  //console.log("Inserted a new user with id: ", results.insertId);
+
+  res.end()
+}) 
+
+*/
 
 /*
 //Middleware 
