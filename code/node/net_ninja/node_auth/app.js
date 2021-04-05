@@ -3,15 +3,24 @@ const mongoose = require('mongoose');
 const mysql = require('mysql')
 const authRoutes = require('./routes/authRoutes');
 
-
 const app = express();
 
-// middleware
+//Middleware
 app.use(express.static('public'));
+app.use(express.json());
 
-// view engine
+//View Engine
 app.set('view engine', 'ejs');
 
+
+app.post('/api/recieveData', (req, res) => {  
+  const firstName = req.body.first_name;
+  const lastName = req.body.last_name
+  
+  console.log("test");
+  console.log(lastName);
+  res.end()
+}); 
 
 
 //Get Users
