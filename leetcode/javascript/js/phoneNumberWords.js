@@ -31,25 +31,46 @@ let indexMap = numberMap[mapKey];
 var currentChar;
 var match = true; 
 
- 
-indexMap.forEach(function (startingIndex, index) {
-    var loopCount = 0;
-    for (let i = startingIndex; i < nString.length; i++) {
-        matchNumber = nString.charAt(i);
-        console.log(matchNumber);
+checkWord();
 
-        if(loopCount > wordNumber.length) {
-            console.log("Reached Char max " + wordNumber.length);
-            break;
-
+function checkWord() {
+    indexMap.forEach(function (startingIndex, index) {
+        var loopCount = 1;
+        var charPosition = 0;
+        for (let i = startingIndex; i < nString.length; i++) {
+            matchNumber = nString.charAt(i);
+            //console.log(matchNumber);
+     
+            
+            currentChar = wordNumber.charAt(charPosition);
+            matchNumber = nString.charAt(i);
+            
+            console.log(currentChar + " " + matchNumber);
+            if(currentChar != matchNumber) {
+                match = false;
+                console.log("false");
+            } else {
+                console.log("match");
+            }
+     
+            
+            //Exit the Loop if you reach max loops
+            if(loopCount >= wordNumber.length) {
+                console.log("Reached Char max " + wordNumber.length);
+                break;
+    
+            }
+    
+            charPosition = charPosition + 1;
+            loopCount = loopCount + 1;
+    
         }
-        loopCount = loopCount + 1;
-
-    }
-    console.log("___________");
-
-
-});
+        console.log("___________");
+    
+    
+    });
+    
+}
 
 /*
 
