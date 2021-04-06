@@ -17,3 +17,13 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('user', userSchema);
 
 module.exports = User;
+
+
+/*
+class User {
+  constructor(userID, userName) {
+    this.userID = userID;
+    this.userName = userName;
+  }
+}
+*/

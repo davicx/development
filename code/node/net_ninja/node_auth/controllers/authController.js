@@ -1,5 +1,11 @@
 const mysql = require('mysql')
 
+//Handle Errors
+const handleErrors = (err) => {
+
+}
+
+
 // controller actions
 module.exports.signup_get = (req, res) => {
   res.render('signup');
@@ -20,19 +26,26 @@ module.exports.signup_post = async (req, res) => {
   const lastName = req.body.last_name 
   console.log(userName);
 
-  const queryString = "INSERT INTO users (user_name, password) VALUES (?, ?)"
+  try {
+    const queryString = "INSERT INTO users (user_name, password) VALUES (?, ?)"
   
-  
-  getConnection().query(queryString, [userName, email], (err, results, fields) => {
-    if (err) {
-      console.log("Failed to insert new user: " + err)
-      res.sendStatus(500)
-      return
-    }
+    getConnection().query(queryString, [userName, password], (err, results, fields) => {
+      if (err) {
+        console.log("Failed to insert new user: " + err.message + " " + err.code)
+        res.sendStatus(500)
+        return
+      }
 
-    console.log("Inserted a new user with id: ", results.insertId);
-    res.end()
-  })
+      console.log("Inserted a new user with id: ", results.insertId);
+      res.end()
+    })
+
+  } catch(err) {
+    console.log(err);
+    res.status(400).send('error');
+
+  }
+
 
   /*
   const queryString = "INSERT INTO user_profile (user_name, email, password, first_name, last_name) VALUES (?, ?, ?, ?, ?)"

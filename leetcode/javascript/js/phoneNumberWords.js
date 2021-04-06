@@ -1,7 +1,9 @@
+//Word Far = 327
 //let n = 3662;
 let n = 3212327;
 let nString = n.toString();
-let words = ["far", "foo", "bar"];
+//let words = ["far", "foo", "bar"];
+let words = ["far"];
 var numberLength = getlength(n);
 var charMap = new Array();
 var numberMap = {
@@ -16,19 +18,45 @@ var numberMap = {
     nine: [],
 };
 
-//Create a Numnber Map
-//createNumberMap(n);
-//printNumberMap();
+//Create a Number Map
+createNumberMap(n);
+printNumberMap();
 
 for (index in words) {
     currentWord = words[index];
-    //console.log("Word " + words[index]);
+    console.log("Word " + words[index]);
     //checkWord(currentWord, n, numberMap);
-    checkWord(currentWord, n);
+    //checkWord(currentWord, n);
 }
 
-function checkWord(currentWord, n) {
+checkWord("far")
 
+function checkWord(word) {
+
+    //Convert the word to a number
+    let wordNumber = wordToNumber(word).toString();
+
+    //Get all of its starting indexes
+    let startingNumber = getWordRepresentation(wordNumber.charAt(0));
+    console.log(startingNumber);
+    let startingIndexArray = numberMap[startingNumber]; 
+    console.log(startingIndexArray.sort());
+    /*
+
+    console.log(wordNumber + " " + nString.length);
+    for (let i = 0; i < nString.length; i++) {
+        
+        for (let j = i; j < nString.length; j++) {
+            currentChar = nString.charAt(j);
+
+            //Loop over the Word Here 
+            console.log(currentChar);
+        }
+        
+        console.log("_________");
+        //console.log(currentChar);
+    }
+    */
 }
 
 
