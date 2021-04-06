@@ -2,7 +2,6 @@
 let n = 3212327;
 let nString = n.toString();
 let words = ["far", "foo", "bar"];
-
 var numberLength = getlength(n);
 var charMap = new Array();
 var numberMap = {
@@ -17,78 +16,22 @@ var numberMap = {
     nine: [],
 };
 
-//Convert the Word to a Number and Create the Number Map
-let wordNumber = wordToNumber(words[0]);
-createNumberMap(n);
-//console.log("First Digit " + wordNumber);
-//console.log("Wordnumber " + wordNumber.charAt(0));
-let mapKey = getWordRepresentation(wordNumber.charAt(0))
-//console.log("mapKey " + mapKey);
-let indexMap = numberMap[mapKey];
-//console.log("indexMap " + indexMap);
+//Create a Numnber Map
+//createNumberMap(n);
+//printNumberMap();
 
-//Loop Over Array 
-var currentChar;
-var match = true; 
-
-checkWord();
-
-function checkWord() {
-    indexMap.forEach(function (startingIndex, index) {
-        var loopCount = 1;
-        var charPosition = 0;
-        for (let i = startingIndex; i < nString.length; i++) {
-            matchNumber = nString.charAt(i);
-            //console.log(matchNumber);
-     
-            
-            currentChar = wordNumber.charAt(charPosition);
-            matchNumber = nString.charAt(i);
-            
-            console.log(currentChar + " " + matchNumber);
-            if(currentChar != matchNumber) {
-                match = false;
-                console.log("false");
-            } else {
-                console.log("match");
-            }
-     
-            
-            //Exit the Loop if you reach max loops
-            if(loopCount >= wordNumber.length) {
-                console.log("Reached Char max " + wordNumber.length);
-                break;
-    
-            }
-    
-            charPosition = charPosition + 1;
-            loopCount = loopCount + 1;
-    
-        }
-        console.log("___________");
-    
-    
-    });
-    
+for (index in words) {
+    currentWord = words[index];
+    //console.log("Word " + words[index]);
+    //checkWord(currentWord, n, numberMap);
+    checkWord(currentWord, n);
 }
 
-/*
+function checkWord(currentWord, n) {
 
-for (let i = 0; i < wordNumber.length; i++) {
-    currentChar = wordNumber.charAt(i);
-    matchNumber = nString.charAt(i);
-    
-    console.log(currentChar + " " + matchNumber);
-    if(currentChar != matchNumber) {
-        match = false;
-        console.log("false");
-    } else {
-        console.log("match");
-    }
 }
- 
-console.log(match);
-*/
+
+
 
 //Function 1.B: Convert the Number to a Map of where each Digit is located 
 function createNumberMap(n) {
@@ -96,6 +39,7 @@ function createNumberMap(n) {
     let currentDigit = 100;
     let currentIndex = numberLength - 1;
     let key = "";
+    
     //Loop Over the Number and Create a Map of the Digit and the Index where it is found 
     while(n > 0) { 
         currentDigit = n % 10;
@@ -161,9 +105,6 @@ function getNumberRepresentation(word) {
     }
 }
 
-
-
-
 //Function 1.A: Convert a Word to a Phone Number Representation 
 function wordToNumber(word) { 
     let numberWord = "";
@@ -215,8 +156,83 @@ function printNumberMap() {
     console.log("eight: " + numberMap['eight']);
     console.log("nine: " + numberMap['nine']);
 }
+ 
+/*
 
 
+//Convert the Word to a Number and Create the Number Map
+let wordNumber = wordToNumber(words[0]);
+createNumberMap(n);
+//console.log("First Digit " + wordNumber);
+//console.log("Wordnumber " + wordNumber.charAt(0));
+let mapKey = getWordRepresentation(wordNumber.charAt(0))
+//console.log("mapKey " + mapKey);
+let indexMap = numberMap[mapKey];
+//console.log("indexMap " + indexMap);
+
+//Loop Over Array 
+var currentChar;
+var match = true; 
+
+checkWord();
+
+function checkWord() {
+    indexMap.forEach(function (startingIndex, index) {
+        var loopCount = 1;
+        var charPosition = 0;
+        for (let i = startingIndex; i < nString.length; i++) {
+            matchNumber = nString.charAt(i);
+            //console.log(matchNumber);
+     
+            
+            currentChar = wordNumber.charAt(charPosition);
+            matchNumber = nString.charAt(i);
+            
+            console.log(currentChar + " " + matchNumber);
+            if(currentChar != matchNumber) {
+                match = false;
+                console.log("false");
+            } else {
+                console.log("match");
+            }
+     
+            
+            //Exit the Loop if you reach max loops
+            if(loopCount >= wordNumber.length) {
+                console.log("Reached Char max " + wordNumber.length);
+                break;
+    
+            }
+    
+            charPosition = charPosition + 1;
+            loopCount = loopCount + 1;
+    
+        }
+        console.log("___________");
+    
+    
+    });
+    
+}
+*/
+/*
+
+for (let i = 0; i < wordNumber.length; i++) {
+    currentChar = wordNumber.charAt(i);
+    matchNumber = nString.charAt(i);
+    
+    console.log(currentChar + " " + matchNumber);
+    if(currentChar != matchNumber) {
+        match = false;
+        console.log("false");
+    } else {
+        console.log("match");
+    }
+}
+ 
+console.log(match);
+*/
+ 
 
 /*
  
