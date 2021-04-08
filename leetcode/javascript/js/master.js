@@ -1,3 +1,5 @@
+
+
 //ARRAYS
 //Normal Array 
 var animals = ['Beaver', 'Deer ','Chipmunk','Badger'] 

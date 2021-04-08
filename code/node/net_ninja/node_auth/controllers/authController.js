@@ -1,4 +1,5 @@
 const mysql = require('mysql')
+const bcrypt = require('bcrypt')
 
 //Handle Errors
 const handleErrors = (err) => {
@@ -19,11 +20,13 @@ module.exports.signup_post = async (req, res) => {
 
   console.log("Trying to create a new user...")
     
-  const userName = req.body.user_name
-  const email = req.body.email
-  const password = req.body.password
-  const firstName = req.body.first_name
-  const lastName = req.body.last_name 
+  const userName = req.body.user_name;
+  const email = req.body.email;
+  const password = req.body.password;
+  const salt = await bcrypt.genSalt();
+  //this.password = await bcrypt.hash(this.password, salt);
+  const firstName = req.body.first_name;
+  const lastName = req.body.last_name;
   console.log(userName);
 
   try {
