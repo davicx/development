@@ -11,14 +11,13 @@ public class Main {
         char capitalC = 'C';
         byte b = 100;
         short s = 10000;
-        //int i = 0;
+        int i = 0;
+		
+		//PART 2: Arrays
+		
 
 
         int[] nums = {2, 7, 11, 15, 2, 3, 4, 2, 4};
-        /*
-
-        */
-
 
         ArrayList<Integer> millionInts = new ArrayList<Integer>();
         Random rand = new Random();
