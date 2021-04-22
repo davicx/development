@@ -4,23 +4,48 @@ const morgan = require('morgan')
 const mysql = require('mysql')
 const bodyParser = require('body-parser')
 
-app.use(bodyParser.urlencoded({extended: false}))
+//app.use(bodyParser.urlencoded({extended: false}))
 app.use(express.static('./public'))
 app.use(morgan('short'))
 
 
 //Router
-const router = require('./routes/user.js')
+//const router = require('./routes/user.js')
+//app.use(router)
+app.listen(3003, () => {
+  console.log("Server is up and listening on 3003...")
+})
+
+app.use(morgan('short'));
+
+app.get("/", (req, res) => {
+  console.log("Responding to root route");
+    res.end()
+})
+
+//USERS
+app.get("/users", (req, res) => {
+  var user1 = {firstName: "David", lastName: "V"}
+  const user2 = {firstName: "Frodo", lastName: "B"}
+  const user3 = {firstName: "Bilbo", lastName: "B"}
+  res.json([user1, user2, user3])
+})
+
+app.get('/allusers', (req, res) => {
+  console.log("Responding to database route");
+  const connection = mysql.createConnection({
+      host: 'localhost',
+      user: 'root',
+      database: 'shareshare'
+    })
+    const queryString = "SELECT * FROM user_profile";
+    connection.query(queryString, (err, rows, fields) => {    
+      console.log("Fetched")
+      res.json(rows);
+  })
+})
 
 
-app.use(router)
-
-
-
-
-
-
-//Clean Below 
 
 //Functions: Get Connection
 function getConnection() {
@@ -32,13 +57,10 @@ function getConnection() {
   })
 }
 
-//app.use(morgan('combined'))
-app.use(morgan('short'));
+//Clean Below 
 
-app.get("/", (req, res) => {
-  console.log("Responding to root route");
-    res.end()
-})
+/*
+//app.use(morgan('combined'))
 
 
 app.post('/user_create', (req, res) => {
@@ -68,7 +90,7 @@ app.post('/user_create', (req, res) => {
 app.listen(3003, () => {
   console.log("Server is up and listening on 3003...")
 })
-
+*/
 //////////////////
 
 /*
@@ -192,20 +214,7 @@ app.get('/getfriends/:id', (req, res) => {
     })     
   })
 
-app.get('/allusers', (req, res) => {
-    console.log("Responding to database route");
-    const connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        database: 'shareshare'
-      })
-      const queryString = "SELECT * FROM user_profile";
-      connection.query(queryString, (err, rows, fields) => {    
-        console.log("Fetched")
-        res.json(rows);
-    })
-})
-  
+
 
 
 
@@ -217,7 +226,5 @@ app.get("/users", (req, res) => {
 })
 
 // localhost:3003
-app.listen(3003, () => {
-  console.log("Server is up and listening on 3003...")
-})
+
 */

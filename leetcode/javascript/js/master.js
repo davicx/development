@@ -1,5 +1,3 @@
-
-
 //ARRAYS
 //Normal Array 
 var animals = ['Beaver', 'Deer ','Chipmunk','Badger'] 
@@ -16,6 +14,11 @@ myArray["location"] = "corvallis";
 myArray["tree"] = "apples";
 
 //DATA STRUCTURES
+//Loop Over Array
+for (let i = 0; i < animals.length; i++) {
+    console.log(animals[i]);
+}
+
 //Loop Over String
 let s = "hi";
 for (let i = 0; i < s.length; i++) {
@@ -106,6 +109,30 @@ for (post in objectsArray) {
         console.log("POST " + objectsArray[post].post_id + " " + objectsArray[post].post_type);
     }
 }
+
+
+
+//SLIDING WINDOW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
