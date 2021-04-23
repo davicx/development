@@ -13,6 +13,25 @@ myArray["name"] = "davey";
 myArray["location"] = "corvallis";
 myArray["tree"] = "apples";
 
+for (var key in myArray) {
+    if (myArray.hasOwnProperty(key)) {
+        console.log(key + " " + myArray[key]);
+    }
+} 
+
+var myObject = {
+    "name": "davey",
+    "location": "corvallis",
+    "tree": "apples"
+};
+
+for (var key in myObject) {
+    if (myObject.hasOwnProperty(key)) {
+        console.log(key + " " + myObject[key]);
+    }
+} 
+
+
 //DATA STRUCTURES
 //Loop Over Array
 for (let i = 0; i < animals.length; i++) {
