@@ -15,7 +15,7 @@ myArray["tree"] = "apples";
 
 for (var key in myArray) {
     if (myArray.hasOwnProperty(key)) {
-        console.log(key + " " + myArray[key]);
+        //console.log(key + " " + myArray[key]);
     }
 } 
 
@@ -27,7 +27,7 @@ var myObject = {
 
 for (var key in myObject) {
     if (myObject.hasOwnProperty(key)) {
-        console.log(key + " " + myObject[key]);
+        //console.log(key + " " + myObject[key]);
     }
 } 
 
@@ -35,7 +35,7 @@ for (var key in myObject) {
 //DATA STRUCTURES
 //Loop Over Array
 for (let i = 0; i < animals.length; i++) {
-    console.log(animals[i]);
+    //console.log(animals[i]);
 }
 
 //Loop Over String
@@ -69,6 +69,13 @@ function addTwo(a, b) {
     return a + b;
 }
 
+//Named function expression: Using the ECMAScript 2015 arrow notation
+const hello = (val) => "Hello " + val;
+console.log(hello("Universe!"));
+
+//const myArrowFunction = (a, b) => {a + b};
+//console.log(myArrowFunction(2,2));
+
 //CLASS
 //Classes
 class Rectangle {
@@ -86,7 +93,46 @@ class Rectangle {
     calcArea() {
       return this.height * this.width;
     }
-  }
+}
+
+
+//Ways to Create Objects
+//Object constructor: The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
+//var object = new Object();
+
+//Object's create method: The create method of Object creates a new object by passing the prototype object as a parameter
+//var object = Object.create(null);
+
+//Object literal syntax: The object literal syntax is equivalent to create method when it passes null as parameter
+//var object = {};
+
+//Function constructor: Create any function and apply the new operator to create object instances
+/*
+function Person(name){
+   var object = {};
+   object.name=name;
+   object.age=21;
+   return object;
+}
+var object = new Person("Frodo");
+*/
+//Function constructor with prototype: This is similar to function constructor but it uses prototype for their properties and methods,
+//This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.
+
+//Create a new instance using function prototype.
+//var newInstance = Object.create(func.prototype)
+// Call the function
+//var result = func.call(newInstance, x, y, z),
+
+//ES6 Class syntax: ES6 introduces class feature to create the objects
+class Person {
+   constructor(name) {
+      this.name = name;
+   }
+}
+
+var object = new Person("Frodo");
+
 
 //OBJECTS
 //Create an Object 
@@ -125,7 +171,7 @@ objectsArray["post_two"] = post_two;
 
 for (post in objectsArray) {
     if (objectsArray.hasOwnProperty(post)) {
-        console.log("POST " + objectsArray[post].post_id + " " + objectsArray[post].post_type);
+        //console.log("POST " + objectsArray[post].post_id + " " + objectsArray[post].post_type);
     }
 }
 
@@ -134,9 +180,70 @@ for (post in objectsArray) {
 //SLIDING WINDOW
 
 
+//EMBEDDED MAPS
+
+//Array of Values
+var hobbiton = ["frodo", "sam"];
+var bree = ["merry", "pippin"];
+var minas_tirith = ["aragon", "faramir"];
+var dol_amroth = ["elendil"];
+
+//Associative Array with a list as value
+var shire = {
+    "hobbiton": hobbiton,
+    "bree": bree
+};
+
+var gondor = {
+    "minas_tirith": minas_tirith,
+    "dol_amroth": dol_amroth
+};
+
+//Loop over Associative Array
+for (var key in shire) {
+    if (shire.hasOwnProperty(key)) {
+        //console.log("PLACE: " + key);
+        let shirePeople = shire[key];
+        //console.log(key + " " + shire[key]);
+        for(let i = 0; i < shirePeople.length; i++) {
+            //console.log(shirePeople[i]);
+        }
+        //console.log("");
+    }
+} 
+
+//World Map
+var middle_earth = {
+    "shire": shire,
+    "gondor": gondor,
+}
+
+for (var key in middle_earth) {
+
+    //Out Loop: All the Places in the World
+    if (middle_earth.hasOwnProperty(key)) {  
+        let place = middle_earth[key];
+        
+        //Inner Loop
+        for (var place_key in place) {
+            if (place.hasOwnProperty(place_key)) {
+                //console.log("PLACE: " + place_key);
+                let peopleList = place[place_key];
+
+                //Loop Over the List
+                for(let i = 0; i < peopleList.length; i++) {
+                    //console.log(peopleList[i]);
+                }
+            }
+            //console.log("");
+        }
+    }
+} 
 
 
-
+//JSON
+//JSON.parse(text)
+//JSON.stringify(object)
 
 
 
