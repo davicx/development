@@ -8,18 +8,15 @@ let intervals = [
 
 merge(intervals);
 
-var myArray = new Array();
-
 function merge(intervals) {
     var masterIntervals = new Array();
     var intervalSize = 0;
-    console.log(masterIntervals);
 
     for (let i = 0; i < intervals.length; i++) {
         let intervalStart = intervals[i][0] 
         let intervalEnd = intervals[i][1] 
         //console.log(i + " " + intervalStart + " " + intervalEnd);
-        
+
         for (let j = intervalStart; j <= intervalEnd; j++) {
             masterIntervals[j] = "T";
             intervalSize = Math.max(j, intervalSize);
@@ -38,29 +35,59 @@ function merge(intervals) {
         if(intervalFound.localeCompare(masterIntervals[i]) == 0) {
             insideInterval = true;
             startInterval = i;
-            console.log("FOUND  " + i + " " + masterIntervals[i] + " " + insideInterval);
+            //console.log("FOUND  " + i + " " + masterIntervals[i] + " " + insideInterval);
             
         } else {
             insideInterval = false;
             endInterval = i - 1;
-            console.log("NOPE " + insideInterval);
+            //console.log("NOPE "  + i + " " + masterIntervals[i] + " " + insideInterval);
         }
-       
     }
 
- 
+    //Solve the Problem
+    var masterAnswer = new Array();
+    let previous = "F";
+
+    for (let i = 0; i <= masterIntervals.length; i++) {
+        let intervalCheck = "T";
+        
+        //Create the SubArray
+        if(intervalCheck.localeCompare(masterIntervals[i]) == 0) {
+            //console.log(i + " " + masterIntervals[i] + " Found");
+        } else {
+            //console.log(i + " " + masterIntervals[i] + " Nope");
+        }
+
+        //Add this to the master answer Array 
+
+    
+    }
+
 
 }
 
+var myArray = new Array();
+let shire = ["david", "frodo", "sam"];
+let rohan = ["aragon", "gimli"];
+let rivendel = ["elendil", "galadriel"];
+
+myArray[0] = shire;
+myArray[1] = rohan;
+myArray.push(rivendel);
+
+for (let i = 0; i < myArray.length; i++) {
+ 
+    for (let j = 0; j < myArray[i].length; j++) {
+        console.log(myArray[i][j])
+    }
+    console.log(" ")
+}
  
 
 
-/*
-console.log(intervals[0][1]);
-console.log(intervals[1][1]);
-console.log(intervals[2][1]);
-console.log(intervals[3][1]);
-
-console.log(intervals[2]);
-console.log(intervals[3]);
-*/
+ 
+//Default Array
+Array.prototype.repeat= function(what, L){
+    while(L) this[--L]= what;
+    return this;
+}

@@ -66,12 +66,27 @@ var current_item = queue.shift(); // queue is now [5]
 
 //FUNCTIONS
 function addTwo(a, b) {
+    var helloThere = "hello!";
     return a + b;
 }
 
+//Wont work
+//console.log(helloThere);
+
+//Function Expression
+const subtractNumbers = function(x, y) {
+    return x - y;
+};
+
+
+
+//console.log(subtractNumbers(7, 4));
+  
+
+
 //Named function expression: Using the ECMAScript 2015 arrow notation
 const hello = (val) => "Hello " + val;
-console.log(hello("Universe!"));
+//console.log(hello("Universe!"));
 
 //const myArrowFunction = (a, b) => {a + b};
 //console.log(myArrowFunction(2,2));
@@ -89,55 +104,18 @@ class Rectangle {
       return this.calcArea();
     }
   
-    // Method
+    //Method
     calcArea() {
       return this.height * this.width;
     }
 }
 
 
-//Ways to Create Objects
-//Object constructor: The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
-//var object = new Object();
-
-//Object's create method: The create method of Object creates a new object by passing the prototype object as a parameter
-//var object = Object.create(null);
-
-//Object literal syntax: The object literal syntax is equivalent to create method when it passes null as parameter
-//var object = {};
-
-//Function constructor: Create any function and apply the new operator to create object instances
-/*
-function Person(name){
-   var object = {};
-   object.name=name;
-   object.age=21;
-   return object;
-}
-var object = new Person("Frodo");
-*/
-//Function constructor with prototype: This is similar to function constructor but it uses prototype for their properties and methods,
-//This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.
-
-//Create a new instance using function prototype.
-//var newInstance = Object.create(func.prototype)
-// Call the function
-//var result = func.call(newInstance, x, y, z),
-
-//ES6 Class syntax: ES6 introduces class feature to create the objects
-class Person {
-   constructor(name) {
-      this.name = name;
-   }
-}
-
-var object = new Person("Frodo");
-
-
-//OBJECTS
 //Create an Object 
 const user = { first: 'david', last: 'v', city: 'corvallis'}
 //console.log(user);
+
+//var currentUser = new objectType([param1, param2, ..., paramN]);
 
 //Type 1: Loop over the object 
 for (const key in user) {

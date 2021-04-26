@@ -1,10 +1,18 @@
 import PropTypes from 'prop-types'
+import Button from './Button'
 
 const Header = ({ title }) => {
+  const onClick = () => {
+    console.log("hiya!");
+  }
+
     return (
         <div>
-            <p style={headingStyle}> style </p>
-            <p> { title } </p>
+            <header className='header'>
+              <h4> { title } </h4>
+              <Button color='green' text='Add' onClick={onClick}  />
+            </header>
+            
         </div>
     )
 }
@@ -17,11 +25,19 @@ Header.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
+
+//STYLE: 
 const headingStyle = {
-   color: 'blue',
+   color: 'black',
 }
 
 export default Header
+
+
+
+
+
+
 
 //TYPE 1:
 /*
@@ -39,10 +55,20 @@ Header.defaultProps = {
 }
 
 export default Header
- */
 
-/*
-//TYPE 2: Props Input
+//TYPE 2:
+const Header = ({ title }) => {
+    return (
+        <div>
+            <p style={headingStyle}> style </p>
+            <p> { title } </p>
+            <button className='btn'>Add</button>
+        </div>
+    )
+}
+
+
+//TYPE 3: Props Input
 //App.js
 import Header from './components/Header'
 

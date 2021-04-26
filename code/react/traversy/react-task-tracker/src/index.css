@@ -110,3 +110,10 @@ footer {
   margin-top: 30px;
   text-align: center;
 }
+
+
+.closeIcon {
+  float: right;
+  color: blue;
+  cursor: pointer; 
+}
