@@ -13,8 +13,6 @@ for (let i = 0; i < animals.length; i++) {
     break;
   } 
   rightPointer = rightPointer - 1;
-
-
 }
 
 

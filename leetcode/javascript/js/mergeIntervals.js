@@ -1,12 +1,159 @@
+/*
 let intervals = [
     [1,3],
     [2,6],
     [8,10],
     [15,18]
 ]
+*/
+
+let intervals = [
+    [1,3],
+    [2,4],
+    [7,8]
+]
 
 
-merge(intervals);
+var masterIntervals = new Array();
+var masterArrays = new Array();
+var testmasterArrays = new Array();
+
+let arr1 = [2,3];
+let arr2 = [4,7];
+let arr3 = [7,9];
+let arr4 = [9,12];
+
+testmasterArrays.push(arr1);
+testmasterArrays.push(arr2);
+testmasterArrays.push(arr3);
+testmasterArrays.push(arr4);
+
+for (let k = 0; k < testmasterArrays.length; k++) {
+    console.log(testmasterArrays[k][0] + " " + testmasterArrays[k][1]);
+}
+
+
+for (let i = 0; i < intervals.length; i++) {
+    let intervalStart = intervals[i][0] 
+    let intervalEnd = intervals[i][1] 
+    //console.log("Array Index: [" + i + "] " + intervalStart + " " + intervalEnd);
+    for (let j = intervalStart; j <= intervalEnd; j++) {
+        masterIntervals[j] = "T";
+        //intervalSize = Math.max(j, intervalSize);
+    }        
+    //console.log("______");
+}     
+
+var masterArrays = new Array();
+var babyArray = new Array();
+let insideInterval = false;
+let currentValue;
+
+//console.log("LENGTH " + masterArrays.length);
+for (let i = 0; i < masterIntervals.length; i++) {
+    if(typeof masterIntervals[i] == 'undefined') {
+        //console.log("[" + i + "] F");
+        currentValue = "F";
+    } else {
+        //console.log("[" + i + "] " + masterIntervals[i]);
+        currentValue = "T";
+    }
+    babyArray = [1 + i, 4 + i];
+
+    //Case 1: Not in Subarray
+    if(currentValue == "F" && insideInterval == false) {
+        insideInterval = false;
+        console.log("[" + i + "] " + currentValue + " insideInterval " + insideInterval);
+
+
+    //Case 2: Start Subarray
+    } else if(currentValue == "T" && insideInterval == false) {
+        insideInterval = true; 
+        console.log("[" + i + "] " + currentValue + " insideInterval " + insideInterval);    
+   
+    //Case 3: Inside Subarray
+    } else if(currentValue == "T" && insideInterval == true) {
+        insideInterval = true;
+        console.log("[" + i + "] " + currentValue + " insideInterval " + insideInterval);    
+
+    //Case 4: Close Subarray
+    } else if(currentValue == "F" && insideInterval == true || i == masterIntervals.length - 1) {
+        insideInterval = false;
+        console.log("[" + i + "] "+ currentValue + " insideInterval " + insideInterval);  
+
+    //Case 5: All Else
+    } else {
+
+    } 
+    //masterArrays.push(babyArray);
+    //babyArray = [];
+    
+    /*
+    //Not Needed
+
+
+    if(typeof masterIntervals[i] == 'undefined') {
+        currentValue = "F";
+        //insideInterval = false;
+        //console.log("[" + i + "] F");
+    } else {
+        currentValue = "T";
+        //insideInterval = true;
+        //console.log("[" + i + "] " + masterIntervals[i]);
+    }
+
+    //Case 1: Not in Subarray
+    if(currentValue == "F" && insideInterval == false) {
+        console.log("Case 1");
+        insideInterval = false;
+
+    //Case 2: Start Subarray
+    } else if(currentValue == "T" && insideInterval == false) {
+        //console.log("Case 2");
+        insideInterval = true;
+        babyArray[0] = i;
+
+    //Case 3: Inside Subarray
+    } else if(currentValue == "T" && insideInterval == true) {
+        //console.log("Case 3");
+        insideInterval = true;
+
+    //Case 4: Close Subarray
+    } else if(currentValue == "F" && insideInterval == true || i == masterIntervals.length - 1) {
+        //console.log("Case 4");
+        insideInterval = false;
+        babyArray[1] = i;
+        //console.log(babyArray);
+        masterArrays.push(babyArray);
+        
+
+    //Case 5: All Else
+    } else {
+
+    } 
+  
+
+
+    //Final Case: Last Element in Array 
+    if(i == masterIntervals.length - 1) {
+        //console.log("End of Array " + i + " " + masterIntervals[i]);
+        //babyArray[1] = i;
+        
+    }
+
+console.log("LENGTH " + masterArrays.length);
+console.log("ARRAY "  + masterArrays[0]);
+ 
+    */
+ 
+ 
+}  
+ 
+
+
+
+
+//merge(intervals);
 
 function merge(intervals) {
     var masterIntervals = new Array();
