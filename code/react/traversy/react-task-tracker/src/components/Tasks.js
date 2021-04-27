@@ -1,20 +1,17 @@
 import Task from './Task'
 
 //rafce
-const Tasks = ({tasks, onDelete }) => {
-
+const Tasks = ({tasks, onDelete, sayHelloDavid }) => {
     return (
         <div>
             {tasks.map((task) =>(
-                <Task key={task.id} task = {task} onDelete={onDelete}/>
+                <Task key={task.id} task = {task} onDelete={onDelete} sayHelloDavid={ sayHelloDavid } />
             ))}
         </div>
     )
 }
 
 export default Tasks
-
-
 
 
 

@@ -53,19 +53,21 @@ function merge(intervals) {
         
         //Create the SubArray
         if(intervalCheck.localeCompare(masterIntervals[i]) == 0) {
-            //console.log(i + " " + masterIntervals[i] + " Found");
+            console.log(i + " " + masterIntervals[i] + " Found");
         } else {
-            //console.log(i + " " + masterIntervals[i] + " Nope");
+            console.log(i + " " + masterIntervals[i] + " Nope");
         }
 
         //Add this to the master answer Array 
-
     
     }
 
 
 }
 
+
+//Nested Objects
+/*
 var myArray = new Array();
 let shire = ["david", "frodo", "sam"];
 let rohan = ["aragon", "gimli"];
@@ -83,11 +85,4 @@ for (let i = 0; i < myArray.length; i++) {
     console.log(" ")
 }
  
-
-
- 
-//Default Array
-Array.prototype.repeat= function(what, L){
-    while(L) this[--L]= what;
-    return this;
-}
+*/

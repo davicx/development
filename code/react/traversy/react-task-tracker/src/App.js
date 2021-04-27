@@ -1,4 +1,4 @@
-//STOP: 54
+//STOP: 56
 import { useState } from 'react'
 
 import Header from './components/Header'
@@ -28,14 +28,20 @@ function App() {
 
   //Delete Task
   const deleteTask = (id) => {
-    console.log('delete', id);
+    //console.log('delete', id);
+    setTasks(tasks.filter((task) => task.id !== id))
   }
+
+  const mySayHelloFunction = () => {
+    console.log('Say Hello!');
+  }
+
 
   return (
     <div className="container">
       <header className="App-header">
         <Header title = {'My Title'}/>
-        <Tasks tasks={ tasks } onDelete={ deleteTask }/>
+        <Tasks tasks={ tasks } onDelete={ deleteTask } sayHelloDavid = { mySayHelloFunction }/>
       </header>
     </div>
   );
@@ -43,9 +49,4 @@ function App() {
 
 export default App;
 
-/*
-<Header title = 'Hello'/>  
-*/
 
-
-//Function Mapping: ra

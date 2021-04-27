@@ -3,11 +3,14 @@ import PropTypes from 'prop-types'
 //rafce
 const Button = ({color, text, onClick}) => {
     return (
-    <button onClick={onClick} style={{backgroundColor: color}} className='btn'>
+    //<button onClick={onClick} style={{backgroundColor: color}} className='btn'>
+    <button onClick={ () => onClick("hi!!") } style={{backgroundColor: color}} className='btn'>
         {text}
     </button>
     )
 }
+
+//onClick={ () => onDelete(task.id)
 
 Button.defaultProps = {
     color: 'steelblue',
