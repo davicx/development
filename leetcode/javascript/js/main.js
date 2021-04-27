@@ -1,13 +1,47 @@
 "use strict";
 
+//Two Pointer Array
+var animals = ['Beaver', 'Deer ','Chipmunk','Badger', 'Cougar'];
+let leftPointer = 0;
+let rightPointer = animals.length - 1;
+
+for (let i = 0; i < animals.length; i++) {
+  leftPointer = i;
+  console.log(animals[i] + " " + leftPointer + " " + rightPointer);
+  if(leftPointer >= rightPointer ) {
+    console.log("Break!");
+    break;
+  } 
+  rightPointer = rightPointer - 1;
+
+
+}
+
+
+
+//Priority Q
+
+//Map
+var numbers = [1, 2, 3, 4];
+var numbersSquared = numbers.map(squareNumber)
+
+function squareNumber(num) {
+  return num * num;
+}
+
+//console.log(numbers);
+//console.log(numbersSquared);
+
 //Filter
+/*
 var numbers = [1, 3, 6, 8, 11];
 
 var lucky = numbers.filter(function(number) {
   return number > 7;
 });
-
+*/
 //ARRAYS
+/*
 //concat() joins two or more arrays and returns a new array.
 let myArray = new Array('1', '2', '3')
 myArray = myArray.concat('a', 'b', 'c')
@@ -57,63 +91,66 @@ myArray.sort()
  
 //indexOf(searchElement[, fromIndex]) searches the array for searchElement and returns the index of the first match.
 let a = ['a', 'b', 'a', 'b', 'a']
-console.log(a.indexOf('b'))     // logs 1
+//console.log(a.indexOf('b'))     // logs 1
 // Now try again, starting from after the last match
-console.log(a.indexOf('b', 2))  // logs 3
-console.log(a.indexOf('z'))     // logs -1, because 'z' was not found
+//console.log(a.indexOf('b', 2))  // logs 3
+//console.log(a.indexOf('z'))     // logs -1, because 'z' was not found
 
 //lastIndexOf(searchElement[, fromIndex]) works like indexOf, but starts at the end and searches backwards.
 let a = ['a', 'b', 'c', 'd', 'a', 'b']
-console.log(a.lastIndexOf('b'))     // logs 5
+//console.log(a.lastIndexOf('b'))     // logs 5
 
 //Now try again, starting from before the last match
-console.log(a.lastIndexOf('b', 4))  // logs 1
-console.log(a.lastIndexOf('z'))     // logs -1
+//console.log(a.lastIndexOf('b', 4))  // logs 1
+//console.log(a.lastIndexOf('z'))     // logs -1
 
+*/
 //forEach(callback[, thisObject]) executes callback on every array item and returns undefined.
-let a = ['a', 'b', 'c']
-a.forEach(function(element) { console.log(element) })
+//let a = ['a', 'b', 'c']
+//a.forEach(function(element) { console.log(element) })
 //logs each item in turn
 
+/*
 //map(callback[, thisObject]) returns a new array of the return value from executing callback on every array item.
 let a1 = ['a', 'b', 'c']
 let a2 = a1.map(function(item) { return item.toUpperCase() })
-console.log(a2) // logs ['A', 'B', 'C']
+//console.log(a2) // logs ['A', 'B', 'C']
 
 //filter(callback[, thisObject]) returns a new array containing the items for which callback returned true.
 let a1 = ['a', 10, 'b', 20, 'c', 30]
 let a2 = a1.filter(function(item) { return typeof item === 'number'; })
-console.log(a2)  // logs [10, 20, 30]
+//console.log(a2)  // logs [10, 20, 30]
 
 //every(callback[, thisObject]) returns true if callback returns true for every item in the array.
 function isNumber(value) {
   return typeof value === 'number'
 }
 let a1 = [1, 2, 3]
-console.log(a1.every(isNumber))  // logs true
+//console.log(a1.every(isNumber))  // logs true
+
 let a2 = [1, '2', 3]
-console.log(a2.every(isNumber))  // logs false
+//console.log(a2.every(isNumber))  // logs false
 
 //some(callback[, thisObject]) returns true if callback returns true for at least one item in the array.
 function isNumber(value) {
   return typeof value === 'number'
 }
 let a1 = [1, 2, 3]
-console.log(a1.some(isNumber))  // logs true
+//console.log(a1.some(isNumber))  // logs true
 let a2 = [1, '2', 3]
-console.log(a2.some(isNumber))  // logs true
+//console.log(a2.some(isNumber))  // logs true
 let a3 = ['1', '2', '3']
-console.log(a3.some(isNumber))  // logs false
-
+//console.log(a3.some(isNumber))  // logs false
+*/
 
 
 //ITERATE OVER ARRAY
 let colors = ['red', 'green', 'blue']
 colors.forEach(function(color) {
-  console.log(color)
+  //console.log(color)
 })
 
-colors.forEach(color => console.log(color))
+//colors.forEach(color => console.log(color))
 
 //NUMBERS
 var biggestNum = Number.MAX_VALUE;
@@ -143,7 +180,7 @@ function addSquares(a, b) {
 }
 
 //Works
-console.log(addSquares(2, 3)); 
+//console.log(addSquares(2, 3)); 
 
 //Does not Work
 //console.log(square(2)); 
