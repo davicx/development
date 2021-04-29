@@ -10,7 +10,7 @@ let intervals = [
     [1,4],
     [5,6]
 ]
-
+ 
 */
 
 let intervals = [
@@ -20,19 +20,48 @@ let intervals = [
     [2,6]
 ]
 
-for (let k = 0; k < intervals.length; k++) {
-    console.log(intervals[k][0] + " " + intervals[k][1]);
-}
-
+let answer = new Array();
 intervals.sort(sortFunction);
-console.log(" ");
+answer = merge(intervals);
 
-for (let k = 0; k < intervals.length; k++) {
-    console.log(intervals[k][0] + " " + intervals[k][1]);
+//Loop Over Answer
+for (let i = 0; i < answer.length; i++) {
+    let intervalStart = answer[i][0];
+    let intervalEnd = answer[i][1];
+    console.log("Array Index: [" + i + "] " + intervalStart + " " + intervalEnd);
+}    
+ 
+
+function merge(intervals) {
+    if (intervals.length <= 1) {
+        return intervals;
+
+    }
+    let answerArray = new Array();
+    let currentInterval = intervals[0];
+    answerArray.push(currentInterval);
+
+    //Loop Over 
+    for (let i = 0; i < intervals.length; i++) {
+        let current_begin = currentInterval[0];
+        let current_end = currentInterval[1];
+        let next_begin = intervals[i][0];
+        let next_end = intervals[i][1];
+
+        //Look for Overlaps 
+        if(current_end >= next_begin) {
+            currentInterval[1] = Math.max(current_end, next_end);
+        } else {
+            currentInterval = intervals;
+            answerArray.push(currentInterval);
+        }
+    }    
+ 
+    return answerArray;
 }
+ 
 
-
-
+//Sort the Intervals 
 function sortFunction(a, b) {
     if (a[0] === b[0]) {
         return 0;
@@ -43,6 +72,13 @@ function sortFunction(a, b) {
 }
 
 
+/*
+for (let k = 0; k < intervals.length; k++) {
+    console.log(intervals[k][0] + " " + intervals[k][1]);
+}
+
+
+*/
 
 
 /*

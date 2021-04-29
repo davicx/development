@@ -2,8 +2,16 @@
 const dict = ["abc"] 
 
 const s = "abczzz123"
-console.log(s);
+boldStrings(s, dict) 
  
-for (let i = 0; i < dict.length; i++) {
-    console.log(dict[i]);
+function boldStrings(s, dict) {
+    let answerString = "";
+    
+
+    for (let i = 0; i < dict.length; i++) {
+        console.log(dict[i]);
+    }
+    
+    return answerString;
+    
 }
