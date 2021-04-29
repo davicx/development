@@ -141,6 +141,30 @@ let a3 = ['1', '2', '3']
 //console.log(a3.some(isNumber))  // logs false
 */
 
+//SORT 2D ARray
+var ab = [[12, 'AAA'], [58, 'BBB'], [28, 'CCC'],[18, 'DDD']];
+
+ab.sort(sortFunction);
+
+function sortFunction(a, b) {
+    if (a[0] === b[0]) {
+        return 0;
+    }
+    else {
+        return (a[0] < b[0]) ? -1 : 1;
+    }
+}
+
+ab.sort(compareSecondColumn);
+
+function compareSecondColumn(a, b) {
+    if (a[1] === b[1]) {
+        return 0;
+    }
+    else {
+        return (a[1] < b[1]) ? -1 : 1;
+    }
+}
 
 //ITERATE OVER ARRAY
 let colors = ['red', 'green', 'blue']

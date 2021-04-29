@@ -31,7 +31,6 @@ for (var key in myObject) {
     }
 } 
 
-
 //DATA STRUCTURES
 //Loop Over Array
 for (let i = 0; i < animals.length; i++) {
@@ -78,12 +77,8 @@ const subtractNumbers = function(x, y) {
     return x - y;
 };
 
-
-
 //console.log(subtractNumbers(7, 4));
   
-
-
 //Named function expression: Using the ECMAScript 2015 arrow notation
 const hello = (val) => "Hello " + val;
 //console.log(hello("Universe!"));

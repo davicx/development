@@ -1,11 +1,4 @@
 /*
-let intervals = [
-    [1,3],
-    [2,6],
-    [8,10],
-    [15,18]
-]
-*/
 
 let intervals = [
     [1,3],
@@ -13,20 +6,107 @@ let intervals = [
     [7,8]
 ]
 
-var masterIntervals = createSingleArray(intervals)
-var masterArrays = new Array();
+let intervals = [
+    [1,4],
+    [5,6]
+]
 
-//Loop Over Single Interval
-let currentValue;
-for (let i = 0; i < masterIntervals.length; i++) {
-    if(typeof masterIntervals[i] == 'undefined') {
-        console.log("[" + i + "] F");
-        currentValue = "F";
-    } else {
-        console.log("[" + i + "] " + masterIntervals[i]);
-        currentValue = "T";
+*/
+
+let intervals = [
+    [1,3],
+    [15,18],
+    [8,10],
+    [2,6]
+]
+
+for (let k = 0; k < intervals.length; k++) {
+    console.log(intervals[k][0] + " " + intervals[k][1]);
+}
+
+intervals.sort(sortFunction);
+console.log(" ");
+
+for (let k = 0; k < intervals.length; k++) {
+    console.log(intervals[k][0] + " " + intervals[k][1]);
+}
+
+
+
+function sortFunction(a, b) {
+    if (a[0] === b[0]) {
+        return 0;
+    }
+    else {
+        return (a[0] < b[0]) ? -1 : 1;
     }
 }
+
+
+
+
+/*
+//STEP 1: Create a Single Array 
+var masterIntervals = createSingleArray(intervals)
+var masterIntervalsLength = masterIntervals.length;
+
+//STEP 2: Loop over this array and break it up into smaller arrays
+var masterArrays = new Array();
+var subArray = new Array();
+let currentValue;
+
+for (let i = 0; i < masterIntervals.length; i++) {
+    
+    //Get Previous Value
+    if(i > 0) {
+        previousValue = masterIntervals[i - 1];
+    } else {
+        previousValue = undefined;
+    }
+    
+    //Get Current Value    
+    currentValue = getCurrentValue(masterIntervals[i], i);
+    //console.log(i + " " + previousValue + " " + currentValue);
+    
+    //Start a Subarray
+    if(currentValue == "T" && typeof previousValue == 'undefined') {
+        subArray[0] = i;
+        console.log("Started an array at " + i);
+    
+    //Close a Subarray
+    } else if (previousValue == "T" && currentValue == "F") {
+        subArray[1] = i - 1;
+        console.log("Closed an array at " + (i - 1));
+        masterArrays.push(subArray);
+        subArray = [];
+
+    } else {
+
+    }
+
+    //Handle Last Value
+    if(i == masterIntervalsLength -1) {
+        //console.log("Last Value");
+        
+        //Last Value is True
+        if(currentValue == "T") {
+            subArray[1] = i;
+            masterArrays.push(subArray);
+            console.log("Closed an array at " + i);
+        } else {
+            subArray[1] = i - 1;
+            masterArrays.push(subArray);
+            console.log("Closed an array at " + (i - 1));
+        }
+        subArray = [];
+    }
+}
+
+
+for (let k = 0; k < masterArrays.length; k++) {
+    console.log(masterArrays[k][0] + " " + masterArrays[k][1]);
+}
+
 
 
 
@@ -34,8 +114,8 @@ for (let i = 0; i < masterIntervals.length; i++) {
 function createSingleArray(intervals) { 
     let singleArray = new Array();
     for (let i = 0; i < intervals.length; i++) {
-        let intervalStart = intervals[i][0] 
-        let intervalEnd = intervals[i][1] 
+        let intervalStart = intervals[i][0];
+        let intervalEnd = intervals[i][1];
         //console.log("Array Index: [" + i + "] " + intervalStart + " " + intervalEnd);
         for (let j = intervalStart; j <= intervalEnd; j++) {
             singleArray[j] = "T";
@@ -46,6 +126,22 @@ function createSingleArray(intervals) {
     return singleArray;
 
 }
+
+function getCurrentValue(currentVal, i) { 
+    if(typeof currentVal == 'undefined') {
+        console.log("[" + i + "] F");
+        currentValue = "F";
+    } else {
+        console.log("[" + i + "] " + currentVal);
+        currentValue = "T";
+    }
+    return currentValue;
+}
+
+*/
+
+
+/*
 
 
 //OLD 
@@ -149,10 +245,10 @@ console.log("LENGTH " + masterArrays.length);
 console.log("ARRAY "  + masterArrays[0]);
  
     */
- 
+ /*
  
 }  
- 
+ */
 
 /*
 var testmasterArrays = new Array();
@@ -174,7 +270,7 @@ for (let k = 0; k < testmasterArrays.length; k++) {
 
 
 //merge(intervals);
-
+/*
 function merge(intervals) {
     var masterIntervals = new Array();
     var intervalSize = 0;
@@ -232,7 +328,7 @@ function merge(intervals) {
 
 }
 
-
+*/
 //Nested Objects
 /*
 var myArray = new Array();
