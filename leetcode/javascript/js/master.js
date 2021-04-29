@@ -25,6 +25,7 @@ var myObject = {
     "tree": "apples"
 };
 
+//Print Key and Values in an Object 
 for (var key in myObject) {
     if (myObject.hasOwnProperty(key)) {
         //console.log(key + " " + myObject[key]);
@@ -65,12 +66,8 @@ var current_item = queue.shift(); // queue is now [5]
 
 //FUNCTIONS
 function addTwo(a, b) {
-    var helloThere = "hello!";
     return a + b;
 }
-
-//Wont work
-//console.log(helloThere);
 
 //Function Expression
 const subtractNumbers = function(x, y) {
@@ -108,9 +105,6 @@ class Rectangle {
 
 //Create an Object 
 const user = { first: 'david', last: 'v', city: 'corvallis'}
-//console.log(user);
-
-//var currentUser = new objectType([param1, param2, ..., paramN]);
 
 //Type 1: Loop over the object 
 for (const key in user) {
@@ -118,7 +112,6 @@ for (const key in user) {
         //console.log(user[key]);
     }
 }
-
 
 //Type 2: Unwrap the the Values (keep the order of the keys)
 for (const val of Object.values(user)) {
@@ -147,13 +140,6 @@ for (post in objectsArray) {
         //console.log("POST " + objectsArray[post].post_id + " " + objectsArray[post].post_type);
     }
 }
-
-
-
-//SLIDING WINDOW
-
-
-//EMBEDDED MAPS
 
 //Array of Values
 var hobbiton = ["frodo", "sam"];
@@ -218,26 +204,6 @@ for (var key in middle_earth) {
 //JSON.parse(text)
 //JSON.stringify(object)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SORT */
-
-
 //LOOPS
 //var animals = ['Badger', 'Beaver', 'Chipmunk',]
 //Loop 1
@@ -245,12 +211,10 @@ for (let i = 0; i < animals.length; i++) {
     //console.log(animals[i]);
 } 
 
-
 //Loop 2 (iterate over array)
 for (const animal of animals ) { 
     //console.log(animal);
 } 
-
 
 //Loop 3: For Each Loop (Pass a callback function for every item in the array)
 animals.forEach(makeLowercase);
@@ -265,39 +229,3 @@ let animalLengths = animals.map(function(animal, index, array) {
     let len = animal.length
     return len;
 });
-
-//console.log(animalLengths);
- 
-
-
-//Type 3: Create a Map
-/*
-const userMap = new Map(
-    Object.entries(user)
-);
-
- 
-for (const v of userMap.values()) {
-    console.log(v)
-}
-*/
-
-//JSON
-//Text
-var usersAsText = '{ "users" : [' +
-'{ "firstName":"david" , "lastName":"v" },' +
-'{ "firstName":"bilbo" , "lastName":"baggins" },' +
-'{ "firstName":"Frodo" , "lastName":"baggins" } ]}';
-
-var users = JSON.parse(usersAsText);
-
-//console.log(users);
-
-
-
-
-//CONSOLE
-//console.time()
-//console.timeEnd()
-
-
