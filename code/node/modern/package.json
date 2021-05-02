@@ -1,15 +1,16 @@
 {
   "name": "modern",
   "version": "1.0.0",
-  "description": "Simple MH App",
+  "description": "Take home challenge for Modern Health",
   "main": "app.js",
   "scripts": {
-    "test": "run_tests"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "davey",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^5.12.7",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1"
   },
