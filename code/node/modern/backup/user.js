@@ -1,3 +1,4 @@
+/*
 const express = require('express');
 const mysql = require('mysql');
 const router = express.Router();
@@ -132,3 +133,5 @@ function getConnection() {
 }
 
 module.exports = router;
+
+*/

@@ -11,6 +11,7 @@ npm install express
 npm install morgan
 npm install mysql
 npm install mongoose --save
+npm install mocha --save
 
 npm install --save-dev nodemon
 
@@ -26,6 +27,9 @@ mongodb+srv://modernHealth:<password>@cluster0.qrzt6.mongodb.net/myFirstDatabase
 
 // sequelize pg pg-hstore
 
+##### Database Seeding
+Navigate to seed folder
+node ProgramSeeder.js
 
 
 ### Project Structure
@@ -57,14 +61,13 @@ Program:
 	"name":"John", 
 	"age":30, 
 	"city":"New York"
+	Sections: [
+		{ "name":"John", "age":30, "city":"New York" },
+		{ "name":"John", "age":30, "city":"New York"}
+	]
 }
 
-Section:
-{ 
-	"name":"John", 
-	"age":30, 
-	"city":"New York"
-}
+
 
 ### Function Inputs
 #### Function 1A: Add Covenants to each Facility ####
