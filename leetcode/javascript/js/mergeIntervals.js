@@ -20,6 +20,8 @@ let intervals = [
     [2,6]
 ]
 
+
+/*
 let answer = new Array();
 intervals.sort(sortFunction);
 answer = merge(intervals);
@@ -71,7 +73,7 @@ function sortFunction(a, b) {
     }
 }
 
-
+*/
 /*
 for (let k = 0; k < intervals.length; k++) {
     console.log(intervals[k][0] + " " + intervals[k][1]);
