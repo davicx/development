@@ -20,9 +20,11 @@ app.listen(3003, () => {
 })
  
 app.get("/", (req, res) => {
-    console.log("Responding to root route");
+    console.log("whatch you lookin at willis");
     res.end()
 })
 
 const router = require('./routes/programs.js');
 app.use(router);
+
+module.exports = app

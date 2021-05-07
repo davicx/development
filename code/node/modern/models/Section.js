@@ -2,6 +2,8 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
 //Section Model 
+
+/*
 const SectionSchema = new mongoose.Schema({
     sectionName: {
       type: String,
@@ -17,7 +19,6 @@ const SectionSchema = new mongoose.Schema({
     }
   }, {timestamps: true});
   
-/*
 const SectionSchema = new mongoose.Schema({
   sectionName: {
     type: String,

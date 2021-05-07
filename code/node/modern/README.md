@@ -1,115 +1,85 @@
 ## Modern Health Coding Challenge
-
+This is a small program to develop an API that will output Programs for a self paced mental health library. 
  
 ### Prerequisites
- 
+You need to have Node.js installed on your computer to run this program. 
 
 ### Installation and Running
 #### Project Setup 
+##### Create a new project and install express
 npm init
 npm install express
-npm install morgan
-npm install mysql
+
+##### Install all other Dependencies 
 npm install mongoose --save
-npm install mocha --save
-
+npm install mocha --save-dev
+npm install morgan --save-dev
+npm install chai --save-dev
+npm install chai-http --save-dev
 npm install --save-dev nodemon
-
-
 
 #### Database Setup
 Mongo DB: 
 User: modernHealth
 PW: GYRE1T1aarCPLDsi
-PW: th9HI4ydlU0coyvz
 
 mongodb+srv://modernHealth:<password>@cluster0.qrzt6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
-// sequelize pg pg-hstore
-
 ##### Database Seeding
-Navigate to seed folder
-node ProgramSeeder.js
+There are two ways you can get the data. There is a public MongoDB database that I put up that you can access or you can 
+create your own MongoDB database and run the seed file. 
+
+Run Seed File: 
+1) Navigate to seed folder
+2) node ProgramSeeder.js
 
 
 ### Project Structure
 
     .
     ├── ...
-    ├── classes 	                   
-    │   ├── Assignments.py               
-    │   ├── Covenant.py              
-    │   ├── DataFunctions.py             
-    │   ├── Facility.py             
-    │   ├── Loan.py           
-    ├── data 							 
-    ├── Affirm- Discussion Questions     
-    ├── Main.py 						 
+    ├── models	                   
+    │   ├── Program.js               
+    │   ├── Section.js              
+    │   ├── Activity.js                    
+    ├── node_modules							 
+    ├── routes
+    │   ├── program.js         
+    ├── seed
+    │   ├── ProgramSeeder.js  
+    ├── test
+    │   ├── app_test.js  
+    ├── app.js (Entry Point into the Application) 
+    ├── package.json
     ├── README.MD
     └── ...
  
 ### API Routes
 This is the API you would call to get all the programs 
-/api/programs
+//ROUTE 1: Get all Programs
+http://localhost:3003/api/programs
 
-This is the API that displays 
-/api/section/section_id
+//ROUTE 2: Get a Program based on its input ID 
+http://localhost:3003/api/programs/program_id
+http://localhost:3003/api/programs/1
 
-###JSON
-Program:
-{ 
-	"name":"John", 
-	"age":30, 
-	"city":"New York"
-	Sections: [
-		{ "name":"John", "age":30, "city":"New York" },
-		{ "name":"John", "age":30, "city":"New York"}
-	]
-}
+//ROUTE 3: Find an Individual Section
+http://localhost:3003/api/programs/program_id/section/section_id
+http://localhost:3003/api/programs/1/section/3
 
 
+###Testing
+From the projects Root Directory run
+npm run test
 
-### Function Inputs
-#### Function 1A: Add Covenants to each Facility ####
-Parameters: 
-all_facilities (Facility Objects): List of Facility Objects 
-all_covenants (Covenant Objects): List of Covenant Objects 
- 
-Returns: 
-Updates Facility Object with Banned States and Max Default Rate
- 
-#### Function 1B: Check that Facility has enough Funds ####
-Parameters: 
-loan_amount (int): The requested loan amount
-current_funds_in_facility (decimal): Remaining Facility Funds
 
-Returns: 
-boolean: Returns True if there is enough funds to make the loan
- 
-#### Function 1C: Check that the consumer Default Rate is not too high ####
-Parameters: 
-Loan (Object): The current Loan instance
-Facility (Object): The current Facility instance
+### Overall Thoughts 
+There is a lot to do on this project. 
 
-Returns: 
-boolean: Returns True if the loan can be made
- 
-#### Function 1D: Make sure Loan Applicant does not live in a state restricted by the Facilities Covenants ####
-Parameters: 
-Loan (Object): The current Loan instance
-Facility (Object): The current Facility instance
+#### Navigating the API
+The API for Sections has a Page Number and Total Sections for each Section Area.
 
-Returns: 
-boolean: Returns True if the state is not banned and the loan can be made
- 
-#### Function 1E: Process all Loans ####
-Parameters: 
-all_loans (list of Loans): The whole list of Loans
-all_facilities_sorted (list of Facilities):  The whole list of Facilities
 
-Returns: 
-csv: This will output the csv files yields.csv and assignments.csv
- 
 
 ### Questions
 Please feel free to reach out if there are any issues

@@ -42,10 +42,14 @@ const SectionSchema = new mongoose.Schema({
 
 //Program Model 
 const ProgramSchema = new mongoose.Schema({
+  programID: {
+    type: Number,
+    required: true,
+  },
   programName: {
     type: String,
-    unique: true, required: true, dropDups: true
-  },
+    required: true,
+  },  
   programDescription: {
     type: String,
     required: false,
