@@ -1,5 +1,6 @@
 //POST
 class Post {
+    post_id;
     post_message;
     comments = [];
 
