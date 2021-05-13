@@ -1,9 +1,24 @@
-//STOP: 56
 import { useState } from 'react'
+import React from 'react';
 
-import Header from './components/Header'
-import Tasks from './components/Tasks'
 
+function App() {
+  const name = "davey"
+
+  return (
+    <div className="">
+      <p> hello { name }</p>
+    </div>
+  );
+}
+
+export default App;
+
+
+//import Header from './components/Header'
+//import Tasks from './components/Tasks'
+
+/*
 function App() {
   const [tasks, setTasks] = useState([
     {
@@ -47,6 +62,22 @@ function App() {
   );
 }
 
-export default App;
+*/
+
+
+/*
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <p> hello!</p>
+      </div>
+    );
+  }
+}
+
+*/
+
 
 
