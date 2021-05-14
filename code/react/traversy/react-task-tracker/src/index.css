@@ -7,7 +7,14 @@
 }
 
 body {
+  background-color: white;
  
+}
+
+.post {
+  border: 1px solid blue;
+  margin: 40px;
+  float: left;
 }
 
 .container {

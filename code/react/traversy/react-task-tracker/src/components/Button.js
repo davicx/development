@@ -1,5 +1,38 @@
 import PropTypes from 'prop-types'
 
+const Button = ( { color, text, onClick}) => {
+    
+    /*
+    let count = 0;
+
+    function onClick(count) {
+        console.log("you clicked! " + count);
+        count = count + 1;
+        //console.log(e);
+    }
+    */
+    return (
+        <button onClick={onClick} style={{backgroundColor: color}}  className='btn'> 
+            {text} 
+        </button>
+    )
+}
+
+export default Button
+
+Button.defaultProps = {
+    color: 'steelblue',
+}
+
+Button.propTypes = {
+    text: PropTypes.string,
+    color: PropTypes.string,
+    onClickArrow: PropTypes.func,
+}
+  
+
+//WORKS
+/*
 //rafce
 const Button = ({color, text, onClick}) => {
     return (
@@ -12,17 +45,13 @@ const Button = ({color, text, onClick}) => {
 
 //onClick={ () => onDelete(task.id)
 
-Button.defaultProps = {
-    color: 'steelblue',
-}
-  
-Button.propTypes = {
-    text: PropTypes.string,
-    color: PropTypes.string,
-    onClick: PropTypes.func,
-}
+
+
 
 export default Button
+
+*/
+
 
 
 //Button with its own On Click

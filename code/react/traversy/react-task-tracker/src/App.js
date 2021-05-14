@@ -1,5 +1,30 @@
 import { useState } from 'react'
 import React from 'react';
+import Header from './components/Header'
+import Post from './components/Post'
+//import Tasks from './components/Tasks'
+
+function App() {
+  const name = "davey"
+  const myArray = ['hiya', 'me too!']
+
+  return (
+    <div>
+      
+      <div className="container">
+        <Header title = 'Task Tracker '/>
+      </div>
+      
+      <Post />
+
+    </div>
+  );
+}
+
+export default App;
+
+
+/*
 
 
 function App() {
@@ -15,10 +40,7 @@ function App() {
 export default App;
 
 
-//import Header from './components/Header'
-//import Tasks from './components/Tasks'
 
-/*
 function App() {
   const [tasks, setTasks] = useState([
     {

@@ -4,18 +4,43 @@ import './index.css';
 import App from './App';
 
 
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+/*
+
+
+
+function MyApp() {
+  const name = "davey"
+
+  return (
+    <div className="">
+      <p> hello { name } my app! </p>
+      <p> It is {new Date().toLocaleTimeString()}.</p>
+    </div>
+  );
+}
+
+setInterval(MyApp, 1000);
+export default App;
+
 function tick() {
   const element = (
     <div>
-      <h1>Hello, world!</h1>
-      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+      <p>Hello, world!</p>
+      <p>It is {new Date().toLocaleTimeString()}.</p>
     </div>
   );
   ReactDOM.render(element, document.getElementById('root'));
 }
 
 setInterval(tick, 1000);
-
+*/
 /*
 const functions = require("./functions/main");
 
