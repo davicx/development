@@ -1,16 +1,6 @@
 import PropTypes from 'prop-types'
 
 const Button = ( { color, text, onClick}) => {
-    
-    /*
-    let count = 0;
-
-    function onClick(count) {
-        console.log("you clicked! " + count);
-        count = count + 1;
-        //console.log(e);
-    }
-    */
     return (
         <button onClick={onClick} style={{backgroundColor: color}}  className='btn'> 
             {text} 
@@ -32,6 +22,16 @@ Button.propTypes = {
   
 
 //WORKS
+/*
+
+    let count = 0;
+
+    function onClick(count) {
+        console.log("you clicked! " + count);
+        count = count + 1;
+        //console.log(e);
+    }
+     */
 /*
 //rafce
 const Button = ({color, text, onClick}) => {

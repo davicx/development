@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import React from 'react';
 import Header from './components/Header'
-import Post from './components/Post'
+import Posts from './components/Posts'
 //import Tasks from './components/Tasks'
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Header title = 'Task Tracker '/>
       </div>
       
-      <Post />
+      <Posts />
 
     </div>
   );

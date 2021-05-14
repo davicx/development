@@ -9,15 +9,6 @@ const Header = ({title}) => {
     console.log("you clicked!");
     console.log(e);
   }
- 
-  /*
-    let count = 0;
-
-  function onClick(count) {
-      console.log("you clicked! " + count);
-      count = count + 1;
-      //console.log(e);
-  } */
 
   return (
     <header className='header'>
@@ -45,6 +36,17 @@ const headingStyle = {
 }
 
 /*
+
+
+    let count = 0;
+
+  function onClick(count) {
+      console.log("you clicked! " + count);
+      count = count + 1;
+      //console.log(e);
+  } 
+
+
 const Header = ({ title }) => {
   const onClick = (message) => {
     console.log("hiya! ", message);

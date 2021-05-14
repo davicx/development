@@ -1,6 +1,37 @@
-import Task from './Task'
+//import Task from './Task'
+const tasks = [
+  {
+    id: 1,
+    text: 'go Shopping',
+    day: 'monday',
+    reminder: true
+  },
+  {
+    id: 2,
+    text: 'go Sailing',
+    day: 'friday',
+    reminder: true
+  },
+  {
+    id: 3,
+    text: 'go Climbing',
+    day: 'saturday',
+    reminder: true
+  }
+]
 
-//rafce
+const Tasks = () => {
+  return (
+      <div>
+      
+       
+      </div>
+  )
+}
+
+export default Tasks
+
+/*
 const Tasks = ({tasks, onDelete, sayHelloDavid }) => {
     return (
         <div>
@@ -12,7 +43,7 @@ const Tasks = ({tasks, onDelete, sayHelloDavid }) => {
 }
 
 export default Tasks
-
+*/
 
 
 
