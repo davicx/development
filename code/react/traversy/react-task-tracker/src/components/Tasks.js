@@ -22,9 +22,10 @@ const tasks = [
 
 const Tasks = () => {
   return (
-      <div>
-      
-       
+        <div>
+        { tasks.map((task) => (
+            <p> {  task.text } </p>
+        ))}
       </div>
   )
 }

@@ -2,7 +2,9 @@ import { useState } from 'react'
 import React from 'react';
 import Header from './components/Header'
 import Posts from './components/Posts'
-//import Tasks from './components/Tasks'
+import Tasks from './components/Tasks'
+
+
 
 function App() {
   const name = "davey"
@@ -13,6 +15,7 @@ function App() {
       
       <div className="container">
         <Header title = 'Task Tracker '/>
+        <Tasks />
       </div>
       
       <Posts />
