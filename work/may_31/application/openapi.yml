@@ -1,0 +1,106 @@
+openapi: 3.0.0
+info:
+    title: GHX Grower API
+    version: 1.1.0
+    description: API for GHX Grower
+    contact:
+        name: Syngenta Digital
+        email: developer@syngenta-digital.com
+        url: https://developer.syngenta-digital.com/
+tags:
+    - name: GHX
+      description: GHX
+
+servers:
+    - url: https://{environment}-api.syngenta-digital.com
+      variables:
+          environment:
+              default: dev
+              enum:
+                  - dev
+                  - qa
+                  - uat
+                  - prod
+components:
+    schemas:
+        v1-example-request:
+            title: v1-example-request
+            type: object
+            required:
+                - example_id
+                - name
+            properties:
+                example_id:
+                    type: string
+                name:
+                    type: string
+                    enum:
+                        - ben
+        v1-recommendation-model:
+            title: v1-recommendation-model
+            type: object
+            required:
+                - recommendation_id
+            properties:
+                recommendation_id:
+                    type: string
+                title:
+                    type: string
+                status:
+                    type: string
+                    enum:
+                        - PLANNED
+                        - ACCEPTED
+                is_accepted:
+                    type: boolean
+                plan_type:
+                    type: string
+                seller_id:
+                    type: string
+                seller_name:
+                    type: string
+                seller_phone_number:
+                    type: string
+                seller_email:
+                    type: string
+                total_amount:
+                    type: integer
+                enrolled_fields_quantity:
+                    type: integer
+                enrolled_fields_total:
+                    type: integer
+                enrolled_acres_quantity:
+                    type: integer
+                enrolled_acres_total:
+                    type: integer
+                game_plan_pdf:
+                    type: string
+                fields:
+                    type: array
+                    items:
+                        type: object
+                products:
+                    type: array
+                    items:
+                        type: object
+        v1-patch-recommendation-request:
+                    title: v1-patch-recommendation-request
+                    type: object
+                    required:
+                        - recommendation_id
+                    properties:
+                        recommendation_id:
+                            type: string
+                        status:
+                            type: string
+                            enum:
+                                - PLANNED
+                                - ACCEPTED
+        v1-400-error-response:
+            title: v1-400-error-response
+            type: object
+            properties:
+                errors:
+                    type: array
+                    items:
+                        type: string

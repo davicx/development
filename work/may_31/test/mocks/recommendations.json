@@ -1,0 +1,40 @@
+[
+    {
+        "recommendation_id": "5c32d6be-7c5c-4d16-8999-c62e0b256223",
+        "title": "Recommendation Demo 1",
+        "status": "PLANNED",
+        "is_accepted": false,
+        "plan_type": "",
+        "seller_id": "",
+        "seller_name": "",
+        "seller_phone_number": "",
+        "seller_email": "",
+        "total_amount": 300, 
+        "enrolled_fields_quantity": 2, 
+        "enrolled_fields_total": 3, 
+        "enrolled_acres_quantity":500, 
+        "enrolled_acres_total": 700, 
+        "recommendation_pdf": "http://www.africau.edu/images/default/sample.pdf",
+        "fields":["field1","field2","field3"],
+        "products": [{"id":"fasdfadsf","name":"product1"},{"id":"fasdfadsd","name":"product2"}]
+    },
+    {
+        "recommendation_id": "17caa20c-da85-4257-9216-31cbf9c55e6f",
+        "title": "Recommendation Demo 2",
+        "status": "ACCEPTED",
+        "is_accepted": true,
+        "plan_type": "",
+        "seller_id": "",
+        "seller_name": "",
+        "seller_phone_number": "",
+        "seller_email": "",
+        "total_amount": 300, 
+        "enrolled_fields_quantity": 2, 
+        "enrolled_fields_total": 3, 
+        "enrolled_acres_quantity":500, 
+        "enrolled_acres_total": 700, 
+        "recommendation_pdf": "http://www.africau.edu/images/default/sample.pdf",        
+        "fields":["field1","field2","field3"],
+        "products": [{"id":"fasdfadsf","name":"product1"},{"id":"fasdfadsd","name":"product2"}]
+    }
+]
