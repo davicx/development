@@ -1,0 +1,50 @@
+[
+    {
+        "config_name": "game-plan",
+        "display_name": "Game Plan",
+        "display_icon": "football",
+        "display_information": "hut hut hike",
+        "display_notification": "Acceptance Needed",
+        "api_url": "http://localhost:9000/ghx-growers/v1/recommendations"
+    },
+    {
+        "config_name": "booking-invoice",
+        "display_name": "Booking Invoice",
+        "display_icon": "money",
+        "display_information": "money money money... mooooneyyy",
+        "display_notification": "",
+        "api_url": "http://localhost:9000/ghx-growers/v1/invoices"
+    },
+    {
+        "config_name": "payment",
+        "display_name": "Payment",
+        "display_icon": "currency",
+        "display_information": "calling about your extended warranty",
+        "display_notification": "",
+        "api_url": "http://localhost:9000/ghx-growers/v1/payment"
+    },
+    {
+        "config_name": "delivery",
+        "display_name": "Delivery",
+        "display_icon": "truck",
+        "display_information": "2 day express",
+        "display_notification": "",
+        "api_url": "http://localhost:9000/ghx-growers/v1/payment"
+    },
+    {
+        "config_name": "in-season",
+        "display_name": "In Season Logistics",
+        "display_icon": "arrows",
+        "display_information": "Logistics...its what we do",
+        "display_notification": "",
+        "api_url": "http://localhost:9000/ghx-growers/v1/logistics"
+    },
+    {
+        "config_name": "finalize",
+        "display_name": "Finalize",
+        "display_icon": "flag",
+        "display_information": "Somethings gotta end...",
+        "display_notification": "",
+        "api_url": "http://localhost:9000/ghx-growers/v1/logistics"
+    }
+]

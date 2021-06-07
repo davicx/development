@@ -1,0 +1,850 @@
+[
+    {
+    "Id": "17caa20c-da85-4257-9216-31cbf9c55e6f",
+    "Name": "string",
+    "Created": "2021-05-27T16:44:33.152Z",
+    "Modified": "2021-05-27T16:44:33.152Z",
+    "OperationName": "string",
+    "OperationId": "string",
+    "IsDeleted": true,
+    "ReturnUrl": "string",
+    "CallbackUrl": "string",
+    "Status": "Draft",
+    "Fields": [
+      {
+        "Id": "90a68dc8-0efc-4430-b3b1-979d98821185",
+        "FieldId": "string",
+        "Name": "string",
+        "Boundary": {
+          "Factory": {
+            "CoordinateSequenceFactory": {
+              "Ordinates": "None"
+            },
+            "SRID": 0,
+            "PrecisionModel": {
+              "PrecisionModelType": "Floating",
+              "IsFloating": true,
+              "MaximumSignificantDigits": 0,
+              "Scale": 0
+            }
+          },
+          "PrecisionModel": {
+            "PrecisionModelType": "Floating",
+            "IsFloating": true,
+            "MaximumSignificantDigits": 0,
+            "Scale": 0
+          },
+          "SRID": 0,
+          "GeometryType": "string",
+          "OgcGeometryType": "Point",
+          "Area": 0,
+          "Length": 0,
+          "NumGeometries": 0,
+          "NumPoints": 0,
+          "BoundaryDimension": "Point",
+          "Centroid": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "M": 0,
+            "CoordinateSequence": {
+              "Dimension": 0,
+              "Ordinates": "None",
+              "Count": 0
+            },
+            "Factory": {
+              "CoordinateSequenceFactory": {
+                "Ordinates": "None"
+              },
+              "SRID": 0,
+              "PrecisionModel": {
+                "PrecisionModelType": "Floating",
+                "IsFloating": true,
+                "MaximumSignificantDigits": 0,
+                "Scale": 0
+              }
+            },
+            "PrecisionModel": {
+              "PrecisionModelType": "Floating",
+              "IsFloating": true,
+              "MaximumSignificantDigits": 0,
+              "Scale": 0
+            },
+            "SRID": 0,
+            "GeometryType": "string",
+            "OgcGeometryType": "Point",
+            "Area": 0,
+            "Length": 0,
+            "NumGeometries": 0,
+            "NumPoints": 0,
+            "BoundaryDimension": "Point",
+            "Coordinate": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "Coordinates": [
+              {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            ],
+            "Dimension": "Point",
+            "EnvelopeInternal": {
+              "IsNull": true,
+              "Width": 0,
+              "Height": 0,
+              "MinX": 0,
+              "MaxX": 0,
+              "MinY": 0,
+              "MaxY": 0,
+              "Area": 0,
+              "MinExtent": 0,
+              "MaxExtent": 0,
+              "Centre": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            },
+            "UserData": {},
+            "IsEmpty": true,
+            "IsRectangle": true,
+            "IsSimple": true,
+            "IsValid": true
+          },
+          "Coordinate": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0
+          },
+          "Coordinates": [
+            {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            }
+          ],
+          "Dimension": "Point",
+          "EnvelopeInternal": {
+            "IsNull": true,
+            "Width": 0,
+            "Height": 0,
+            "MinX": 0,
+            "MaxX": 0,
+            "MinY": 0,
+            "MaxY": 0,
+            "Area": 0,
+            "MinExtent": 0,
+            "MaxExtent": 0,
+            "Centre": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            }
+          },
+          "InteriorPoint": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "M": 0,
+            "CoordinateSequence": {
+              "Dimension": 0,
+              "Ordinates": "None",
+              "Count": 0
+            },
+            "Factory": {
+              "CoordinateSequenceFactory": {
+                "Ordinates": "None"
+              },
+              "SRID": 0,
+              "PrecisionModel": {
+                "PrecisionModelType": "Floating",
+                "IsFloating": true,
+                "MaximumSignificantDigits": 0,
+                "Scale": 0
+              }
+            },
+            "PrecisionModel": {
+              "PrecisionModelType": "Floating",
+              "IsFloating": true,
+              "MaximumSignificantDigits": 0,
+              "Scale": 0
+            },
+            "SRID": 0,
+            "GeometryType": "string",
+            "OgcGeometryType": "Point",
+            "Area": 0,
+            "Length": 0,
+            "NumGeometries": 0,
+            "NumPoints": 0,
+            "BoundaryDimension": "Point",
+            "Coordinate": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "Coordinates": [
+              {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            ],
+            "Dimension": "Point",
+            "EnvelopeInternal": {
+              "IsNull": true,
+              "Width": 0,
+              "Height": 0,
+              "MinX": 0,
+              "MaxX": 0,
+              "MinY": 0,
+              "MaxY": 0,
+              "Area": 0,
+              "MinExtent": 0,
+              "MaxExtent": 0,
+              "Centre": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            },
+            "UserData": {},
+            "IsEmpty": true,
+            "IsRectangle": true,
+            "IsSimple": true,
+            "IsValid": true
+          },
+          "PointOnSurface": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "M": 0,
+            "CoordinateSequence": {
+              "Dimension": 0,
+              "Ordinates": "None",
+              "Count": 0
+            },
+            "Factory": {
+              "CoordinateSequenceFactory": {
+                "Ordinates": "None"
+              },
+              "SRID": 0,
+              "PrecisionModel": {
+                "PrecisionModelType": "Floating",
+                "IsFloating": true,
+                "MaximumSignificantDigits": 0,
+                "Scale": 0
+              }
+            },
+            "PrecisionModel": {
+              "PrecisionModelType": "Floating",
+              "IsFloating": true,
+              "MaximumSignificantDigits": 0,
+              "Scale": 0
+            },
+            "SRID": 0,
+            "GeometryType": "string",
+            "OgcGeometryType": "Point",
+            "Area": 0,
+            "Length": 0,
+            "NumGeometries": 0,
+            "NumPoints": 0,
+            "BoundaryDimension": "Point",
+            "Coordinate": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "Coordinates": [
+              {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            ],
+            "Dimension": "Point",
+            "EnvelopeInternal": {
+              "IsNull": true,
+              "Width": 0,
+              "Height": 0,
+              "MinX": 0,
+              "MaxX": 0,
+              "MinY": 0,
+              "MaxY": 0,
+              "Area": 0,
+              "MinExtent": 0,
+              "MaxExtent": 0,
+              "Centre": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            },
+            "UserData": {},
+            "IsEmpty": true,
+            "IsRectangle": true,
+            "IsSimple": true,
+            "IsValid": true
+          },
+          "UserData": {},
+          "IsEmpty": true,
+          "IsRectangle": true,
+          "IsSimple": true,
+          "IsValid": true
+        },
+        "Irrigation": true,
+        "Acres": 0,
+        "FarmName": "string",
+        "Preselected": true,
+        "ProposalId": "20aaba9c-0152-4ebc-bdbb-b448e4192a99",
+        "GamePlanId": "string",
+        "GamePlan": {
+          "Id": "818a2208-4440-4e3a-8e88-321c142a8524",
+          "Name": "string",
+          "Finished": true,
+          "SelectedAlgorithm": "string",
+          "RequestedSeeds": 0,
+          "DefaultIrrigation": true,
+          "Created": "2021-05-27T16:44:33.154Z",
+          "Modified": "2021-05-27T16:44:33.154Z",
+          "IsDeleted": true,
+          "SelectedRmMax": 0,
+          "SelectedRmMin": 0,
+          "GamePlanSessionId": "771e38cc-ef26-4de5-81c3-a3329ca5f83e",
+          "SessionStatus": "string",
+          "SessionErrorMessage": "string",
+          "SelectedFields": [
+            null
+          ],
+          "CropId": "string",
+          "Crop": {
+            "Id": "203c5b08-9ca4-43d3-ade4-51eec32c0ec6",
+            "Name": "string",
+            "Default": true,
+            "Brands": [
+              {
+                "Id": "b7224dcb-0ea9-4d03-87bd-0b2c32913b8e",
+                "BrandName": "string",
+                "SeedingRate": 0,
+                "SeedsPerBag": 0,
+                "Default": true,
+                "Seeds": [
+                  {
+                    "Id": "f01918b3-9c6d-4e0e-a9f7-4337f1b589d9",
+                    "Name": "string",
+                    "RM": "string",
+                    "BrandId": "7c6a874b-2c6d-484c-9555-e3610c4c571a",
+                    "Traits": [
+                      {
+                        "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+                        "Name": "string",
+                        "HybridName": "string",
+                        "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+                        "GamePlanToInputTraits": [
+                          null
+                        ],
+                        "PortfolioSeeds": [
+                          null
+                        ]
+                      }
+                    ],
+                    "GamePlanToInputSeeds": [
+                      null
+                    ],
+                    "PortfolioSeeds": [
+                      null
+                    ]
+                  }
+                ],
+                "GamePlans": [
+                  null
+                ],
+                "CropId": "646fce7e-a0c4-419c-b966-37db55156cb6"
+              }
+            ],
+            "GamePlans": [
+              null
+            ],
+            "ProposalId": "19c19492-593a-4acf-9a55-f1c57f9de5f6"
+          },
+          "BrandId": "string",
+          "Brand": {
+            "Id": "b7224dcb-0ea9-4d03-87bd-0b2c32913b8e",
+            "BrandName": "string",
+            "SeedingRate": 0,
+            "SeedsPerBag": 0,
+            "Default": true,
+            "Seeds": [
+              {
+                "Id": "f01918b3-9c6d-4e0e-a9f7-4337f1b589d9",
+                "Name": "string",
+                "RM": "string",
+                "BrandId": "7c6a874b-2c6d-484c-9555-e3610c4c571a",
+                "Traits": [
+                  {
+                    "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+                    "Name": "string",
+                    "HybridName": "string",
+                    "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+                    "GamePlanToInputTraits": [
+                      null
+                    ],
+                    "PortfolioSeeds": [
+                      null
+                    ]
+                  }
+                ],
+                "GamePlanToInputSeeds": [
+                  null
+                ],
+                "PortfolioSeeds": [
+                  null
+                ]
+              }
+            ],
+            "GamePlans": [
+              null
+            ],
+            "CropId": "646fce7e-a0c4-419c-b966-37db55156cb6"
+          },
+          "ProposalId": "7719d889-60c3-4819-b56d-73497ae26cb0",
+          "GamePlanToInputSeeds": [
+            {
+              "Id": "a6cbc540-822e-4f33-9046-c80bd086f4d7",
+              "GamePlanId": "fe01fd80-f64b-41a9-a29e-39c0133e02df",
+              "SeedId": "string",
+              "Seed": {
+                "Id": "f01918b3-9c6d-4e0e-a9f7-4337f1b589d9",
+                "Name": "string",
+                "RM": "string",
+                "BrandId": "7c6a874b-2c6d-484c-9555-e3610c4c571a",
+                "Traits": [
+                  {
+                    "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+                    "Name": "string",
+                    "HybridName": "string",
+                    "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+                    "GamePlanToInputTraits": [
+                      null
+                    ],
+                    "PortfolioSeeds": [
+                      null
+                    ]
+                  }
+                ],
+                "GamePlanToInputSeeds": [
+                  null
+                ],
+                "PortfolioSeeds": [
+                  null
+                ]
+              }
+            }
+          ],
+          "GamePlanToInputTraits": [
+            {
+              "Id": "1fdc8a9b-0e0a-4946-833b-6c26ccf864de",
+              "GamePlanId": "1300c224-0ce8-4e5d-88d0-06fdce79181d",
+              "TraitId": "string",
+              "Trait": {
+                "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+                "Name": "string",
+                "HybridName": "string",
+                "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+                "GamePlanToInputTraits": [
+                  null
+                ],
+                "PortfolioSeeds": [
+                  null
+                ]
+              }
+            }
+          ],
+          "PortfolioSeeds": [
+            {
+              "Id": "f9d6316c-c519-4a26-8e4a-fe1a75c13125",
+              "AssignmentToFields": [
+                {
+                  "Id": "e98b7077-1c9b-4407-84b1-d128534c51dd",
+                  "Acres": 0,
+                  "SeedingRate": 0,
+                  "FieldId": "string",
+                  "PortfolioSeedId": "87d0a48f-0eea-4b04-8bfe-4aa9c2ebda48"
+                }
+              ],
+              "SeedId": "string",
+              "Seed": {
+                "Id": "f01918b3-9c6d-4e0e-a9f7-4337f1b589d9",
+                "Name": "string",
+                "RM": "string",
+                "BrandId": "7c6a874b-2c6d-484c-9555-e3610c4c571a",
+                "Traits": [
+                  {
+                    "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+                    "Name": "string",
+                    "HybridName": "string",
+                    "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+                    "GamePlanToInputTraits": [
+                      null
+                    ],
+                    "PortfolioSeeds": [
+                      null
+                    ]
+                  }
+                ],
+                "GamePlanToInputSeeds": [
+                  null
+                ],
+                "PortfolioSeeds": [
+                  null
+                ]
+              },
+              "GamePlanId": "06228d63-3aa5-470c-8f5b-e2a6f9395dd7",
+              "TraitId": "string",
+              "Trait": {
+                "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+                "Name": "string",
+                "HybridName": "string",
+                "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+                "GamePlanToInputTraits": [
+                  null
+                ],
+                "PortfolioSeeds": [
+                  null
+                ]
+              }
+            }
+          ],
+          "Color": "string",
+          "IncludedInPdf": true
+        },
+        "FarmId": "string",
+        "Farm": {
+          "Id": "e084a960-1e37-4960-a891-abc68d398c65",
+          "Name": "string",
+          "Fields": [
+            null
+          ],
+          "ProposalId": "ac2f5baf-3d68-4755-b5c3-88c8346b3a86"
+        },
+        "GroupToFields": [
+          {
+            "Id": "7f59593d-aaee-4a0f-ab13-cc6ed2ea5d17",
+            "GroupId": "string",
+            "FieldId": "4e9eb228-5f8f-405a-9199-ae3393767760"
+          }
+        ],
+        "PortfolioSeedsAssigned": [
+          {
+            "Id": "e98b7077-1c9b-4407-84b1-d128534c51dd",
+            "Acres": 0,
+            "SeedingRate": 0,
+            "FieldId": "string",
+            "PortfolioSeedId": "87d0a48f-0eea-4b04-8bfe-4aa9c2ebda48"
+          }
+        ]
+      }
+    ],
+    "Farms": [
+      {
+        "Id": "e084a960-1e37-4960-a891-abc68d398c65",
+        "Name": "string",
+        "Fields": [
+          null
+        ],
+        "ProposalId": "ac2f5baf-3d68-4755-b5c3-88c8346b3a86"
+      }
+    ],
+    "Groups": [
+      {
+        "Id": "9c578911-2ddd-449b-9d61-707ea63dac80",
+        "GroupName": "string",
+        "ProposalId": "3f4642d6-bbc7-4184-99ba-d0bfbdc89db2",
+        "GroupToFields": [
+          {
+            "Id": "7f59593d-aaee-4a0f-ab13-cc6ed2ea5d17",
+            "GroupId": "string",
+            "FieldId": "4e9eb228-5f8f-405a-9199-ae3393767760"
+          }
+        ]
+      }
+    ],
+    "GamePlans": [
+      {
+        "Id": "818a2208-4440-4e3a-8e88-321c142a8524",
+        "Name": "string",
+        "Finished": true,
+        "SelectedAlgorithm": "string",
+        "RequestedSeeds": 0,
+        "DefaultIrrigation": true,
+        "Created": "2021-05-27T16:44:33.154Z",
+        "Modified": "2021-05-27T16:44:33.154Z",
+        "IsDeleted": true,
+        "SelectedRmMax": 0,
+        "SelectedRmMin": 0,
+        "GamePlanSessionId": "771e38cc-ef26-4de5-81c3-a3329ca5f83e",
+        "SessionStatus": "string",
+        "SessionErrorMessage": "string",
+        "SelectedFields": [
+          null
+        ],
+        "CropId": "string",
+        "Crop": {
+          "Id": "203c5b08-9ca4-43d3-ade4-51eec32c0ec6",
+          "Name": "string",
+          "Default": true,
+          "Brands": [
+            {
+              "Id": "b7224dcb-0ea9-4d03-87bd-0b2c32913b8e",
+              "BrandName": "string",
+              "SeedingRate": 0,
+              "SeedsPerBag": 0,
+              "Default": true,
+              "Seeds": [
+                {
+                  "Id": "f01918b3-9c6d-4e0e-a9f7-4337f1b589d9",
+                  "Name": "string",
+                  "RM": "string",
+                  "BrandId": "7c6a874b-2c6d-484c-9555-e3610c4c571a",
+                  "Traits": [
+                    {
+                      "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+                      "Name": "string",
+                      "HybridName": "string",
+                      "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+                      "GamePlanToInputTraits": [
+                        null
+                      ],
+                      "PortfolioSeeds": [
+                        null
+                      ]
+                    }
+                  ],
+                  "GamePlanToInputSeeds": [
+                    null
+                  ],
+                  "PortfolioSeeds": [
+                    null
+                  ]
+                }
+              ],
+              "GamePlans": [
+                null
+              ],
+              "CropId": "646fce7e-a0c4-419c-b966-37db55156cb6"
+            }
+          ],
+          "GamePlans": [
+            null
+          ],
+          "ProposalId": "19c19492-593a-4acf-9a55-f1c57f9de5f6"
+        },
+        "BrandId": "string",
+        "Brand": {
+          "Id": "b7224dcb-0ea9-4d03-87bd-0b2c32913b8e",
+          "BrandName": "string",
+          "SeedingRate": 0,
+          "SeedsPerBag": 0,
+          "Default": true,
+          "Seeds": [
+            {
+              "Id": "f01918b3-9c6d-4e0e-a9f7-4337f1b589d9",
+              "Name": "string",
+              "RM": "string",
+              "BrandId": "7c6a874b-2c6d-484c-9555-e3610c4c571a",
+              "Traits": [
+                {
+                  "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+                  "Name": "string",
+                  "HybridName": "string",
+                  "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+                  "GamePlanToInputTraits": [
+                    null
+                  ],
+                  "PortfolioSeeds": [
+                    null
+                  ]
+                }
+              ],
+              "GamePlanToInputSeeds": [
+                null
+              ],
+              "PortfolioSeeds": [
+                null
+              ]
+            }
+          ],
+          "GamePlans": [
+            null
+          ],
+          "CropId": "646fce7e-a0c4-419c-b966-37db55156cb6"
+        },
+        "ProposalId": "7719d889-60c3-4819-b56d-73497ae26cb0",
+        "GamePlanToInputSeeds": [
+          {
+            "Id": "a6cbc540-822e-4f33-9046-c80bd086f4d7",
+            "GamePlanId": "fe01fd80-f64b-41a9-a29e-39c0133e02df",
+            "SeedId": "string",
+            "Seed": {
+              "Id": "f01918b3-9c6d-4e0e-a9f7-4337f1b589d9",
+              "Name": "string",
+              "RM": "string",
+              "BrandId": "7c6a874b-2c6d-484c-9555-e3610c4c571a",
+              "Traits": [
+                {
+                  "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+                  "Name": "string",
+                  "HybridName": "string",
+                  "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+                  "GamePlanToInputTraits": [
+                    null
+                  ],
+                  "PortfolioSeeds": [
+                    null
+                  ]
+                }
+              ],
+              "GamePlanToInputSeeds": [
+                null
+              ],
+              "PortfolioSeeds": [
+                null
+              ]
+            }
+          }
+        ],
+        "GamePlanToInputTraits": [
+          {
+            "Id": "1fdc8a9b-0e0a-4946-833b-6c26ccf864de",
+            "GamePlanId": "1300c224-0ce8-4e5d-88d0-06fdce79181d",
+            "TraitId": "string",
+            "Trait": {
+              "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+              "Name": "string",
+              "HybridName": "string",
+              "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+              "GamePlanToInputTraits": [
+                null
+              ],
+              "PortfolioSeeds": [
+                null
+              ]
+            }
+          }
+        ],
+        "PortfolioSeeds": [
+          {
+            "Id": "f9d6316c-c519-4a26-8e4a-fe1a75c13125",
+            "AssignmentToFields": [
+              {
+                "Id": "e98b7077-1c9b-4407-84b1-d128534c51dd",
+                "Acres": 0,
+                "SeedingRate": 0,
+                "FieldId": "string",
+                "PortfolioSeedId": "87d0a48f-0eea-4b04-8bfe-4aa9c2ebda48"
+              }
+            ],
+            "SeedId": "string",
+            "Seed": {
+              "Id": "f01918b3-9c6d-4e0e-a9f7-4337f1b589d9",
+              "Name": "string",
+              "RM": "string",
+              "BrandId": "7c6a874b-2c6d-484c-9555-e3610c4c571a",
+              "Traits": [
+                {
+                  "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+                  "Name": "string",
+                  "HybridName": "string",
+                  "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+                  "GamePlanToInputTraits": [
+                    null
+                  ],
+                  "PortfolioSeeds": [
+                    null
+                  ]
+                }
+              ],
+              "GamePlanToInputSeeds": [
+                null
+              ],
+              "PortfolioSeeds": [
+                null
+              ]
+            },
+            "GamePlanId": "06228d63-3aa5-470c-8f5b-e2a6f9395dd7",
+            "TraitId": "string",
+            "Trait": {
+              "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+              "Name": "string",
+              "HybridName": "string",
+              "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+              "GamePlanToInputTraits": [
+                null
+              ],
+              "PortfolioSeeds": [
+                null
+              ]
+            }
+          }
+        ],
+        "Color": "string",
+        "IncludedInPdf": true
+      }
+    ],
+    "Crops": [
+      {
+        "Id": "203c5b08-9ca4-43d3-ade4-51eec32c0ec6",
+        "Name": "string",
+        "Default": true,
+        "Brands": [
+          {
+            "Id": "b7224dcb-0ea9-4d03-87bd-0b2c32913b8e",
+            "BrandName": "string",
+            "SeedingRate": 0,
+            "SeedsPerBag": 0,
+            "Default": true,
+            "Seeds": [
+              {
+                "Id": "f01918b3-9c6d-4e0e-a9f7-4337f1b589d9",
+                "Name": "string",
+                "RM": "string",
+                "BrandId": "7c6a874b-2c6d-484c-9555-e3610c4c571a",
+                "Traits": [
+                  {
+                    "Id": "33b600d3-89fc-4048-a006-cbd527f4c79b",
+                    "Name": "string",
+                    "HybridName": "string",
+                    "SeedId": "e7142325-7a89-4aa6-a6b7-dc0084ad9190",
+                    "GamePlanToInputTraits": [
+                      null
+                    ],
+                    "PortfolioSeeds": [
+                      null
+                    ]
+                  }
+                ],
+                "GamePlanToInputSeeds": [
+                  null
+                ],
+                "PortfolioSeeds": [
+                  null
+                ]
+              }
+            ],
+            "GamePlans": [
+              null
+            ],
+            "CropId": "646fce7e-a0c4-419c-b966-37db55156cb6"
+          }
+        ],
+        "GamePlans": [
+          null
+        ],
+        "ProposalId": "19c19492-593a-4acf-9a55-f1c57f9de5f6"
+      }
+    ],
+    "PricingCategory": "string"
+  }
+]

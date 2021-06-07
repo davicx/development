@@ -1,0 +1,13 @@
+[
+    {
+        "config_region": "us",
+        "config_group": [
+            "game-plan",
+            "booking-invoice",
+            "payment",
+            "delivery",
+            "in-season",
+            "finalize"
+        ]
+    }
+]
