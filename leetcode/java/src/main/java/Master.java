@@ -1,7 +1,31 @@
 
 
 
+/*
+        ArrayList<Integer> userOne = new ArrayList<Integer>();
+        userOne.add(1);
+        userOne.add(2);
+        userOne.add(5);
+        userOne.add(7);
 
+        ArrayList<Integer> userTwo = new ArrayList<Integer>();
+        userTwo.add(1);
+        userTwo.add(2);
+        userTwo.add(3);
+        userTwo.add(7);
+
+        ArrayList<Integer> userThree = new ArrayList<Integer>();
+        userThree.add(1);
+        userThree.add(2);
+        userThree.add(7);
+
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 1; i < 8; i++) {
+            map.put(userOne.get(i), map.getOrDe fault(userOne.get(i), 0)+ 1);
+            map.put(userTwo.get(i), map.getOrDefault(userOne.get(i), 0)+ 1);
+            map.put(userThree.get(i), map.getOrDefault(userOne.get(i), 0)+ 1);
+        }
+*/
 /*
 import java.util.ArrayList;
 import java.util.HashMap;
