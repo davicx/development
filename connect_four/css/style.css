@@ -1,0 +1,77 @@
+/*TOC*/
+/*
+Connect Four
+SECTION 1: Game Board 
+SECTION 2: Pieces
+
+
+
+/****************************************************
+SECTION 1: Main Body, Global Styles
+*****************************************************/
+body {	
+	background-color: white;	
+	height: 100%;	
+}
+
+
+
+/****************************************************
+SECTION 3: Grid
+*****************************************************/
+.grid {
+	display: grid;
+	grid-template-columns: 118px 118px 118px 118px 118px 118px 118px;
+	width: 840px;
+	margin-top: 60px;
+	margin-left: 200px;
+
+}
+
+.grid div {
+  height: 118px;
+  width: 118px;	
+  border: 1px solid blue;
+}
+
+.taken {
+	border: 1px solid blue;
+  background-color: green;
+}
+
+
+.bottom-row {
+  border: 1px solid red;	
+  background-color: green;	
+}
+
+
+/****************************************************
+SECTION 2: Pieces
+*****************************************************/
+.player-one {
+	background-color: red;
+	border-radius: 100px;
+}
+
+.player-two {
+	background-color: blue;
+	border-radius: 100px;
+}
+
+/*
+.grid-container {
+   display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  width: 800px;
+  margin-top: 60px;
+  margin-left: 200px;
+
+}
+.grid-item {
+  border: 1px solid black;
+  padding: 6px;
+  font-size: 30px;
+  text-align: center;
+}
+*/
