@@ -1,3 +1,46 @@
+let a = ['a1','a2','a3','a4']
+let b = ['b1','b2','b3','b4']
+let c = ['c1','c2','c3','c4']
+let d = ['d1','d2','d3','d4']
+
+board = [a,b,c,d]
+const playerOne = 'p1';
+const playerTwo = 'p2';
+
+dropPiece(4) 
+
+
+function dropPiece(row) {
+    row = row - 1;
+    for(let i = 0; i < board.length; i++) {
+        console.log(board[i][row]);
+    }
+}
+
+
+
+
+
+
+/*
+for (let i = 0; i < a.length; i++) {
+    if(playerOne.toUpperCase() !== a[i].toUpperCase()) {
+        console.log(playerOne + " Does not equal " + a[i]);
+    } else {
+        console.log("MATCH! " + playerOne + " Does equal " + a[i]);
+    }
+    
+}
+*/
+
+
+function printBoard() {
+    for (let i = 0; i < board.length; i++) {
+        console.log("Board "+ i + " " + board[i]);
+    }
+}
+
+/*
 let a1 = ['-','-','-','-']
 let a2 = ['-','-','-','-']
 let a3 = ['-','-','-','-']
@@ -24,12 +67,8 @@ function dropPiece(row) {
     //console.log(board[row][3])
 }
 
-function printBoard() {
-    for (let i = 0; i < board.length; i++) {
-        console.log("Board "+ i + " " + board[i]);
-    }
-}
 
+*/
 
 
 
