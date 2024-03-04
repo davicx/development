@@ -7,6 +7,10 @@ import java.util.List;
 public class PrintWordsVertically {
     public static void main(String[] args) {
         String s = "HOW ARE YOU";
+        //[0][0] [1][0] [2][0]
+        //[0][1] [1][1] [2][1]
+        //[0][2] [1][2] [2][2]
+        //String s = "TO BE OR NOT TO BE";
 
         printVertically(s);
 
@@ -15,14 +19,28 @@ public class PrintWordsVertically {
 
     public static List<String> printVertically(String s) {
         List<String> words;
+        List<String> outputArray = new ArrayList<>();
+        Integer maxLength = 0;
         words = Arrays.asList(s.split(" "));
 
+        //STEP 1: Get max length
         for (int i = 0; i < words.size(); i++) {
-            System.out.println(words.get(i).length() + " | " + words.get(i));
-            System.out.println(" ");
+            maxLength = Math.max(words.get(i).length(), maxLength);
+            //System.out.println(words.get(i).length() + " | " + words.get(i));
         }
 
-        return words;
+        //STEP 2: Loop over words
+        for (int i = 0; i < maxLength; i++) {
+            for (int j = 0; j < words.size(); j++) {
+                //System.out.println(j + " " + i);
+                System.out.print(words.get(j).charAt(i) + " | ");
+            }
+            System.out.println(" ");
+        }
+        System.out.println(" ");
+
+
+        return outputArray;
 
     }
 }
