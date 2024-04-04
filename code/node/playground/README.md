@@ -25,10 +25,13 @@ npm install --save-dev jest
 ### Routes
 
 ### REST API Respones
+```
 res.status(500).json({})    
 res.download("path/to/file.img")    
 res.render("index")    
+```
 
+```
 var apiOutcome = {    
     data: {},    
     message: "",    
@@ -37,6 +40,7 @@ var apiOutcome = {
     errors: [],    
     currentUser: "currentUser"    
 }  
+```
 
 ### Function Inputs
 #### Function 1A: Add Covenants to each Facility ####
