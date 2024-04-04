@@ -3,11 +3,11 @@
 ### Prerequisites
 
 ### Installation 
-npm init -y
-npm install express
-npm install --save-dev nodemon
-npm install cors
-npm install --save-dev jest
+npm init -y  
+npm install express  
+npm install --save-dev nodemon   
+npm install cors    
+npm install --save-dev jest    
 
 
 ### File Structure
@@ -25,18 +25,18 @@ npm install --save-dev jest
 ### Routes
 
 ### REST API Respones
-res.status(500).json({})
-res.download("path/to/file.img")
-res.render("index")
+res.status(500).json({})    
+res.download("path/to/file.img")    
+res.render("index")    
 
-var apiOutcome = {
-    data: {},
-    message: "", 
-    success: false,
-    statusCode: 500,
-    errors: [], 
-    currentUser: "currentUser"
-}
+var apiOutcome = {    
+    data: {},    
+    message: "",    
+    success: false,    
+    statusCode: 500,   
+    errors: [],    
+    currentUser: "currentUser"    
+}  
 
 ### Function Inputs
 #### Function 1A: Add Covenants to each Facility ####
