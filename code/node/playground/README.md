@@ -7,6 +7,7 @@ npm init -y
 npm install express
 npm install --save-dev nodemon
 npm install cors
+npm install --save-dev jest
 
 
 ### File Structure
@@ -15,31 +16,12 @@ npm install cors
         App 	               
          |
     ├── Classes             
-    │   ├── Covenant.py              
-    │   ├── DataFunctions.py             
-    │   ├── Facility.py             
-    │   ├── Loan.py           
+    │   ├── Post.py                       
     ├── Functions 							 
-    ├── Intuit- Discussion Questions     
-    ├── Main.py 						 
+    ├── app.js    					 
     ├── README.MD
     └── ...
 
-
-    .
-    ├── ...
-    ├── classes 	                   
-    │   ├── Assignments.py               
-    │   ├── Covenant.py              
-    │   ├── DataFunctions.py             
-    │   ├── Facility.py             
-    │   ├── Loan.py           
-    ├── data 							 
-    ├── Intuit- Discussion Questions     
-    ├── Main.py 						 
-    ├── README.MD
-    └── ...
- 
 ### Routes
 
 ### REST API Respones
