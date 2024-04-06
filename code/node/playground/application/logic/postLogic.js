@@ -1,4 +1,5 @@
-//const db = require('../functions/conn');
+const db = require('../functions/conn');
+const Post = require('../classes/Post');
 
 /*
 FUNCTIONS A: All Routes Related to Getting Posts
@@ -34,10 +35,32 @@ async function getSinglePost(req, res) {
 //FUNCTIONS B: All Routes Related to Post Actions
 //Function B1: Create a Post 
 //Function B2: Update a Post 
+async function updateSinglePost(req, res) {	
+	const postFrom = req.body.postFrom 
+	const postTo = req.body.postTo 
+	const postCaption = req.body.postCaption 
+	
+	var postOutcome = {
+		data: {
+			postFrom: postFrom,
+			postTo: postTo,
+			postCaption: postCaption
+		},
+		message: "Post was updated with caption " + postCaption, 
+		success: true,
+		statusCode: 200,
+		errors: [], 
+		currentUser: "davey"
+	}
+
+    res.json(postOutcome)
+
+}
+
 
 //Function B3: Delete a Post
 async function deleteSinglePost(req, res) {
-	const postID = req.params_post_id;
+	const postID = req.params.post_id;
 	
 	var postOutcome = {
 		data: {
@@ -54,4 +77,4 @@ async function deleteSinglePost(req, res) {
 
 }
 
-module.exports = {  getSinglePost, deleteSinglePost };
+module.exports = {  getSinglePost, deleteSinglePost, updateSinglePost };

@@ -5,9 +5,10 @@
 ### Installation 
 npm init -y  
 npm install express  
-npm install --save-dev nodemon   
-npm install cors    
 npm install --save-dev jest    
+npm install --save-dev nodemon   
+npm install --save-dev jest
+npm install cors    
 npm install jsonwebtoken    
 npm install env    
 
@@ -42,6 +43,9 @@ var apiOutcome = {
     currentUser: "currentUser"    
 }  
 ```
+
+### Testing
+npm test --coverage
 
 ### Function Inputs
 #### Function 1A: ####

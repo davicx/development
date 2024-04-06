@@ -1,7 +1,6 @@
+const db = require('./../functions/conn');
 
 
-/*
-const db = require('./../conn');
 
 class Post {
     constructor(postID) {
@@ -192,6 +191,3 @@ class Post {
 
 
 module.exports = Post;
-
-
-*/

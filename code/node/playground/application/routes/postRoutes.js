@@ -36,15 +36,18 @@ postRouter.post('/post', authMiddleware.verifyUser, function(req, res) {
 	//const postTo = req.body.postTo 
 	//const postCaption = req.body.postCaption 
 	console.log(req.body)
-    //posts.postText(req, res);
+
 	res.json({postCaption: "postCaption"})
 })
 
 //Function B2: Update a Post 
+postRouter.put("/post", authMiddleware.verifyUser, function(req, res) {
+	posts.updateSinglePost(req, res);
+})
 
 //Function B3: Delete a Post
 postRouter.delete("/posts/:post_id", authMiddleware.verifyUser, function(req, res) {
-	posts.deleteSinglePost(postID);
+	posts.deleteSinglePost(req, res);
 })
 
 module.exports = postRouter;

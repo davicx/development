@@ -7,6 +7,8 @@ const cors = require('cors')
 
 //Application 
 const posts = require('./application/routes/postRoutes.js'); 
+const user = require('./application/routes/userRoutes.js'); 
+app.use(user);
 app.use(posts);
 
 

@@ -1,21 +1,32 @@
 const express = require('express')
-const postRouter = express.Router();
+const userRouter = express.Router();
 const user = require('../logic/postLogic')
 const cors = require('cors')
+const functions = require('../functions/functions');
+//const friendFunctions = require('../functions/friendFunctions');
+
 
 /*
 FUNCTIONS A: All Routes Related to Getting Users
 	1) Function A1: Get Users
 */
 
+userRouter.post('/login', function(req, res) {
 
-userRouter.post('/users', function(req, res) {
-	//const postFrom = req.body.postFrom 
-	//const postTo = req.body.postTo 
-	//const postCaption = req.body.postCaption 
-	console.log(req.body)
-    //posts.postText(req, res);
-	res.json({postCaption: "postCaption"})
+
+    // Validate username
+    // Validate password
+    // Save user to database
+
+    const answer = functions.sum(2,2)
+    console.log(answer)
+    const validPassword = functions.validatePassword(true)
+
+    if (validPassword) {
+      res.json({message: "Valid User"})
+    } else {
+      res.json({error: "Invalid Password"})
+    }
 })
 
 module.exports = userRouter;
