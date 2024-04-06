@@ -8,7 +8,8 @@ npm install express
 npm install --save-dev nodemon   
 npm install cors    
 npm install --save-dev jest    
-
+npm install jsonwebtoken    
+npm install env    
 
 ### File Structure
     .
@@ -43,10 +44,10 @@ var apiOutcome = {
 ```
 
 ### Function Inputs
-#### Function 1A: Add Covenants to each Facility ####
+#### Function 1A: ####
 
  
-#### Function 1E: Process all Loans ####
+#### Function 1B: ####
  
 
 ### Questions

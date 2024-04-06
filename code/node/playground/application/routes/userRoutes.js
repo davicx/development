@@ -1,6 +1,7 @@
 const express = require('express')
 const postRouter = express.Router();
 const user = require('../logic/postLogic')
+const cors = require('cors')
 
 /*
 FUNCTIONS A: All Routes Related to Getting Users
