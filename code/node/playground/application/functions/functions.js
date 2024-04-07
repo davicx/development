@@ -1,5 +1,3 @@
-//const Functions = require('../functions/functions');
-//const friendFunctions = require('../functions/friendFunctions');
 
 function validatePassword() {
     return true
