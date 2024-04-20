@@ -1,0 +1,5 @@
+#Constants
+ALPHA = 0.038
+BETA = 0.6667
+INITIAL = 5
+TAU = 0.08
