@@ -2,11 +2,11 @@
 
 ### Project Setup and Modules
 * The project requires [Python](https://www.python.org/) 3.4 or above 
-* It also uses [Pandas](https://pypi.org/project/pandas/#installation-from-sources)to work with our data and csv files    
+* It also uses [Pandas](https://pypi.org/project/pandas/#installation-from-sources) to work with our data and csv files    
 * This project was built on a mac please reach out with any windows specific questions. 
 
 ### Installation and Running
-STEP 1: Python 
+STEP 1: Check Python Installation
 From your terminal check that you have Python by running `python -V`   
 You should see a message like Python 3.9.6
 
@@ -42,13 +42,16 @@ The project structure is fairly simple.
 ### Testing
 python -m unittest test_utils.py
 
-### Function Inputs
-#### Function 1A: Add Covenants to each Facility ####
-https://docs.python.org/3/tutorial/floatingpoint.html
- 
-#### Function 1E: Process all Loans ####
- 
-### https://github.com/googleapis/google-api-python-client/blob/main/tests/test__auth.py
+### Function Inputs (utils.py)
+#### Function A1: Calculate Salmon Growth as a Function of Water Temperature ####
+This function is the main equation to calculate salmon growth per day based on water temperature.
+
+#### Function B1: Read in CSV File ####
+This function is used to read in our data.
+
+#### Function B2: Adjust for Significant Figures ####
+This function adjusts for significant figures and makes sure we do not add to many.
+
 ### Questions
 Please feel free to reach out if there are any issues
 vasquezd@oregonstate.edu
