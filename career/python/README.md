@@ -5,28 +5,29 @@
 * It also uses [Pandas](https://pypi.org/project/pandas/#installation-from-sources) to work with our data and csv files    
 * This project was built on a mac please reach out with any windows specific questions. 
 
+
 ### Installation and Running
-#### STEP 1: Check Python Installation ####   
+#### Step 1: Check Python Installation ####   
 From your terminal check that you have Python by running     
 `python -V`   
 You should see a message like Python 3.9.6
 
-#### STEP 2: Install Pandas ####    
+#### Step 2: Install Pandas ####    
 You should be able to use pip (which comes with your Python installation) and    
 `run pip install pandas` 
 
-#### STEP 3: Install an IDE ####    
+#### Step 3: Install an IDE ####    
 It is recommended to use [Visual Studio Code](https://code.visualstudio.com/}) 
 
-#### STEP 4: Set up path to csv data ####    
+#### Step 4: Set up path to csv data ####    
 Make sure to set the path to the csv files when you start the program. 
 You do this in the file main.py in the following line of code. 
 `data = utils.open_csv(salmon_file, optionalFilePath = "set/this/path/data.csv")`  
 This is somewhat optional as we will attempt to first run this using pathlib so it is a backup for finding the data.
 
-#### STEP 5: Run Program ####      
+#### Step 5: Run Program ####      
 Open the main.py file and you can run this. One simple way from VS Code is form the header menu click the Run Button and then click Run without Debugging.
- 
+
 
 ### Project Structure
 The project structure is fairly simple.  
@@ -52,12 +53,14 @@ The project structure is fairly simple.
     ├── test_utils.py
     └── ...
 
+
 ### Testing
 To run our simple unit tests navigate in your terminal to the main project file.   
 You can type ls to see what files and folders are here and you should see files including main.py and test_utils.py.    
 From this folder you can run the following command and should see all unit tests passing.    
 
 `python -m unittest test_utils.py` 
+
 
 ### Function Inputs (utils.py)
 #### Function A1: Calculate Salmon Growth as a Function of Water Temperature ####
@@ -68,6 +71,7 @@ This function is used to read in our data.
 
 #### Function B2: Adjust for Significant Figures ####
 This function adjusts for significant figures and makes sure we do not add to many.
+
 
 ### Questions
 Please feel free to reach out if there are any issues
