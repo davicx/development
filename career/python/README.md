@@ -8,7 +8,11 @@ Make sure to set the path to the csv files when you start the program.
 
 ### Project Structure
 The project structure is fairly simple.   
-   .
+**Main.py** is the entry point into the application and contains the salmon_growth() function which performs the logic.   
+**Utils.py** is the logic needed by the main program and test_utils.py tests our code.  
+**Data** The csv data is stored in the excel folder. There are three main files.  
+
+    .
     ├── ...    
     ├── classes              
     │   ├── Salmon.py                     
@@ -24,7 +28,6 @@ The project structure is fairly simple.
     ├── utils.py
     ├── test_utils.py
     └── ...
-
 
 ### Testing
 python -m unittest test_utils.py
