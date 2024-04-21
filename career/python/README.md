@@ -7,11 +7,13 @@
 
 ### Installation and Running
 STEP 1: Check Python Installation
-From your terminal check that you have Python by running `python -V`   
+From your terminal check that you have Python by running     
+`python -V`   
 You should see a message like Python 3.9.6
 
 STEP 2: Install Pandas 
-You should be able to use pip (which comes with your Python installation) and `run pip install pandas` 
+You should be able to use pip (which comes with your Python installation) and    
+`run pip install pandas` 
 
 STEP 3: Install an IDE 
 It is recommended to use [Visual Studio Code](https://code.visualstudio.com/}) 
