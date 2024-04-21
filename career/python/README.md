@@ -27,7 +27,8 @@ Open the main.py file and you can run this. One simple way from VS Code is form 
  
 
 ### Project Structure
-The project structure is fairly simple.   
+The project structure is fairly simple.  
+ 
 **Main.py** is the entry point into the application and contains the salmon_growth() function which performs the logic.   
 **Utils.py** is the logic needed by the main program and test_utils.py tests our code.  
 **Data** The csv data is stored in the excel folder. There are three main files. Temperature_series.csv which reads the waw data the program uses. Temperature_series_error.csv which is test data to throw an error. Temperature_series_solved.csv which is hand solved data to compare our answer with.
