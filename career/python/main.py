@@ -3,36 +3,40 @@ import time
 import sys
 import pathlib
 from constants import constants
-from functions import biology_utils
-from functions import utils
+import utils
 
-file_name = "temperature_series.csv"
 
 def main():
-    hello()
+    #salmon_csv = "temperature_series.csv"
+    salmon_csv = "temperature_series_error.csv"
+    starting_weight = 5
+    salmon_growth(starting_weight, salmon_csv)
     
-def hello():
-    print("hello")
-    biology_utils.calc_weight(5, 8.447)
+def salmon_growth(initial_weight, salmon_file):
     
-    # Attemp to read in data 
-    data = utils.open_csv(optionalFilePath = "/Users/david/Desktop/David/www/development/career/python/excel/temperature_series.csv")
-    
+    # Attemp to read in data csv_file
+    data = utils.open_csv(salmon_file, optionalFilePath = "/Users/david/Desktop/David/www/development/career/python/excel/" + salmon_file)
+ 
     for index, row in data.iterrows():
-        day = row['Day #']
-        date = row['Day/Month']
-        temp = row['Temp']
+        try:
+            day = row['Day #']
+            date = row['Day/Month']
+            temp = row['Temp']
+        except KeyError as ke:
+            print("Please double check that the headings in the temperature_series.csv in the excel folder. They should match the following format")
+            print("Day # | Day/Month | Temp")
+            sys.exit(1)
     
         if index == 0:
-            current_weight = biology_utils.calc_weight(constants.INITIAL, temp)
+            current_weight = utils.calc_weight(initial_weight, temp)
             print(day, " ", date, " ", temp, "|| ", current_weight)
         else:
-            current_weight = biology_utils.calc_weight(current_weight, temp)
+            current_weight = utils.calc_weight(current_weight, temp)
             #print(day, " ", date, " ", temp, "|| ", current_weight)
         
-        time.sleep(.01)
+        #time.sleep(.01)
         if(day == 365):
-            print("START ", constants.INITIAL)
+            print("START ", initial_weight)
             print("FINAL ", current_weight)
             break
     print(" ")
@@ -40,6 +44,8 @@ def hello():
 
 if __name__ == "__main__":
     main()
+
+
 
 '''
 
