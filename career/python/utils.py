@@ -37,7 +37,7 @@ def calc_weight(weight_cur, temp_cur):
     #print(float(format(weight_new_raw, '.','g')))
 
 
-    return weight_new_raw
+    return weight_new
 
     
 

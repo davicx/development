@@ -6,46 +6,24 @@
 
 Make sure to set the path to the csv files when you start the program. 
 
-### Front End Structure
+### Project Structure
     .
-    ├── ...
-        App 	                   
-         |
-      Photo App
-         |
-     ────────────────
-     |               | 
- Photo Search        Photo List
-                        | 
-                    Photo Card (s)
-
-       
-       ├── Assignments.py               
-    │   ├── Covenant.py              
-    │   ├── DataFunctions.py             
-    │   ├── Facility.py             
-    │   ├── Loan.py           
-    ├── data 							 
-    ├── Intuit- Discussion Questions     
-    ├── Main.py 						 
-    ├── README.MD
+    ├── ...    
+    ├── classes              
+    │   ├── Salmon.py                     
+    ├── constants 	
+        ├── constants.py      						 
+    ├── excel    
+        ├── temperature_series.csv
+        ├── temperature_series_error.csv
+        ├── temperature_series_solved.csv					 
+    ├── hello.py
+    ├── simple.py
+    ├── main.py
+    ├── utils.py
+    ├── test_utils.py
     └── ...
 
-
-    .
-    ├── ...
-    ├── classes 	                   
-    │   ├── Assignments.py               
-    │   ├── Covenant.py              
-    │   ├── DataFunctions.py             
-    │   ├── Facility.py             
-    │   ├── Loan.py           
-    ├── data 							 
-    ├── Intuit- Discussion Questions     
-    ├── Main.py 						 
-    ├── README.MD
-    └── ...
- 
 ### Testing
 python -m unittest test_utils.py
 
