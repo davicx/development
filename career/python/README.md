@@ -40,7 +40,11 @@ The project structure is fairly simple.
     └── ...
 
 ### Testing
-python -m unittest test_utils.py
+To run our simple unit tests navigate in your terminal to the main project file.   
+You can type ls to see what files and folders are here and you should see files including main.py and test_utils.py.    
+From this folder you can run the following command and should see all unit tests passing.    
+
+`python -m unittest test_utils.py` 
 
 ### Function Inputs (utils.py)
 #### Function A1: Calculate Salmon Growth as a Function of Water Temperature ####
