@@ -12,7 +12,6 @@ The project structure is fairly simple.
 **Utils.py** is the logic needed by the main program and test_utils.py tests our code.  
 **Data** The csv data is stored in the excel folder. There are three main files.  
 
-
     .
     ├── ...    
     ├── classes              
