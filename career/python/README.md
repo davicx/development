@@ -1,6 +1,8 @@
 ## Fish Weight Simulation
 
-### Prerequisites
+### Project Setup and Modules
+* The project requires Python 3.4 or above 
+https://pypi.org/project/pandas/#installation-from-sources
 
 ### Installation and Running
 
