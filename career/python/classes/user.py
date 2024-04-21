@@ -1,5 +1,5 @@
 #PART 2: File Paths for each user
-currentUser = UserClass(current_user, user_id)
+#currentUser = UserClass(current_user, user_id)
 
 class UserClass:
     def __init__(self, current_user, user_id):

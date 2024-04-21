@@ -1,17 +1,22 @@
 import pandas as pd
 import time
+import math
 import sys
+import re
 import pathlib
 from constants import constants
 import utils
 
 
 def main():
-    #salmon_csv = "temperature_series.csv"
-    salmon_csv = "temperature_series_error.csv"
+    salmon_csv = "temperature_series.csv"
+    #salmon_csv = "temperature_series_error.csv"
     starting_weight = 5
     salmon_growth(starting_weight, salmon_csv)
-    
+    #nums = [199.8, 20., 20.30]
+    #num_sig_figs = sig_figs(nums)
+    #print(num_sig_figs)
+
 def salmon_growth(initial_weight, salmon_file):
     
     # Attemp to read in data csv_file
@@ -28,9 +33,11 @@ def salmon_growth(initial_weight, salmon_file):
             sys.exit(1)
     
         if index == 0:
+            #print(type(temp))
             current_weight = utils.calc_weight(initial_weight, temp)
             print(day, " ", date, " ", temp, "|| ", current_weight)
         else:
+            #print(type(temp))
             current_weight = utils.calc_weight(current_weight, temp)
             #print(day, " ", date, " ", temp, "|| ", current_weight)
         

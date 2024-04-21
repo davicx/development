@@ -1,10 +1,34 @@
 import unittest
-#from constants import constants
-from functions import biology_utils
+import pandas as pd
+import utils
 
-class TestBiologyUtils(unittest.TestCase):
+'''
+TEST A: All Biology Related Functions  
+	1) Test A1: Calculate Salmon Growth as a Function of Water Temperature
+
+TEST B: All Functions Related to Common Utilities  
+	1) Test B1: Read in CSV File
+    2) Test B2: Adjust for Significant Figures 
+'''
+
+
+
+class TestUtils(unittest.TestCase): 
+    #Test A1: Calculate Salmon Growth as a Function of Water Temperature
     def test_calc_weight(self):
-        self.assertEqual(biology_utils.calc_weight(5, 8.447), 5.21840658968069)
+        message = "Test A1: The calculation was correct for our weight_new function"
+        self.assertEqual(utils.calc_weight(5, 8.447), 5.21840658968069, message)
+    
+    #Test B1: Read in CSV File
+    def test_open_csv(self):
+        data = utils.open_csv("temperature_series.csv", "")
+        message = "Test B1: We were able to access the test data"
+        self.assertEqual(data.loc[0][0], 1, message)
+
+    #Test B2: Adjust for Significant Figures 
+
+
+
 
     '''
 

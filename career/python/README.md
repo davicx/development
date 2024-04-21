@@ -47,11 +47,11 @@ Make sure to set the path to the csv files when you start the program.
     └── ...
  
 ### Testing
-python -m unittest test_biology_utils.py
+python -m unittest test_utils.py
 
 ### Function Inputs
 #### Function 1A: Add Covenants to each Facility ####
-
+https://docs.python.org/3/tutorial/floatingpoint.html
  
 #### Function 1E: Process all Loans ####
  
