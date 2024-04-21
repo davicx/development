@@ -13,8 +13,18 @@ You should see a message like Python 3.9.6
 STEP 2: Install Pandas 
 You should be able to use pip (which comes with your Python installation) and `run pip install pandas` 
 
-STEP 3: Set up path to csv data
+STEP 3: Install an IDE 
+It is recommended to use [Visual Studio Code](https://code.visualstudio.com/}) 
+
+STEP 4: Set up path to csv data
 Make sure to set the path to the csv files when you start the program. 
+You do this in the file main.py in the following line of code. 
+`data = utils.open_csv(salmon_file, optionalFilePath = "set/this/path/data.csv")`  
+This is somewhat optional as we will attempt to first run this using pathlib so it is a backup for finding the data.
+
+STEP 5: Run Program
+Open the main.py file and you can run this. One simple way from VS Code is form the header menu click the Run Button and then click Run without Debugging.
+ 
 
 ### Project Structure
 The project structure is fairly simple.   
