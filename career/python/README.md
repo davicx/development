@@ -11,10 +11,7 @@ The project structure is fairly simple.
 **Main.py** is the entry point into the application and contains the salmon_growth() function which performs the logic.   
 **Utils.py** is the logic needed by the main program and test_utils.py tests our code.  
 **Data** The csv data is stored in the excel folder. There are three main files including the following:  
-temperature_series.csv- Raw data the program uses    
-temperature_series_error.csv- Test data to throw an error     
-temperature_series_solved.csv- Hand solved data to compare our results with    
-  
+
   .
     ├── ...    
     ├── classes              
