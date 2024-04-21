@@ -1,11 +1,19 @@
 ## Fish Weight Simulation
 
 ### Project Setup and Modules
-* The project requires Python 3.4 or above 
-https://pypi.org/project/pandas/#installation-from-sources
+* The project requires [Python](https://www.python.org/) 3.4 or above 
+* It also uses [Pandas](https://pypi.org/project/pandas/#installation-from-sources)to work with our data and csv files    
+* This project was built on a mac please reach out with any windows specific questions. 
 
 ### Installation and Running
+STEP 1: Python 
+From your terminal check that you have Python by running `python -V`   
+You should see a message like Python 3.9.6
 
+STEP 2: Install Pandas 
+You should be able to use pip (which comes with your Python installation) and `run pip install pandas` 
+
+STEP 3: Set up path to csv data
 Make sure to set the path to the csv files when you start the program. 
 
 ### Project Structure
