@@ -25,6 +25,7 @@ The project structure is fairly simple.
     ├── test_utils.py
     └── ...
 
+### Project Structure File Overview
 **Main.py** is the entry point into the application and contains the salmon_growth() function which performs the logic.   
 **Utils.py** is the logic needed by the main program and test_utils.py tests our code.  
 **Data** The csv data is stored in the excel folder. There are three main files.  
