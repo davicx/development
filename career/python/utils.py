@@ -1,5 +1,7 @@
 import math
+from decimal import *
 import pandas as pd
+import numpy as np
 import sys
 import re
 from pathlib import Path
@@ -16,7 +18,56 @@ FUNCTIONS B: All Functions Related to Common Utilities
 
 #FUNCTIONS A: All Biology Related Functions  
 #Function A1: Calculate Salmon Growth as a Function of Water Temperature
-def calc_weight(weight_cur, temp_cur):
+def calc_weight(weight_cur_raw, temp_cur_raw):
+
+    #Calculate days growth from formula
+    #power
+    weight_cur = Decimal(weight_cur_raw)
+    temp_cur = Decimal(temp_cur_raw)
+
+    w_beta = Decimal(math.pow(weight_cur, constants.BETA))
+    #w_beta = Decimal.power(weight_cur, constants.BETA)
+    #temp = math.exp(temp_cur * constants.TAU)
+    temp = Decimal.exp(temp_cur * constants.TAU)
+    weight = constants.ALPHA * w_beta
+    weight_new_raw = weight * temp + weight_cur
+    print("RAW ", weight_new_raw)
+
+    #print(type(constants.BETA))
+    #print(type(constants.TAU))
+    #print(type(temp))
+    #print(type(weight))
+    #print(type(weight_new_raw))
+
+    #Adjust for significant figures
+    current_sig_figs = sig_figs([weight_new_raw, temp_cur_raw])
+    #weight_new = round(weight_new_raw, current_sig_figs)
+    #print(current_sig_figs, " ", weight_new_raw)
+    #print()
+    #print(format(weight_new_raw, '.4g'))
+    #sig_fig_formula = str('.',  current_sig_figs, 'g')
+    #weight_new = float(format(weight_new_raw, sig_fig_formula))
+    #print(weight_new)
+    #print("")
+    #print(float(format(weight_new_raw, '.','g')))
+    
+    #ONE OF THESE MAY WORK
+    getcontext().prec = 10
+
+    mytest = np.format_float_positional(np.float16(weight_new_raw), unique=False, precision=3)
+    print("Rounded")
+    print(mytest)
+
+
+
+
+
+
+    return weight_new_raw
+
+    
+#Function A1: Calculate Salmon Growth as a Function of Water Temperature
+def calc_weight_float(weight_cur, temp_cur):
 
     #Calculate days growth from formula
     w_beta = math.pow(weight_cur, constants.BETA)
@@ -27,8 +78,8 @@ def calc_weight(weight_cur, temp_cur):
     #Adjust for significant figures
     current_sig_figs = sig_figs([weight_new_raw, temp_cur])
     #weight_new = round(weight_new_raw, current_sig_figs)
-    print(weight_new_raw)
-    print(current_sig_figs)
+    #print(current_sig_figs, " ", weight_new_raw)
+    #print()
     #print(format(weight_new_raw, '.4g'))
     #sig_fig_formula = str('.',  current_sig_figs, 'g')
     #weight_new = float(format(weight_new_raw, sig_fig_formula))
@@ -37,7 +88,7 @@ def calc_weight(weight_cur, temp_cur):
     #print(float(format(weight_new_raw, '.','g')))
 
 
-    return weight_new
+    return weight_new_raw
 
     
 
@@ -80,7 +131,7 @@ def sig_figs(nums):
 
         #Does not contain a Decimal so we can count all the digits
         else:
-            print(string_num, " does not have period")
+            #print(string_num, " does not have period")
             num_length = len(string_num)
 
         min_figs = min(min_figs, num_length)

@@ -6,16 +6,32 @@ import re
 import pathlib
 from constants import constants
 import utils
-
+from decimal import *
+import pandas as pd
+import numpy as np
 
 def main():
     salmon_csv = "temperature_series.csv"
     #salmon_csv = "temperature_series_error.csv"
     starting_weight = 5
-    salmon_growth(starting_weight, salmon_csv)
+    #salmon_growth(starting_weight, salmon_csv)
+    num = 12345.54321
+
+    #print(num)
+ 
+    #new_num = np.format_float_positional(np.float16(num), unique=False, precision=8)
+    #print(new_num)
     #nums = [199.8, 20., 20.30]
     #num_sig_figs = sig_figs(nums)
     #print(num_sig_figs)
+    x = 1039.48564
+    round_to = "6"
+    round_amt = '.' + round_to + 'g'
+    rounded = format(x, round_amt) 
+    round_float = float(rounded)
+    print(round_float)
+
+   # print(f"x is approximately {x:5g}")
 
 def salmon_growth(initial_weight, salmon_file):
     
@@ -33,13 +49,13 @@ def salmon_growth(initial_weight, salmon_file):
             sys.exit(1)
     
         if index == 0:
-            #print(type(temp))
             current_weight = utils.calc_weight(initial_weight, temp)
             print(day, " ", date, " ", temp, "|| ", current_weight)
         else:
-            #print(type(temp))
             current_weight = utils.calc_weight(current_weight, temp)
-            #print(day, " ", date, " ", temp, "|| ", current_weight)
+            print(day, " ", date, " ", temp, "|| ", current_weight)
+            print(" ")
+        time.sleep(.01)
         
         #time.sleep(.01)
         if(day == 365):

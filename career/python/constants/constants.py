@@ -1,4 +1,7 @@
+import math
+from decimal import *
+
 #Constants
-ALPHA = 0.038
-BETA = 0.6667
-TAU = 0.08
+ALPHA = Decimal(0.038)
+BETA = Decimal(0.6667)
+TAU = Decimal(0.08)
