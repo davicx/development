@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="algorithms.testing.PlaygroundTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-04T23:17:35" hostname="10-249-188-101.wireless.oregonstate.edu" time="0.468">
+  <properties/>
+  <testcase name="sum()" classname="algorithms.testing.PlaygroundTest" time="0.468"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,4 +1,21 @@
-Main.java
- Main
+Notes.java
+ Notes
 leetcode/PrintWordsVertically.java
  leetcode.PrintWordsVertically
+Master.java
+ Master
+ SimpleUser
+algorithms/SimpleBinaryTree.java
+ algorithms.SimpleBinaryTree
+Main.java
+ Main
+simple/User.java
+ simple.User
+tools/SortObjects.java
+ tools.SortObjects
+algorithms/testing/Playground.java
+ algorithms.testing.Playground
+tools/CountWords.java
+ tools.CountWords
+tools/SortArrays.java
+ tools.SortArrays
