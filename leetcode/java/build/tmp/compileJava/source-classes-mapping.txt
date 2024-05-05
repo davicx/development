@@ -2,20 +2,43 @@ Notes.java
  Notes
 leetcode/PrintWordsVertically.java
  leetcode.PrintWordsVertically
-Master.java
- Master
- SimpleUser
-algorithms/SimpleBinaryTree.java
- algorithms.SimpleBinaryTree
-Main.java
- Main
 simple/User.java
  simple.User
-tools/SortObjects.java
- tools.SortObjects
-algorithms/testing/Playground.java
- algorithms.testing.Playground
+algorithms/SimpleBinaryTree.java
+ algorithms.SimpleBinaryTree
+simple/SimpleInheritance.java
+ simple.Hero
+ simple.Person
+ simple.SimpleInheritance
 tools/CountWords.java
  tools.CountWords
 tools/SortArrays.java
  tools.SortArrays
+simple/SimpleInnerClass.java
+ simple.OuterClass
+ simple.OuterClass$InnerClass
+ simple.OuterClass$StaticInnerClass
+ simple.SimpleInnerClass
+Main.java
+ Main
+simple/SimpleAbstract.java
+ simple.Elf
+ simple.SimpleAbstract
+ simple.WoodElf
+tools/MapsReduceStream.java
+ tools.MapsReduceStream
+tools/SortObjects.java
+ tools.SortObjects
+Master.java
+ Master
+ SimpleUser
+leetcode/LongestPalindrome.java
+ leetcode.LongestPalindrome
+leetcode/SimpleLRUCache.java
+ leetcode.ItemInt
+ leetcode.LRUCache
+ leetcode.SimpleLRUCache
+algorithms/testing/Playground.java
+ algorithms.testing.Playground
+leetcode/SortCharsAscending.java
+ leetcode.SortCharsAscending

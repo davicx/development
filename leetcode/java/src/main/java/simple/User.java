@@ -5,6 +5,11 @@ public class User {
     public String userName;
     private String location;
 
+    public User(Integer inputUserID, String inputUserName) {
+        this.userID = inputUserID;
+        this.userName = inputUserName;
+    }
+
     //Get User ID
     public void setUserID(Integer userID) {
         this.userID = userID;
@@ -13,12 +18,6 @@ public class User {
     //Get User ID
     public Integer getUserID() {
         return userID;
-    }
-
-
-    public User(Integer inputUserID, String inputUserName) {
-        this.userID = inputUserID;
-        this.userName = inputUserName;
     }
 
     //Get Username

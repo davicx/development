@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="algorithms.testing.PlaygroundTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-04T23:17:35" hostname="10-249-188-101.wireless.oregonstate.edu" time="0.468">
+<testsuite name="algorithms.testing.PlaygroundTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-05-05T22:48:46" hostname="10-249-188-101.wireless.oregonstate.edu" time="0.588">
   <properties/>
-  <testcase name="sum()" classname="algorithms.testing.PlaygroundTest" time="0.468"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="mockingLearning()" classname="algorithms.testing.PlaygroundTest" time="0.543"/>
+  <testcase name="learnVerify()" classname="algorithms.testing.PlaygroundTest" time="0.038"/>
+  <testcase name="sum()" classname="algorithms.testing.PlaygroundTest" time="0.001"/>
+  <testcase name="callSum()" classname="algorithms.testing.PlaygroundTest" time="0.001"/>
+  <testcase name="learnSpy()" classname="algorithms.testing.PlaygroundTest" time="0.004"/>
+  <system-out><![CDATA[one
+100
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

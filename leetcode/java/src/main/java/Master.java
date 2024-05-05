@@ -133,7 +133,14 @@ public class Master {
     }
 
     //METHOD
-    //Method 1: Count Words
+    //Method 1: Simple Method
+    public static String sayHi (String yourName) {
+        String greeting = "hello " + yourName;
+
+        return greeting;
+    }
+
+    //Method 2: Count Words
     public static Map<String, Integer> countWords(String[] words) {
 
         //Hash Map with Default Count
@@ -149,7 +156,7 @@ public class Master {
         return wordMap;
     }
 
-    //Method 2: Loop over String
+    //Method 3: Loop over String
     public static int loopOverString(String s){
         for (int i = 0; i < s.length(); i++) {
             for (int j = i; j < s.length(); j++) {

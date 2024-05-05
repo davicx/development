@@ -14,7 +14,24 @@ public class Playground {
 
         return answer;
     }
+
+    //Method
+    public String whenLearning(String sayWhen) {
+        return sayWhen;
+    }
+
+    public String learnVerify(String stringToSend) {
+        System.out.println("Step 1: Learn Verify was called");
+        calledByLearnVerify(stringToSend);
+        return "Step 3: learnVerify return output";
+    }
+
+    public void calledByLearnVerify(String cameFromLearnVerify) {
+        System.out.println("Step 2: The method calledByLearnVerify was called from learnVerify with this input " + cameFromLearnVerify);
+    }
 }
+
+
 
 
 /*
