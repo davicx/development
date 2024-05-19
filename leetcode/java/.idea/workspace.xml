@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07a33f6a-eae5-4ac6-9bf8-528cc40c5de7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/SimpleMath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/test/java/SimpleMathTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/node/tutorials/sam/uploadImagesDirectlytoAWSfromFrontEnd/s3-direct-upload-master/back/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/node/tutorials/sam/uploadImagesDirectlytoAWSfromFrontEnd/s3-direct-upload-master/back/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/node/tutorials/sam/uploadImagesDirectlytoAWSfromFrontEnd/s3-direct-upload-master/back/s3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/node/tutorials/sam/uploadImagesDirectlytoAWSfromFrontEnd/s3-direct-upload-master/back/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/node/tutorials/sam/uploadImagesDirectlytoAWSfromFrontEnd/s3-direct-upload-master/front/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/node/tutorials/sam/uploadImagesDirectlytoAWSfromFrontEnd/s3-direct-upload-master/front/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/node/tutorials/sam/uploadImagesDirectlytoAWSfromFrontEnd/s3-direct-upload-master/front/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Master.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Master.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
