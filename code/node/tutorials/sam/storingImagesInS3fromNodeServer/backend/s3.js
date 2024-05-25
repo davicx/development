@@ -45,3 +45,24 @@ function getFileStream(fileKey) {
 exports.getFileStream = getFileStream
 
 
+
+/*  
+const s3 = new S3({
+    region: region,
+    accessKeyId: accessKeyId,
+    secretAccessKey: secretAccessKey
+  })
+*/
+
+/*
+//Download from S3
+function getFileStream(fileKey) {
+const downloadParams = {
+    Key: fileKey,
+    Bucket: bucketName
+}
+
+return s3.getObject(downloadParams).createReadStream()
+}
+exports.getFileStream = getFileStream
+  */
