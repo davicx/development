@@ -1,44 +1,46 @@
-Notes.java
- Notes
-leetcode/PrintWordsVertically.java
- leetcode.PrintWordsVertically
-simple/User.java
- simple.User
-algorithms/SimpleBinaryTree.java
- algorithms.SimpleBinaryTree
+algorithms/testing/Playground.java
+ algorithms.testing.Playground
+simple/SimpleAbstract.java
+ simple.Elf
+ simple.SimpleAbstract
+ simple.WoodElf
 simple/SimpleInheritance.java
  simple.Hero
  simple.Person
  simple.SimpleInheritance
-tools/CountWords.java
- tools.CountWords
-tools/SortArrays.java
- tools.SortArrays
+tools/SortObjects.java
+ tools.SortObjects
+leetcode/PrintWordsVertically.java
+ leetcode.PrintWordsVertically
+simple/User.java
+ simple.User
+Notes.java
+ Notes
+Main.java
+ Main
 simple/SimpleInnerClass.java
  simple.OuterClass
  simple.OuterClass$InnerClass
  simple.OuterClass$StaticInnerClass
  simple.SimpleInnerClass
-Main.java
- Main
-simple/SimpleAbstract.java
- simple.Elf
- simple.SimpleAbstract
- simple.WoodElf
-tools/MapsReduceStream.java
- tools.MapsReduceStream
-tools/SortObjects.java
- tools.SortObjects
+leetcode/LongestPalindrome.java
+ leetcode.LongestPalindrome
+leetcode/SortCharsAscending.java
+ leetcode.SortCharsAscending
 Master.java
  Master
  SimpleUser
-leetcode/LongestPalindrome.java
- leetcode.LongestPalindrome
+tools/MapsReduceStream.java
+ tools.MapsReduceStream
+tools/CountWords.java
+ tools.CountWords
+tools/SortArrays.java
+ tools.SortArrays
+algorithms/SimpleBinaryTree.java
+ algorithms.SimpleBinaryTree
 leetcode/SimpleLRUCache.java
  leetcode.ItemInt
  leetcode.LRUCache
  leetcode.SimpleLRUCache
-algorithms/testing/Playground.java
- algorithms.testing.Playground
-leetcode/SortCharsAscending.java
- leetcode.SortCharsAscending
+leetcode/MergeIntervals.java
+ leetcode.MergeIntervals

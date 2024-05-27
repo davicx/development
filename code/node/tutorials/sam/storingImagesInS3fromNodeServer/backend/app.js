@@ -1,5 +1,24 @@
 const express = require('express')
 const app = express()
+require('dotenv').config();
+const crypto = require('crypto')
+//const sharp = require('sharp');
+/*
+import { S3Client, PutObjectCommand, DeleteObjectCommand, GetObjectCommand } from "@aws-sdk/client-s3"
+import { getSignedUrl } from "@aws-sdk/s3-request-presigner"
+
+import dotenv from 'dotenv'
+const multerS3 = require('multer-s3');
+
+const s3 = new S3({ region, accessKeyId, secretAccessKey })
+const fs = require('fs') 
+const multer = require('multer')
+const upload = multer({ dest: './uploads' })
+
+*/
+const S3 = require('aws-sdk/clients/s3')
+
+
 const cookieParser = require('cookie-parser');
 var cors = require('cors')
 const morgan = require('morgan')
@@ -10,6 +29,7 @@ const multer = require('multer')
 var mime = require('mime-types')
 
 var bodyParser = require('body-parser');
+const { S3Client, GetObjectCommand, PutObjectCommand } = require("@aws-sdk/client-s3");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -25,32 +45,88 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const storage = multer.memoryStorage()
 const upload = multer({storage: storage})
 
-
 //const { uploadFile, getFileStream } = require('./s3')
 //var mime = require('mime-types')
 
+//Signed URL
+const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");
 
+
+//APP
 app.use(express.json());
 app.use(cors())
 app.use(cookieParser())
 
-//STOP: 8:45 set up S3
+//ENV
+const bucketName = process.env.AWS_BUCKET_NAME
+const bucketRegion = process.env.AWS_BUCKET_REGION
+const accessKey = process.env.AWS_ACCESS_KEY
+const secretAccessKey = process.env.AWS_SECRET_KEY
+
+const generateFileName = (bytes = 32) => crypto.randomBytes(bytes).toString('hex')
+
+
+//S3
+const s3 = new S3Client({ 
+  credentials: {
+    accessKeyId: accessKey,
+    secretAccessKey: secretAccessKey 
+  },
+  region: bucketRegion
+})
+
 app.get("/", (req, res) => {
   console.log("Hello!");
   res.json({hi: "hiya!"})
 })
 
 
-app.get("/api/posts", (req, res) => {
+app.get("/api/posts", async (req, res) => {
   console.log("Hello!");
-  res.json({hi: "hiya!"})
+  const post1 = {userName: "davey", caption: "hiya!", imageKey: "59045070_p0.jpg"}
+  //const post2 = {userName: "Frodo", caption: "B"}
+  //const post3 = {userName: "David", caption: "B"}
+
+  //const posts = [post1, post2, post3];
+  const posts = [post1];
+
+  const getObjectParams = {
+    Bucket: bucketName,
+    Key: post1.imageKey,
+  }
+
+  //const client = new S3Client(clientParams);
+  const command = new GetObjectCommand(getObjectParams);
+  const url = await getSignedUrl(s3, command, { expiresIn: 3600 });
+  post1.imageURL = url
+
+  res.json({posts})
+
 })
 
-app.post("/api/posts", upload.single('image'), (req, res) => {
+
+
+
+app.post("/api/posts", upload.single('image'), async (req, res) => {
   console.log("Hello! got your image!");
   const file = req.file
   const caption = req.body.caption
   //const caption = req.body.caption
+  const imageName = generateFileName()
+
+  //const fileBuffer = await sharp(file.buffer).resize({ height: 1920, width: 1080, fit: "contain" }).toBuffer()
+
+  const params = {
+    Bucket: bucketName,
+    Key: imageName + req.file.originalname,
+    Body: req.file.buffer,
+    ContentType: req.file.mimetype
+  }
+
+  const command = new PutObjectCommand(params)
+
+  await s3.send(command)
+
   console.log(req.body)
   res.json({file: file.originalname, caption: caption})
 })

@@ -134,7 +134,7 @@ public class Master {
 
     //METHOD
     //Method 1: Simple Method
-≥Method
+
 
     //Method 2: Count Words
     public static Map<String, Integer> countWords(String[] words) {
