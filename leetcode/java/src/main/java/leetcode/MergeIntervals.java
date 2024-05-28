@@ -7,22 +7,49 @@ import java.util.Comparator;
 public class MergeIntervals {
     public static void main(String[] args) {
         ArrayList<ArrayList<Integer>> intervals = createIntervals();
-
         ArrayList<ArrayList<Integer>> answer = merge(intervals);
-
+        System.out.println("ANSWER");
+        System.out.println(answer);
     }
 
 
     public static ArrayList<ArrayList<Integer>> merge(ArrayList<ArrayList<Integer>> intervals) {
         ArrayList<ArrayList<Integer>> answerArray = new ArrayList<>();
 
-        //STEP 1: Sort the intervals
+        //STEP 1: Check for small input
+        if(intervals.size() < 2) {
+            return intervals;
+        }
+
+        //STEP 2: Sort the intervals
         Collections.sort(intervals, Comparator.comparing(o -> o.get(0)));
 
-        //STEP 2: Merge
-        for (int i = 0; i < intervals.size(); i++) {
-            System.out.println(intervals.get(i).get(0) + " " + intervals.get(i).get(1));
+        //STEP 3: Merge
+        ArrayList<Integer> tempInterval = intervals.get(0);
+        Boolean newInterval = true;
 
+        for (int i = 0; i < intervals.size(); i++) {
+
+            //Last interval
+            if(i == intervals.size() - 1) {
+                System.out.println("Last interval " + intervals.get(i));
+            }
+
+            //We just added a new interval so we need to start over
+            if(newInterval == true) {
+                tempInterval = intervals.get(i);
+                newInterval = false;
+
+            //Check if we can merge
+            } else {
+                if(tempInterval.get(1) < intervals.get(i).get(0)) {
+                    answerArray.add(tempInterval);
+                    newInterval = true;
+                } else {
+                    Integer newRight = Math.max(tempInterval.get(1), intervals.get(i).get(1));
+                    tempInterval.add(1,newRight);
+                }
+            }
         }
 
         return answerArray;
