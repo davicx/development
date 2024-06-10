@@ -20,6 +20,15 @@ public class Master {
         System.out.println(usersTen[0]);
         String[] currentUsers = {"david", "sam", "bilbo"};
 
+        //Copy Array
+        String currentUsersCopy[] = new String[currentUsers.length];
+
+        // Copying elements of a[] to b[]
+        for (int i = 0; i < currentUsers.length; i++) {
+            currentUsersCopy[i] = currentUsers[i];
+        }
+
+
         //Array List (Resizable)
         ArrayList<String> users = new ArrayList<String>();
         users.add("davey");

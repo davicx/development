@@ -12,6 +12,12 @@ tools/SortObjects.java
  tools.SortObjects
 leetcode/PrintWordsVertically.java
  leetcode.PrintWordsVertically
+tools/PriorityQueueTool.java
+ tools.FriendComparator
+ tools.PriorityQueueTool
+ tools.SimpleUser
+leetcode/LongestPalindrome.java
+ leetcode.LongestPalindrome
 simple/User.java
  simple.User
 Notes.java
@@ -23,24 +29,29 @@ simple/SimpleInnerClass.java
  simple.OuterClass$InnerClass
  simple.OuterClass$StaticInnerClass
  simple.SimpleInnerClass
-leetcode/LongestPalindrome.java
- leetcode.LongestPalindrome
+leetcode/MergeIntervals.java
+ leetcode.MergeIntervals
 leetcode/SortCharsAscending.java
  leetcode.SortCharsAscending
-Master.java
- Master
- SimpleUser
+leetcode/LongestCommonPrefix.java
+ leetcode.LongestCommonPrefix
 tools/MapsReduceStream.java
  tools.MapsReduceStream
 tools/CountWords.java
  tools.CountWords
-tools/SortArrays.java
- tools.SortArrays
+leetcode/MinDifferenceBetweenLargeSmaleValues.java
+ leetcode.MinDifference
+ leetcode.MinDifferenceBetweenLargeSmaleValues
 algorithms/SimpleBinaryTree.java
  algorithms.SimpleBinaryTree
 leetcode/SimpleLRUCache.java
  leetcode.ItemInt
  leetcode.LRUCache
  leetcode.SimpleLRUCache
-leetcode/MergeIntervals.java
- leetcode.MergeIntervals
+tools/SortArrays.java
+ tools.SortArrays
+leetcode/HeightChecker.java
+ leetcode.HeightChecker
+Master.java
+ Master
+ SimpleUser
