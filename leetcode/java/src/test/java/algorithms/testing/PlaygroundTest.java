@@ -47,7 +47,7 @@ class PlaygroundTest {
     }
 
 
-    @Test
+    @org.junit.Test
     void callSum() {
         //This will NOT call real method
         when(playgroundMock.sum(2,2)).thenReturn(4);

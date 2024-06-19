@@ -48,10 +48,14 @@ leetcode/SimpleLRUCache.java
  leetcode.ItemInt
  leetcode.LRUCache
  leetcode.SimpleLRUCache
-tools/SortArrays.java
- tools.SortArrays
 leetcode/HeightChecker.java
  leetcode.HeightChecker
 Master.java
  Master
  SimpleUser
+tools/SortArrays.java
+ tools.SortArrays
+leetcode/AmazonMaximizeRevenue.java
+ leetcode.AmazonMaximizeRevenue
+leetcode/RemoveElement.java
+ leetcode.RemoveElement

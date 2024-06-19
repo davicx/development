@@ -33,7 +33,12 @@ public class SortArrays {
     public static Integer[] sortArrayIntegers(Integer[] intArray) {
         Arrays.sort(intArray);
         return intArray;
+    }
 
+    //TYPE 2: Sort an Array List of Integers
+    public static ArrayList<Integer> sortArrayIntegers(ArrayList<Integer> nums) {
+        Collections.sort(nums);
+        return nums;
     }
 
     //TYPE 2: Sort a Double Array of Integers by First Value

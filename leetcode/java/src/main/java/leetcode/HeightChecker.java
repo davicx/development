@@ -2,15 +2,19 @@ package leetcode;
 
 import java.util.Arrays;
 
+//STATUS: Accepted
 public class HeightChecker {
     public static void main(String[] args) {
-        Integer[] heights = {1,1,4,2,1,3};
-
-
+        int[] heights = {1,1,4,2,1,3};
+        int answer = heightChecker(heights);
+        System.out.println(answer);
     }
 
     public static int heightChecker(int[] heights) {
-        System.out.println(heights);
+        int answer = 0;
+        if(heights.length <= 1) {
+            return heights.length;
+        }
 
         //STEP 1: Copy Original Array
         int heightsSorted[] = new int[heights.length];
@@ -21,16 +25,15 @@ public class HeightChecker {
 
         Arrays.sort(heightsSorted);
 
-        //Print them
-        for (int i = 0; i < heights.length; i++) {
-            System.out.print(heights[i] + " ");
-        }
         System.out.println(" ");
         for (int i = 0; i < heightsSorted.length; i++) {
-            System.out.print(heightsSorted[i] + " ");
+            System.out.println(heightsSorted[i] + " " + heights[i]);
+            if(heightsSorted[i] != heights[i]) {
+                answer = answer + 1;
+            }
         }
 
-        return 1;
+        return answer;
 
     }
 }
