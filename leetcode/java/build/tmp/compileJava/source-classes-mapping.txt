@@ -59,3 +59,5 @@ leetcode/AmazonMaximizeRevenue.java
  leetcode.AmazonMaximizeRevenue
 leetcode/RemoveElement.java
  leetcode.RemoveElement
+leetcode/ValidParentheses.java
+ leetcode.ValidParentheses
